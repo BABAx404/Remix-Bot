@@ -89,7 +89,7 @@ client.on(`message`, async (message) => {
     .setColor("RANDOM")
     .setDescription(saymsg)
     .setAuthor(message.author.username,message.author.avatarURL())
-    .setFooter(`Embed By | ${message.author.username}#${message.author.discriminator}))
+    .setFooter(`Embed By | ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
