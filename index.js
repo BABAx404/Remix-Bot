@@ -78,7 +78,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("#c219d8").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -89,7 +89,7 @@ client.on(`message`, async (message) => {
     .setColor("RANDOM")
     .setDescription(saymsg)
     .setAuthor(message.author.username,message.author.avatarURL())
-    .setFooter(`Embed By | ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`Embed By | ${message.author.username}#${message.author.discriminator}`))
     .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
