@@ -168,8 +168,7 @@ module.exports = {
         .setImage(thumb)
         .setFooter(``)
         .setTimestamp()
-        .addField("Duration:", `\`${song.duration} Minutes\``, true)
-        .addField("Requested by:", `${massage.author.id}`, true)
+        .addField("Duration:", `\`${song.duration}\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
 
