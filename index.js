@@ -88,7 +88,7 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("RANDIM")
     .setDescription(saymsg)
-    .setFooter("${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
