@@ -173,7 +173,7 @@ module.exports = {
       var playingMessage = await queue.textChannel.send(newsong);
 
 
-      await playingMessage.react("✅"); //skip
+      await playingMessage.react(""); //skip
       await playingMessage.react("769912238236106793"); //pause
       await playingMessage.react("769913064194834511"); //loop
       await playingMessage.react("769915194066862080"); //stop
