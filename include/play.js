@@ -169,6 +169,7 @@ module.exports = {
         .setFooter(``)
         .setTimestamp()
         .addField("Duration:", `\`${song.duration} Minutes\``, true)
+        .addField("Requested by:", `${massage.author.id}`, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
 
