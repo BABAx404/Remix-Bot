@@ -86,9 +86,11 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDIM")
+    .setColor("RANDOM")
     .setDescription(saymsg)
-    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setAuthor(message.author.username,message.author.avatarURL())
+    .setFooter(`By | ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
