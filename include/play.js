@@ -199,8 +199,8 @@ module.exports = {
       if (member.voice.channel !== member.guild.me.voice.channel) {
 
         member.send(new MessageEmbed()
-        .setTitle("<:no:770326304473350145> | You must be in the Same Voice Channel as me!")
-        .setColor("#ff0e7a"))
+        .setTitle("❗ | You must be in the Same Voice Channel as me!")
+        .setColor("RANDOM"))
         
         reaction.users.remove(user).catch(console.error);
         
@@ -218,7 +218,7 @@ module.exports = {
           let queueEmbed = new MessageEmbed()
             .setTitle("Music Queue")
             .setDescription(description)
-            .setColor("#c219d8")
+            .setColor("RANDOM")
              ;
 
           const splitDescription = splitMessage(description, {
