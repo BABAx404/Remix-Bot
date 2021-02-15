@@ -166,7 +166,8 @@ module.exports = {
         .setColor("RANDOM")
         .setThumbnail()
         .setImage(thumb)
-        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .setFooter(``)
+        .setTimestamp()
         .addField("Duration:", `\`${song.duration} Minutes\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
