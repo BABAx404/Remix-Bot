@@ -164,7 +164,7 @@ module.exports = {
         .setTitle(""   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setAuthor(`🎶 Play Now Music...`)
+        .setAuthor(`<a:emoji_3:811197148905078834> Play Now Music...`)
         .setImage(thumb)
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
         .setTimestamp()
