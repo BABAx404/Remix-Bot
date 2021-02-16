@@ -179,9 +179,9 @@ module.exports = {
       await playingMessage.react("⏹️"); //pause
       await playingMessage.react("🔁"); //loop
       await playingMessage.react("⏸️"); //stop
-      await playingMessage.react(""); //np
-      await playingMessage.react(""); //queue
-      await playingMessage.react(""); //lyrics
+      await playingMessage.react("▶️"); //np
+      await playingMessage.react("📶"); //queue
+      await playingMessage.react("🔀"); //lyrics
     } catch (error) {
       console.error(error);
     }
@@ -214,7 +214,7 @@ module.exports = {
       
       switch (reaction.emoji.id) {
         //queue
-        case "😂":
+        case "📶":
           reaction.users.remove(user).catch(console.error);
           const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
@@ -239,7 +239,7 @@ module.exports = {
           });
           break;
         //np
-        case "😂":
+        case "▶️":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
@@ -288,7 +288,7 @@ module.exports = {
 
           break;
         //lyrics
-        case "😂":
+        case "🔀":
 
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
