@@ -166,7 +166,8 @@ module.exports = {
         .setColor("RANDOM")
         .setThumbnail()
         .setImage(thumb)
-        .setFooter(``)
+        .setDescription(`**>** __**Remix Bot**__ **<**)
+        .setFooter(message.author.username, message.author.displayAvatarURL)
         .setTimestamp()
         .addField("Duration:", `\`${song.duration}\``, true)
 
