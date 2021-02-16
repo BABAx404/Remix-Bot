@@ -161,10 +161,10 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("🌛 Plaing | "   +song.title)
+        .setTitle(""   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setAuthor(`https://cdn.discordapp.com/emojis/802384066154070036.gif?v=1`)
+        .setAuthor(`🎶 Play Now Music...`)
         .setImage(thumb)
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
         .setTimestamp()
