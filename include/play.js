@@ -161,7 +161,7 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle(":-<:YT:811200082762137620>:"   +song.title)
+        .setTitle("<:YT:811200082762137620>:"   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
         .setAuthor(`✅ Play Now Music...`)
