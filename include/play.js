@@ -168,7 +168,7 @@ module.exports = {
         .setImage(thumb)
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
         .setTimestamp()
-        .addField("• ────── ☔ ────── •", ``, true)
+        .addField("• ────── ☔ ────── •")
         .addField("☄️|Requested by :", `${message.author}`, true)
         .addField("🗯|Text Channel :", `\`#${message.channel.name}\``, true)
         .addField("⏱|Time :", `\`${song.duration} Minutes 🖇\``, true)
