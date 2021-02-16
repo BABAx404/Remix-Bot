@@ -164,7 +164,7 @@ module.exports = {
         .setTitle("<:YOUTUBE:811200082762137620>:"   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setAuthor(`<:REMIXBOT:805705914329989130> Play Now Music...`)
+        .setAuthor(`✅ Play Now Music...`)
         .setImage(thumb)
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
         .setTimestamp()
