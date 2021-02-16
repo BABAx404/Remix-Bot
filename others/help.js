@@ -27,6 +27,7 @@ module.exports = {
        .setImage('https://cdn.discordapp.com/attachments/637326787067641907/808370287790784572/image0-4.gif')
        .setDescription(`**[  SUPPORT  ](https://discord.gg/6Gv895N5hB)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
       .setFooter(message.author.username,message.author.avatarURL())
+      .setTimestamp()
       .setThumbnail(message.author.avatarURL({dynamic: "true"}))
       .setColor('RANDOM');
     //define argstrue to negative
@@ -101,6 +102,9 @@ module.exports = {
           break;
           case "uptime":
             ifargstruedothis=22
+          break;
+          case "embed":
+            ifargstruedothis=23
           break;
           default:
             commands.forEach((cmd) => {
