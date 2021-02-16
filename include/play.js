@@ -161,7 +161,7 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("<:YT:811200082762137620>:"   +song.title)
+        .setTitle("🔰:"   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
         .setAuthor(`✅ Play Now Music...`)
@@ -263,7 +263,7 @@ module.exports = {
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("#c219d8")
+          .setColor("RANDOM")
           .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
           //if its a stream
           if(ms >= 10000) {
