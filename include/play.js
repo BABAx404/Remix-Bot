@@ -161,13 +161,12 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("<a:peacebotmusic:802384066154070036> Plaing | "   +song.title)
+        .setTitle("🌛 Plaing | "   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setThumbnail()
+        .setAuthor(`https://cdn.discordapp.com/emojis/802384066154070036.gif?v=1`)
         .setImage(thumb)
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
-        .setFooter()
         .setTimestamp()
         .addField("Requested by:", `${message.author}`, true)
         .addField("Channel:", `\`#${message.channel.name}\``, true)
