@@ -170,6 +170,7 @@ module.exports = {
         .setFooter(message.author.username, message.author.displayAvatarURL)
         .setTimestamp()
         .addField("Requested by:", `${message.author}`, true)
+        .addField("Channel:", `#${message.channel.name}`, true)
         .addField("Duration:", `\`${song.duration}\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
