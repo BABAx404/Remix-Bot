@@ -28,7 +28,7 @@ module.exports = {
        .setDescription(`**[  SUPPORT  ](https://discord.gg/6Gv895N5hB)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
       .setFooter(message.author.username,message.author.avatarURL())
       .setTimestamp()
-      .setThumbnail(message.author.avatarURL({dynamic: "true"}))
+      .setThumbnail(`https://cdn.discordapp.com/attachments/797027844831576074/811296628006060102/21-03-01-772130955561140224.gif`)
       .setColor('RANDOM');
     //define argstrue to negative
     let ifargstruedothis = -1;
