@@ -169,7 +169,8 @@ module.exports = {
         .setDescription(`[Support](https://discord.gg/6Gv895N5hB) | [Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) 
 
 • ────── ☔ ────── •`)
-                        
+       
+      
         .setTimestamp()
         .addField("☄️|Requested by :", `${message.author}`, true)
         .addField("🗯|Text Channel :", `\`#${message.channel.name}\``, true)
