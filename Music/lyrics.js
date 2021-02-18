@@ -32,7 +32,7 @@ async execute(message) {
     //define the temporary Embed
     let temEmbed = new MessageEmbed()
     .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1").setFooter("Lyrics")
-    .setColor("#f300e5")
+    .setColor("RANDOM")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
     //try to find lyrics
@@ -48,7 +48,7 @@ async execute(message) {
     }
     //define lyrics Embed
     let lyricsEmbed = new MessageEmbed()
-      .setTitle("<:lyrics:769938447279456296> Lyrics")
+      .setTitle("✳️ | Lyrics")
       .setDescription(lyrics)
       .setColor("RANDOM")
     //if to long make slice it
