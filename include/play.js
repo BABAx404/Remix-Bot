@@ -161,7 +161,7 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("🛑 : "   +song.title)
+        .setTitle(":", "https://cdn.discordapp.com/emojis/779963486767677451.png?v=1"   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
