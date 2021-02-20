@@ -53,7 +53,7 @@ execute(message, args) {
     queue.textChannel.send(
       new MessageEmbed()
         .setColor("#c219d8")
-        .setAuthor(`${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "https://cdn.discordapp.com/emojis/792346034063278080.gif?v=1")
+        .setAuthor(`${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "https://cdn.discordapp.com/emojis/780373854039572501.gif?v=1")
     ).catch(console.error);
   }
 };
