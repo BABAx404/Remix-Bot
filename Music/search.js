@@ -10,7 +10,7 @@ const { PREFIX } = require(`../config.json`);
 ////////////////////////////
 module.exports = {
   name: "search",
-  description: "(find)Search and select videos to play",
+  description: "\`(find)Search and select videos to play\`",
   aliases: ["find"],
   cooldown: 3,
   edesc: `Type this Command to find first 5 results for your song!\nUsage: ${PREFIX}search <TITEL | URL>`,
