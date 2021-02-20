@@ -29,7 +29,7 @@ module.exports = {
     }
     //define queueembed
     let queueEmbed = new MessageEmbed()
-      .setAuthor("Muisc Queue...", "https://cdn.discordapp.com/emojis/783663031846305802.gif?v=1")
+      .setAuthor("Music Queue...", "https://cdn.discordapp.com/emojis/783663031846305802.gif?v=1")
       .setDescription(description)
       .setColor("RANDOM");
     //split the description
