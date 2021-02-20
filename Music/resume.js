@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "resume",
   aliases: ["r"],
-  description: "(r)Resume currently playing music",
+  description: "\`(r)Resume currently playing music\`",
   cooldown: 5,
   edesc: `Type this command to resume the paused Song!\nUsage: ${PREFIX}resume`,
 
