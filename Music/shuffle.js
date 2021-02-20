@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "shuffle",
   aliases: ["mix"],
-  description: "(mix)Shuffles the current Queue!",
+  description: "\`(mix)Shuffles the current Queue!\`",
   cooldown: 5,
   edesc: `Type the Command, if a Queue exists to change to Order of the Queue, randomly.\nUsage: ${PREFIX}shuffle`,
 
