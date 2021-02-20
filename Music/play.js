@@ -167,7 +167,6 @@ async execute(message, args, client) {
         .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
         .addField("Estimated time until playing:", `\`${estimatedtime}\``, true)
         .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
-        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         .setTimestamp()
       //send the Embed into the Queue Channel
         return serverQueue.textChannel
