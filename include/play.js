@@ -27,7 +27,7 @@ module.exports = {
       message.client.queue.delete(message.guild.id);
       //define the embed
       const endembed = new MessageEmbed().setColor("RANDOM")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/emojis/769915194066862080.png")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/emojis/776781295191064588.gif?v=1")
       //set the embed
       return queue.textChannel.send(endembed).catch(console.error);
     }
