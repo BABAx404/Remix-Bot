@@ -159,7 +159,7 @@ async execute(message, args, client) {
       serverQueue.songs.push(song);
       //the new song embed
       const newsong = new MessageEmbed()
-        .setAuthor("Hit Him After The Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
+        .setAuthor("Play After Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
         .setTitle("🛑 :" + song.title)
         .setColor("RANDOM")
         .setThumbnail(thumb)
