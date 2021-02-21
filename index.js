@@ -109,6 +109,34 @@ client.on(`message`, async (message) => {
     message.channel.send(embed)
   }
    
+
+//An about announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}about`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setDescription("
+
+\`Owner Bot :\`
+<@637299944939585576>
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+\`Admin Bot :\`
+<@712407561676259418>
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+\`Time Create :\`
+Dec 25, 2020
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+\`Moderation :\`
+Music Bot
+
+")
+
+    //send the Message
+    message.channel.send(embed)
+  }   
+   
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
