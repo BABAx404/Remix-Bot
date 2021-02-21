@@ -97,7 +97,21 @@ client.on(`message`, async (message) => {
     message.channel.send(embed)
   }
 
-
+//An invite announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}invite`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setAuthor("[Click Here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) to invite the bot.", "https://cdn.discordapp.com/emojis/780373854039572501.gif?v=1")
+    //delete the Command
+    message.delete({timeout: 300})
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+   
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
