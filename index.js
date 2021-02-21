@@ -117,6 +117,9 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
+    .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
+    .setFooter("Remix Bot ✨", "https://cdn.discordapp.com/emojis/791641361392074792.gif?v=1")
+    .setTimestamp()
     .setDescription(`
 
 \`Owner Bot :\`
