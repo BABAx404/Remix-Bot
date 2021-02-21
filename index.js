@@ -104,7 +104,7 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("[Click Here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) to invite the bot.", "https://cdn.discordapp.com/emojis/780373854039572501.gif?v=1")
+    .setDescription("[Click Here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) to invite the bot.", "https://cdn.discordapp.com/emojis/780373854039572501.gif?v=1")
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
