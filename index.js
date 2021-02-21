@@ -102,10 +102,14 @@ client.on(`message`, async (message) => {
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-   message.react("✅").catch(console.error);
+    message.react("✅").catch(console.error);
+    return message.member
+      .send(
+        ` 🛑 **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.
+    `
+      )
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setDescription("✅ **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
     //send the Message
     message.channel.send(embed)
   }
