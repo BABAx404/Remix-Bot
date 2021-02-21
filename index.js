@@ -117,7 +117,7 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setDescription("
+    .setDescription(`
 
 \`Owner Bot :\`
 <@637299944939585576>
@@ -131,7 +131,7 @@ Dec 25, 2020
 \`Moderation :\`
 Music Bot
 
-")
+`)
 
     //send the Message
     message.channel.send(embed)
