@@ -38,7 +38,7 @@ async execute(message,args,client) {
   //send the approve message
   message.channel.send(new MessageEmbed()
   .setColor("RANDOM")
-  .setAuthor(`${message.author.username} stopped the music!`, "https://cdn.discordapp.com/emojis/769915194066862080.png"))
+  .setAuthor(`${message.author.username} stopped the music!`, "https://cdn.discordapp.com/emojis/801528793407291442.gif?v=1"))
   .catch(console.error);
   }
 };
