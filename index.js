@@ -111,7 +111,7 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     //send the Message
-    message.member.send(embed)
+    message.author.send(embed)
   }
    
 
