@@ -119,7 +119,7 @@ client.on(`message`, async (message) => {
     .setColor("RANDOM")
     .setAuthor("About Remix Bot...", "https://cdn.discordapp.com/emojis/772130955561140224.gif?v=1")
     .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
-    .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     .setDescription(`
 
