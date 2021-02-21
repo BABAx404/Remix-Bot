@@ -120,7 +120,6 @@ client.on(`message`, async (message) => {
     .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
     .setFooter("Remix Bot ✨", "https://cdn.discordapp.com/emojis/791641361392074792.gif?v=1")
     .setTimestamp()
-    .setTitle(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**`)
     .setDescription(`
 
 \`Owner Bot :\`
@@ -131,6 +130,8 @@ client.on(`message`, async (message) => {
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 \`Moderation :\`
 **Music Bot** 
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
 `)
 
