@@ -29,7 +29,7 @@ execute(message, args) {
     //define Info Embed
     const volinfoembed = new MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("Volume is: \`${queue.volume}%\`", "https://cdn.discordapp.com/emojis/791647359486001173.gif?v=1")
+    .setTitle(`🔊 Volume is: \`${queue.volume}%\``)
     //if no args return info embed
     if (!args[0]) return message.channel.send(volinfoembed).catch(console.error);
     //if args is not a number return error
