@@ -16,8 +16,8 @@ module.exports = {
         }
 
     let resultsEmbed = new MessageEmbed()
-      .setTitle("<:no:770326304473350145> | " + titel)
-      .setColor("#ff0e7a")
+      .setTitle("❗ | " + titel)
+      .setColor("RANDOM")
       
       message.channel.send(resultsEmbed);
     return;
