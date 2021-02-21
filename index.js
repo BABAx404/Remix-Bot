@@ -103,7 +103,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-   message.react("https://cdn.discordapp.com/emojis/779961595656536084.gif?v=1").catch(console.error)
+   message.react("✅").catch(console.error)
     .setColor("RANDOM")
     .setDescription("✅ **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
     //send the Message
