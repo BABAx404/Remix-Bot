@@ -173,6 +173,7 @@ module.exports = {
       
         .setTimestamp()
         .addField("☄️|Requested by :", `${message.author}`, true)
+        .addField("Voice Channel 📣 :", `\`${channel.name}\``, true)
         .addField("🗯️|Text Channel :", `\`#${message.channel.name}\``, true)
         .addField("⏱|Time :", `\`${song.duration} Minutes 🖇\``, true)
 
