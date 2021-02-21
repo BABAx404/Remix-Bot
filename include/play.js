@@ -174,7 +174,7 @@ module.exports = {
         .setTimestamp()
         .addField("Requested by ☄️ :", `${message.author}`, true)
         .addField("Text Channel 🗯️ :", `\`#${message.channel.name}\``, true)
-        .addField("Volume ❄️ :", `\`${queue.volume}%\``, true)
+        .addField("Volume ❄️ :", `\`100\``, true)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
