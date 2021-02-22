@@ -105,11 +105,13 @@ client.on(`message`, async (message) => {
     message.react("✅").catch(console.error);
     return message.member
       .send(
-        `<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.
+        `
     `
       )
+     
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
+    .setTitle (`<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.`)
     //send the Message
    message.author.sendEmbed(embed);
   }
