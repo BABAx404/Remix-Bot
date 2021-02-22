@@ -102,7 +102,7 @@ client.on(`message`, async (message) => {
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-    message.react("<a:yes:813397195771740182>").catch(console.error);
+    message.react("✅").catch(console.error);
     return message.member
       .send(
         `https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot
