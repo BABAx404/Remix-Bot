@@ -139,6 +139,24 @@ if(message.content.startsWith(`${prefix}invite`)){
     message.channel.send(embed)
   }   
    
+if(message.content.startsWith(`${prefix}bot`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+.setTitle ("<a:Remix:811922235018313738> __** **Info Remix Bot** **__ <a:Remix:811922235018313738>")
+.addField("**Servers**", [bot.guilds.size], true)
+        .addField("**Channels**", `[${bot.channels.size}]`, true)
+        .addField("**Users**", `[${bot.users.size}]`, true)
+        .addField("**My Name**", `[ ${bot.user.tag} ]`, true)
+        .addField("**My ID**", `[ ${bot.user.id} ]`, true)
+        .addField(
+          "**My Prefix**",
+          `[>]`,  
+    
+    //send the Message
+    message.author.send(embed)
+  }  
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
