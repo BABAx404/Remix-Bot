@@ -108,28 +108,6 @@ if(message.content.startsWith(`${prefix}invite`)){
     //send the Message
     message.author.send(embed)
   }   
-
-if(message.content.startsWith(`${prefix}bot`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-  .setTitle ("<a:Remix:811654314698866748> __** **Info Remix Bot** **__ <a:Remix:811654314698866748>")
-  .setThumbnail(`https://cdn.discordapp.com/attachments/811929643027398677/813437152951140382/fc9a04b21ba97a192f3afd090c16d96f.png`)
-  .setFooter(message.author.username, message.author.displayAvatarURL)
-  .setTimestamp()
-   .addField("<a:rast:813403866472251399> My Tag :", `\<@792047204361175091>`\``,)
-   .addField("<a:lodaing:813403104384647238>")
-   .addField("<a:rast:813403866472251399> My Name :", `\Remix Bot ✨`\``,)
-   .addField("<a:lodaing:813403104384647238>")
-   .addField("<a:rast:813403866472251399>  Set Status :", `\`Online\``,)
-   .addField("<a:lodaing:813403104384647238>")
-   .addField("<a:rast:813403866472251399> Moderation Bot :", `\`Music Bo t\``,)
-    
-    
-    //send the Message
-    message.author.send(embed)
-  }   
    
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
