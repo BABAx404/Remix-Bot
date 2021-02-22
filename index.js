@@ -120,7 +120,7 @@ if(message.content.startsWith(`${prefix}bot`)){
   .setTimestamp()
    .addField("<a:rast:813403866472251399> My Tag :", `\<@792047204361175091>`\``,)
    .addField("<a:lodaing:813403104384647238>")
-   .addField("<a:rast:813403866472251399> My Name :", `\Remix Bot ✨#9054`\``,)
+   .addField("<a:rast:813403866472251399> My Name :", `\Remix Bot ✨`\``,)
    .addField("<a:lodaing:813403104384647238>")
    .addField("<a:rast:813403866472251399>  Set Status :", `\`Online\``,)
    .addField("<a:lodaing:813403104384647238>")
