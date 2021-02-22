@@ -207,7 +207,7 @@ module.exports = {
       if (member.voice.channel !== member.guild.me.voice.channel) {
 
         member.send(new MessageEmbed()
-        .setTitle("❗ | You must be in the Same Voice Channel as me!")
+        .setTitle("<a:Erore:813505315534405632> | You must be in the Same Voice Channel as me!")
         .setColor("RANDOM"))
         
         reaction.users.remove(user).catch(console.error);
