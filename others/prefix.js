@@ -23,7 +23,7 @@ module.exports = {
     message.react("769665713124016128");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("RANDOM")
     .setTitle(`Current Prefix: \`${prefix}\``)
     .setFooter('Please provide a new prefix')
     );
@@ -40,6 +40,6 @@ module.exports = {
 
     message.channel.send(new MessageEmbed()
     .setColor("RANDOM")
-    .setTitle(`Successfully set new prefix to **\`${args[0]}\`**`))
+    .setTitle(`<a:yes:813397195771740182> Successfully set new prefix to **\`${args[0]}\`**`))
   }
 }
