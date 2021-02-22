@@ -172,10 +172,10 @@ module.exports = {
        
       
         .setTimestamp()
-        .addField("Requested by ☄️ :", `${message.author}`, true)
-        .addField("Text Channel 🗯️ :", `\`#${message.channel.name}\``, true)
-        .addField("Volume ❄️ :", `\`100\``, true)
-        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField("<a:rast:813403866472251399> Requested by :", `${message.author}`, true)
+        .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
+        .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
+        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
 
