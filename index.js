@@ -126,12 +126,6 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:rast:813403866472251399> \`Owner Bot :\`
 <@637299944939585576>
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:rast:813403866472251399> \`Bot Tag :\`
-<@792047204361175091>
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:discord:813406342173818910> \`Bot Name :\`
- **Remix Bot ✨**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:waya:813455060864073788> \`Set Status :\`
  **Online**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
@@ -140,7 +134,6 @@ if(message.content.startsWith(`${prefix}invite`)){
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> \`Moderation :\`
 **Music Bot**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 `)
 
