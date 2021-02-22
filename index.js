@@ -106,8 +106,7 @@ client.on(`message`, async (message) => {
    let embed = new Discord.RichEmbed()
 
       .setColor("RANDOM")
-
-      .setTitle("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.");
+      .setTitle(`<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.`)
 
     message.author.sendEmbed(embed);
      //send the Message
