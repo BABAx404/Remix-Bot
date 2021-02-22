@@ -122,28 +122,25 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setTimestamp()
     .setDescription(`
 
+**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 <a:rast:813403866472251399> \`Owner Bot :\`
 <@637299944939585576>
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:rast:813403866472251399> \`Bot Tag :\`
 <@792047204361175091>
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
-<a:discord:813406342173818910>
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:discord:813406342173818910> \`Bot Name :\`
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
-<a:waya:813455060864073788> \`Online Bot :\`
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
+ **Remix Bot ✨**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:waya:813455060864073788> \`Set Status :\`
+ **Online**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:time:813403485902864435> \`Time Create :\`
 **Dec 25, 2020**
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> \`Moderation :\`
-**Music Bot** 
-
-
-
-
-**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+**Music Bot**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 `)
 
