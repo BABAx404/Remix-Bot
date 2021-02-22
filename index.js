@@ -132,8 +132,8 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:time:813403485902864435> \`Time Create :\`
 **Dec 25, 2020**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:DarkMan:813510767386165263> \`Prefix Bot\`
- **>**
+<a:DarkMan:813510767386165263> \`Prefix Bot :\`
+    **>**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> \`Moderation :\`
 **Music Bot**
