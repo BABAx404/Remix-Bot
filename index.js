@@ -132,7 +132,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 ◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
 <a:discord:813406342173818910> \`Bot Name :\`
 ◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
-<a:waya:813455060864073788> \`Online Bot
+<a:waya:813455060864073788> \`Online Bot :\`
 ◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
 <a:time:813403485902864435> \`Time Create :\`
 **Dec 25, 2020**
