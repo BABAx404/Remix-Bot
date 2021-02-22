@@ -139,7 +139,6 @@ if(message.content.startsWith(`${prefix}invite`)){
 ◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
 <a:setting:813404135181385759> \`Moderation :\`
 **Music Bot** 
-◈ ━━━━━━━━ <a:lodaing:813403104384647238> ━━━━━━━━ ◈
 
 
 
