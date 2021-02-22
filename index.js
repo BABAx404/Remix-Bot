@@ -128,13 +128,13 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-\`Owner Bot :\`
+:-<a:rast:813403866472251399> \`Owner Bot :\`
 <@637299944939585576>
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-\`Time Create :\`
+:-<a:time:813403485902864435> \`Time Create :\`
 **Dec 25, 2020**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-\`Moderation :\`
+:-<a:setting:813404135181385759> \`Moderation :\`
 **Music Bot** 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
