@@ -161,7 +161,7 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("🛑 : "   +song.title)
+        .setTitle("<:Youtube:813453040929210379>: "   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
@@ -174,7 +174,7 @@ module.exports = {
         .setTimestamp()
         .addField("Requested by ☄️ :", `${message.author}`, true)
         .addField("Text Channel 🗯️ :", `\`#${message.channel.name}\``, true)
-        .addField("Volume ❄️ :", `\`${queue.volume}%\``, true)
+        .addField("Volume ❄️ :", `\`100\``, true)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
