@@ -103,7 +103,8 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-.setTitle ("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
+    .setTitle("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
+    .setColor("RANDOM")
     //send the Message
     message.author.send(embed)
   }   
