@@ -97,21 +97,16 @@ client.on(`message`, async (message) => {
     message.channel.send(embed)
   }
 
-//An invite announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}invite`)){
+if(message.content.startsWith(`${prefix}invite`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-    message.react("✅").catch(console.error);
-   const embed = new Discord.RichEmbed()
-
-      .setColor("RANDOM")
-      .setTitle("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
-
-    message.author.sendEmbed(embed);
-     //send the Message
-  }
-   
+     message.react("<a:setting:813404135181385759>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+.setTitle ("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** to invite the bot.")
+    //send the Message
+    message.author.send(embed)
+  }   
 
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
