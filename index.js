@@ -37,7 +37,22 @@ client.on(`ready`, () => {
       });
       
    
-     client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"});
+     client.on("ready", () => {
+  setInterval(() => {
+    const statuses = [
+      `${PREFIX}help | Music bot`,
+      
+      
+       `${client.guilds.cache.size} | Servers `
+    ];
+
+    const status = statuses[Math.floor(Math.random() * statuses.length)];
+    console.log(
+      `${client.user.username} ready! ,Users ${client.guilds.cache.reduce(
+        (a, g) => a + g.memberCount,
+        0
+      )}, Servers| ${client.guilds.cache.size}`
+    );
            
       }, (5000));     
       ////////////////////////////////
