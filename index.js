@@ -144,8 +144,8 @@ __** **>** **__
     message.channel.send(embed)
   }  
    
-//An help announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}help`)){
+//An slaw announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}slaw`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
