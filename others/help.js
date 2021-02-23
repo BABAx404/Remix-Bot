@@ -7,9 +7,9 @@ const {
 const db = require('quick.db');
 
 module.exports = {
-  name: `help`,
+  name: ``,
   description: "\`(h)Gives you a list of all help Commands\`",
-  aliases: ["h","commands"],
+  aliases: ["","commands"],
   cooldown: 3,
   edesc: "Type help to get a short preview of all Commands, Type help <COMMANDNAME> to get extended information about this one command!",
   async execute(message,args,client) {
