@@ -39,7 +39,7 @@ client.on(`ready`, () => {
    
      client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"});
            
-           
+      }, (5000));     
       ////////////////////////////////
       ////////////////////////////////
     figlet.text(`${client.user.username} ready!`, function (err, data) {
