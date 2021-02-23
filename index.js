@@ -36,8 +36,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-   
-     client.on("ready", () => {
+   client.on("ready", () => {
   setInterval(() => {
     const statuses = [
       `${PREFIX}help | Music bot`,
@@ -53,8 +52,12 @@ client.on(`ready`, () => {
         0
       )}, Servers| ${client.guilds.cache.size}`
     );
+    //client.user.setActivity(`+help ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
+    client.user.setActivity(status, { type: "LISTENING" });
+  }, 5000);
+});
            
-      }, (5000));     
+          
       ////////////////////////////////
       ////////////////////////////////
     figlet.text(`${client.user.username} ready!`, function (err, data) {
