@@ -233,23 +233,21 @@ __** **>** **__
     message.channel.send(embed)
   }
  
-client.on("message", async message => {
-  if (message.content.toLowerCase() === prefix + "profile") {
-    message.channel.startTyping();
-    setTimeout(() => {
-      message.channel.stopTyping();
-    }, Math.random() * (1 - 3) + 1 * 200).then(
-      message.channel.send({
-        files: [
-          {
-            name: "prfoilebycutie.png",
-            attachment: `https://api.probot.io/profile/${message.author.id}`
-          }
-        ]
-      })
-    );
+ client.on("message", prof => {
+  if (prof.content.startsWith(prefix + "user")) {
+    var professor = new Discord.MessageEmbed()
+      .setAuthor(client.user.username)
+      .setThumbnail(client.user.avatarURL())
+      .setColor("#0c0b0b")
+      .setTitle("Your Info User")
+      .addField(" ▶️| Your Name", `<@${prof.author.id}>`)
+      .addField(" 🆔| Your ID", `${prof.author.id}`)
+      .addField(" 🌐| Create User", prof.author.createdAt.toLocaleString())
+      .setFooter(`Requested | ${prof.author.tag}`, prof.author.avatarURL())
+      .setTimestamp();
+    prof.channel.send(professor);
   }
-});   
+});  
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
