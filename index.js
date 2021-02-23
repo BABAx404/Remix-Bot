@@ -57,7 +57,7 @@ client.on(`ready`, () => {
   }, 5000);
 });
            
-          
+      }, (5000));    
       ////////////////////////////////
       ////////////////////////////////
     figlet.text(`${client.user.username} ready!`, function (err, data) {
