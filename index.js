@@ -36,8 +36,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-  
-client.on("ready", () => {
+ client.on("ready", () => {
   setInterval(() => {
     const statuses = [
       `${PREFIX}help | Music bot`,
@@ -52,10 +51,8 @@ client.on("ready", () => {
         (a, g) => a + g.memberCount,
         0
       )}, Servers| ${client.guilds.cache.size}`
-    );
-     
-  
-      }, (5000));
+    ); 
+           
       ////////////////////////////////
       ////////////////////////////////
     figlet.text(`${client.user.username} ready!`, function (err, data) {
