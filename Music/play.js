@@ -160,7 +160,7 @@ async execute(message, args, client) {
       //the new song embed
       const newsong = new MessageEmbed()
         .setAuthor("Play After Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
-        .setTitle("🛑 :" + song.title)
+        .setTitle("<:Youtube:813453040929210379>:" + song.title)
         .setColor("RANDOM")
         .setThumbnail(thumb)
         .setURL(song.url)
