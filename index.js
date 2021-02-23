@@ -143,15 +143,14 @@ __** **>** **__
     //send the Message
     message.channel.send(embed)
   }  
-  
-
-//An about announcement for everyone but no one knows so fine ^w^    
- if(message.content.startsWith(`${prefix}help`)){
+   
+//An help announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+.setColor("RANDOM")
     .setImage(`https://cdn.discordapp.com/attachments/768196510558715925/812074440560214076/7bc45af922b2bfb55f6049335cb23879.gif`)
     .setTimestamp()
     .setFooter(message.author.username, message.author.displayAvatarURL)
@@ -178,11 +177,12 @@ __** **>** **__
 =====================
 **Links**
 **[Support server](https://discord.gg/FRZ5vAJ4Rm) | [Add bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+
 `)
 
     //send the Message
     message.channel.send(embed)
-  }  
+  }
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
