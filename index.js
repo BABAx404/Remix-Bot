@@ -36,26 +36,8 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-   client.on("ready", () => {
-  setInterval(() => {
-    const statuses = [
-      `${PREFIX}help | Music bot`,
-      
-      
-       `${client.guilds.cache.size} | Servers `
-    ];
-
-    const status = statuses[Math.floor(Math.random() * statuses.length)];
-    console.log(
-      `${client.user.username} ready! ,Users ${client.guilds.cache.reduce(
-        (a, g) => a + g.memberCount,
-        0
-      )}, Servers| ${client.guilds.cache.size}`
-    );
-    //client.user.setActivity(`+help ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
-    client.user.setActivity(status, { type: "LISTENING" });
-  }, 5000);
-});
+   
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"});    
            
       }, (5000));    
       ////////////////////////////////
