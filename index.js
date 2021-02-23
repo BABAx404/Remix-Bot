@@ -115,30 +115,35 @@ if(message.content.startsWith(`${prefix}invite`)){
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
+    .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/813727451204812820/fc9a04b21ba97a192f3afd090c16d96f.png`)
     .setColor("RANDOM")
     .setImage(`https://cdn.discordapp.com/attachments/768196510558715925/812074440560214076/7bc45af922b2bfb55f6049335cb23879.gif`)
     .setTimestamp()
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTitle(`<a:music:813460704031145986> **Remix Bot** <a:music:813460704031145986>`)
     .setDescription(`
-<a:emoji_20:813716400408887316> ❖ *play*
-<a:emoji_20:813716400408887316> ❖ *skip*
-<a:emoji_20:813716400408887316> ❖ *skipto*
-<a:emoji_20:813716400408887316> ❖ *stop*
-<a:emoji_20:813716400408887316> ❖ *volume*
-<a:emoji_20:813716400408887316> ❖ *nowplaying*
-<a:emoji_20:813716400408887316> ❖ *shuffle*
-<a:emoji_20:813716400408887316> ❖ *search*
-<a:emoji_20:813716400408887316> ❖ *resume*
-<a:emoji_20:813716400408887316> ❖ *remove*
-<a:emoji_20:813716400408887316> ❖ *queue*
-<a:emoji_20:813716400408887316> ❖ *pause*
-<a:emoji_20:813716400408887316> ❖ *filter*
-<a:emoji_20:813716400408887316> ❖ *loop*
-<a:emoji_20:813716400408887316> ❖ *lyrics*
-<a:emoji_20:813716400408887316> ❖ *radio*
-<a:emoji_20:813716400408887316> ❖ *uptime*
-<a:emoji_20:813716400408887316> ❖ *ping*
+<a:emoji_20:813716400408887316> ❖ 𝗽𝗹𝗮𝘆
+<a:emoji_20:813716400408887316> ❖ 𝘀𝗸𝗶𝗽
+<a:emoji_20:813716400408887316> ❖ 𝘀𝗸𝗶𝗽𝘁𝗼
+<a:emoji_20:813716400408887316> ❖ 𝘀𝘁𝗼𝗽
+<a:emoji_20:813716400408887316> ❖ 𝘃𝗼𝗹𝘂𝗺𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗻𝗼𝘄𝗽𝗹𝗮𝘆𝗶𝗻𝗴
+<a:emoji_20:813716400408887316> ❖ 𝘀𝗵𝘂𝗳𝗳𝗹𝗲
+<a:emoji_20:813716400408887316> ❖ 𝘀𝗲𝗮𝗿𝗰𝗵
+<a:emoji_20:813716400408887316> ❖ 𝗿𝗲𝘀𝘂𝗺𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗿𝗲𝗺𝗼𝘃𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗾𝘂𝗲𝘂𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗽𝗮𝘂𝘀𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗳𝗶𝗹𝘁𝗲𝗿
+<a:emoji_20:813716400408887316> ❖ 𝗹𝗼𝗼𝗽
+<a:emoji_20:813716400408887316> ❖ 𝗹𝘆𝗿𝗶𝗰𝘀
+<a:emoji_20:813716400408887316> ❖ 𝗿𝗮𝗱𝗶𝗼
+<a:emoji_20:813716400408887316> ❖ 𝘂𝗽𝘁𝗶𝗺𝗲
+<a:emoji_20:813716400408887316> ❖ 𝗽𝗶𝗻𝗴
+=====================
+<a:lodaing:813403104384647238> ❖ 𝗶𝗻𝘃𝗶𝘁𝗲
+<a:lodaing:813403104384647238> ❖ 𝗮𝗯𝗼𝘂𝘁
+<a:lodaing:813403104384647238> ❖ 𝗵𝗲𝗹𝗽
 =====================
 **Links**
 **[Support server](https://discord.gg/FRZ5vAJ4Rm) | [Add bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
@@ -205,8 +210,8 @@ __** **>** **__
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#c219d8")
-      .setTitle(`<:no:770326304473350145> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
+      new MessageEmbed().setColor("RANDOM")
+      .setTitle(`<a:halaya:813455108577689601> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -216,8 +221,8 @@ __** **>** **__
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#c219d8")
-   .setTitle(`<:no:770326304473350145> There was an error executing that command.`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("RANDOM")
+   .setTitle(`<a:halaya:813455108577689601> There was an error executing that command.`)).catch(console.error);
  }
 
 
