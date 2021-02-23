@@ -150,7 +150,7 @@ __** **>** **__
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-.setColor("RANDOM")
+    .setColor("RANDOM")
     .setImage(`https://cdn.discordapp.com/attachments/768196510558715925/812074440560214076/7bc45af922b2bfb55f6049335cb23879.gif`)
     .setTimestamp()
     .setFooter(message.author.username, message.author.displayAvatarURL)
