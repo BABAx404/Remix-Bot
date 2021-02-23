@@ -68,29 +68,29 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`☔ \`Searching\` 🔍  [__**LINK**__](${args.join(" ")})**`))
+            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [__**LINK**__](${args.join(" ")})**`))
         //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`☔ \`Searching\` 🔍 __**${args.join(" ")}**__`))
+            .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
         }
       } else {
         //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
         //send join message
         message.channel.send(new MessageEmbed().setColor("RANDOM")
-          .setDescription(`**👍 Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
+          .setDescription(`**<a:yes:813397195771740182> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`☔ \`Searching\` 🔍 [__**LINK**__](${args.join(" ")})**`))
+            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [__**LINK**__](${args.join(" ")})**`))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`☔ \`Searching\` 🔍 __**${args.join(" ")}**__`))
+            .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
