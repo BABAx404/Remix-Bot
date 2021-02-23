@@ -231,23 +231,7 @@ __** **>** **__
 
     //send the Message
     message.channel.send(embed)
-  }
- 
- client.on("message", prof => {
-  if (prof.content.startsWith(prefix + "user")) {
-    var professor = new Discord.MessageEmbed()
-      .setAuthor(client.user.username)
-      .setThumbnail(client.user.avatarURL())
-      .setColor("#0c0b0b")
-      .setTitle("Your Info User")
-      .addField(" ▶️| Your Name", `<@${prof.author.id}>`)
-      .addField(" 🆔| Your ID", `${prof.author.id}`)
-      .addField(" 🌐| Create User", prof.author.createdAt.toLocaleString())
-      .setFooter(`Requested | ${prof.author.tag}`, prof.author.avatarURL())
-      .setTimestamp();
-    prof.channel.send(professor);
-  }
-});  
+  } 
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
