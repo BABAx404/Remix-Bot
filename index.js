@@ -231,7 +231,25 @@ __** **>** **__
 
     //send the Message
     message.channel.send(embed)
-  }  
+  }
+ 
+client.on("message", async message => {
+  if (message.content.toLowerCase() === prefix + "profile") {
+    message.channel.startTyping();
+    setTimeout(() => {
+      message.channel.stopTyping();
+    }, Math.random() * (1 - 3) + 1 * 200).then(
+      message.channel.send({
+        files: [
+          {
+            name: "prfoilebycutie.png",
+            attachment: `https://api.probot.io/profile/${message.author.id}`
+          }
+        ]
+      })
+    );
+  }
+});   
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
