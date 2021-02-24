@@ -145,7 +145,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:lodaing:813403104384647238> ❖ 𝗵𝗲𝗹𝗽
 =====================
 <a:links:813729922643263558> **Links**
-**[Support server](https://discord.gg/FRZ5vAJ4Rm) | [Add bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+**[Support Server](https://discord.gg/FRZ5vAJ4Rm) | [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
 `)
 
@@ -190,7 +190,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:lodaing:813403104384647238> ❖ 𝗵𝗲𝗹𝗽
 =====================
 <a:links:813729922643263558> **Links**
-**[Support server](https://discord.gg/FRZ5vAJ4Rm) | [Add bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+**[Support Server](https://discord.gg/FRZ5vAJ4Rm) | [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
 `)
 
