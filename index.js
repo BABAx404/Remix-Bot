@@ -107,8 +107,8 @@ if(message.content.startsWith(`${prefix}invite`)){
     //send the Message
     message.author.send(embed)
   } 
-   
-//An help announcement for everyone but no one knows so fine ^w^
+  
+   //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
