@@ -111,7 +111,8 @@ if(message.content.startsWith(`${prefix}invite`)){
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/813727451204812820/fc9a04b21ba97a192f3afd090c16d96f.png`)
