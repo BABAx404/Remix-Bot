@@ -68,7 +68,7 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [__**LINK**__](${args.join(" ")})**`))
+            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
         //if not
         }
         else { //send searching TITLE
@@ -85,7 +85,7 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [__**LINK**__](${args.join(" ")})**`))
+            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
           //if not
         }
         else { //send searching TITLE
