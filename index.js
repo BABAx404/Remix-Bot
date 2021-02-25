@@ -163,9 +163,8 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setColor("RANDOM")
     .setDescription (`
   ━────╮•╭────━
-
    <a:rast:813403866472251399> **[Support Sever](https://discord.gg/FRZ5vAJ4Rm)** 
-ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+   ــــــــــــــــــــــــــــــــــــــــــــــــــ
    <a:rast:813403866472251399> **[Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
