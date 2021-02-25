@@ -161,13 +161,16 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setDescription (`<a:rast:813403866472251399> [Support Sever](https://discord.gg/FRZ5vAJ4Rm) </> [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) <a:chap:814607523092103171>`)
+    .setDescription (`<a:rast:813403866472251399> **[Support Sever](https://discord.gg/FRZ5vAJ4Rm)** 
+ \`__**</>**__\` 
+**[Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)** <a:chap:814607523092103171>`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__<a:discord:813406342173818910>`)
-    .setAuthor(message.author.username, message.author.displayAvatarURL) 
+    .setAuthor() 
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png`)
-
+    .setTimestamp()
+    
     //send the Message
     message.channel.send(embed)
   }   
