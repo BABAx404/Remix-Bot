@@ -17,8 +17,8 @@ module.exports = {
     let minutes = Math.floor(client.uptime / 60000) % 60;
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
-    message.react("769665713124016128");
-    return message.channel.send(new MessageEmbed().setColor("RANDOM").setTitle(`<a:up:814083666107170836> ***__Musicium-Uptime:__***\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    message.react("<a:time:813403485902864435>");
+    return message.channel.send(new MessageEmbed().setColor("RANDOM").setTitle(`<a:time:813403485902864435> 𝗨𝗽𝘁𝗶𝗺𝗲\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
