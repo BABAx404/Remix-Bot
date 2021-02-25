@@ -155,7 +155,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   } 
    
 //An suuport announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}suuport`)){
+  if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
