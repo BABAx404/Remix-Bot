@@ -18,8 +18,9 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("<a:time:813403485902864435>");
-    return message.channel.send(new MessageEmbed().setColor("RANDOM").setTitle(`<a:time:813403485902864435> 𝗨𝗽𝘁𝗶𝗺𝗲\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
-
+    return message.channel.send(new MessageEmbed().setColor("RANDOM")
+        .setTitle(`<a:time:813403485902864435> 𝗨𝗽𝘁𝗶𝗺𝗲\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``))
+        .addField("Days :", `\`${days}\``, true)
 
   }
 }
