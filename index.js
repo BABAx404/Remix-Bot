@@ -160,7 +160,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   } 
   
  client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 100){
+  if(DarkMan.memberCount < 250){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
@@ -223,35 +223,7 @@ __** **>** **__
 
     //send the Message
     message.channel.send(embed)
-  } 
-   
-client.on("guildCreate", guild => {
-  client.channels.get("811929643027398677")
-    .send(`☑️ **${client.user.tag}بۆتەکە ڕاکێشریایە ئەم سێرڤەرە 🔻
-
-                                        
-
-Server name: __${guild.name}__
-
-Server owner: __${guild.owner}__
-
-Server id: __${guild.id}__ 
-
-Server Count: __${guild.memberCount}__**`);
-}); 
-   
-client.on("guildDelete", guild => {
-  client.channels.get("811929643027398677")
-    .send(`❎ **${client.user.tag} سێرڤەرەکەی بە جێ ھێشت
-
-Server name: __${guild.name}__
-
-Server owner: __${guild.owner}__
-
-Server id: __${guild.id}__ 
-
-Server Count: __${guild.memberCount}__**`);
-});   
+  }    
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
