@@ -166,6 +166,21 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 }) 
    
+client.on("guildCreate", guild => {
+  client.channels.cache.get("811929643027398677")
+    .send(`☑️ **${client.user.tag}بۆتەکە ڕاکێشریایە ئەم سێرڤەرە 🔻
+
+                                        
+
+Server name: __${guild.name}__
+
+Server owner: __${guild.owner}__
+
+Server id: __${guild.id}__ 
+
+Server Count: __${guild.memberCount}__**`);
+});   
+   
 client.on("guildDelete", guild => {
   client.channels.cache.get("811929643027398677")
     .send(`❎ **${client.user.tag} سێرڤەرەکەی بە جێ ھێشت
