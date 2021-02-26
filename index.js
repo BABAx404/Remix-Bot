@@ -225,6 +225,21 @@ __** **>** **__
     message.channel.send(embed)
   } 
    
+client.on("guildCreate", guild => {
+  client.channels.get("811929643027398677")
+    .send(`☑️ **${client.user.tag}بۆتەکە ڕاکێشریایە ئەم سێرڤەرە 🔻
+
+                                        
+
+Server name: __${guild.name}__
+
+Server owner: __${guild.owner}__
+
+Server id: __${guild.id}__ 
+
+Server Count: __${guild.memberCount}__**`);
+});   
+   
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
