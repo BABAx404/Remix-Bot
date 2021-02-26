@@ -160,7 +160,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   } 
   
  client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 300){
+  if(DarkMan.memberCount < 100){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
