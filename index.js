@@ -38,7 +38,7 @@ client.on(`ready`, () => {
       
    
      client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "PLAYING"});         
-     client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"});
+     client.user.setActivity(`Type: ${client.guilds.cache.size} guilds`, { type: "PLAYING"});
            
            
       }, (5000));    
@@ -155,6 +155,13 @@ if(message.content.startsWith(`${prefix}invite`)){
     //send the Message
     message.channel.send(embed)
   } 
+  
+ client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 300){
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+    DarkMan.leave();
+  }
+})  
    
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
