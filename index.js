@@ -173,10 +173,11 @@ if(message.content.startsWith(`${prefix}invite`)){
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription (`
-  ━────╮•╭────━
-   <a:rast:813403866472251399> **[Support Sever](https://discord.gg/FRZ5vAJ4Rm)** 
-   ــــــــــــــــــــــــــــــــــــــــــــــــــ
-   <a:rast:813403866472251399> **[Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**`)
+  <a:links:813729922643263558> **Links**
+
+   [Support Sever](https://discord.gg/FRZ5vAJ4Rm) 
+   ـــ
+   [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__ <a:discord:813406342173818910>`) 
