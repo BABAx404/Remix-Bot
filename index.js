@@ -84,8 +84,7 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
- client.on("message", async message => {
-  if (message.content.startsWith(prefix + "lock")) {
+   if(message.content.startsWith(`${prefix}embed`)){
     if (cooldown.has(message.author.id)) {
       return message.channel
         .send(`<@${message.author.id}>, <a:emoji_13:798075791065350174> Please wait for 10 second <a:emoji_13:798075791065350174>`)
