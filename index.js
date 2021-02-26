@@ -37,7 +37,9 @@ client.on(`ready`, () => {
       });
       
    
-     client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "PLAYING"});         
+     client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "PLAYING"});   
+           
+           
      client.user.setActivity(`Type: ${client.guilds.cache.size} guilds`, { type: "PLAYING"});
            
            
