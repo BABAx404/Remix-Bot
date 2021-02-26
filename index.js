@@ -163,7 +163,51 @@ if(message.content.startsWith(`${prefix}invite`)){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
-})  
+})
+   
+client.on("message", async message => {
+  if (message.content.startsWith(prefix + "lock")) {
+    if (cooldown.has(message.author.id)) {
+      return message.channel
+        .send(`<@${message.author.id}>, <a:emoji_13:798075791065350174> Please wait for 10 second <a:emoji_13:798075791065350174>`)
+        .then(m => {
+          m.delete({ timeout: cdtime * 600 });
+        });
+    }
+    cooldown.add(message.author.id);
+    setTimeout(() => {
+      cooldown.delete(message.author.id);
+    }, cdtime * 1000);
+    if (!message.channel.guild)
+      return message.channel.send(
+        ghallat + "** | Sorry This Command Only For Servers .**"
+      );
+
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
+      return;
+    message.channel.updateOverwrite(message.guild.id, {
+      SEND_MESSAGES: false
+    });
+    const lock = new Discord.MessageEmbed()
+      .setTitle(`CHANNEL LOCK`)
+      .setColor("#808080")
+      .setDescription(
+        `
+Locked Channel
+
+<#${message.channel.id}>
+
+locked by
+
+<@${message.author.id}>
+`
+      )
+      
+      
+    message.channel.send(lock);
+  }
+});   
    
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
