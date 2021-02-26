@@ -174,12 +174,10 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setColor("RANDOM")
     .setDescription (`
 
-  <a:links:813729922643263558> **Links**
+  <a:links:813729922643263558>  **Links**
 
 [Support Sever](https://discord.gg/FRZ5vAJ4Rm)
-
-=====================
-
+====
 [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
