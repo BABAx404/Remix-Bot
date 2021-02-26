@@ -164,6 +164,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     DarkMan.leave();
   }
 })
+  
    
 client.on("message", async message => {
   if (message.content.startsWith(prefix + "lock")) {
@@ -207,7 +208,8 @@ locked by
       
     message.channel.send(lock);
   }
-});   
+}); 
+   
    
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
