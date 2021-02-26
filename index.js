@@ -167,7 +167,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   
    
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "lock")) {
+  if (message.content.startsWith(`${prefix}lock`)){
     if (cooldown.has(message.author.id)) {
       return message.channel
         .send(`<@${message.author.id}>, <a:emoji_13:798075791065350174> Please wait for 10 second <a:emoji_13:798075791065350174>`)
