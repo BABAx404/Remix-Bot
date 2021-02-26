@@ -40,7 +40,7 @@ client.on(`ready`, () => {
      client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "PLAYING"});   
            
            
-     client.user.setActivity(`Type: ${client.guilds.cache.size} guilds`, { type: "PLAYING"});
+     client.user.setActivity(`Type: ${client.guilds.cache.size} Guilds`, { type: "PLAYING"});
            
            
       }, (5000));    
@@ -179,7 +179,7 @@ if(message.content.startsWith(`${prefix}invite`)){
    <a:rast:813403866472251399> **[Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__<a:discord:813406342173818910>`) 
+    .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__ <a:discord:813406342173818910>`) 
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png`)
     .setTimestamp()
     
