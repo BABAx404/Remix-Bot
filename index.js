@@ -129,14 +129,14 @@ if(message.content.startsWith(`${prefix}invite`)){
 **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
-• ────── <a:dark:813714900777959444>  ────── •
+• ────── <a:dark:813714900777959444> ────── •
 **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`suffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`filter\`
 \`loop\` - \`lyric\` - \`radio\`
-• ────── <a:dark:813714900777959444>  ────── •
+• ────── <a:dark:813714900777959444> ────── •
 **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
