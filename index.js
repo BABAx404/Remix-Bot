@@ -130,7 +130,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`c!invite\` - \`c!support\` - \`c!about\`
 \`c!ping\` - \`c!prefix\` - \`c!uptime\`
 
-Music Commands
+**Music Commands**
 \`c!play\` - \`c!skip\` - \`c!skipto\`
 \`c!stop\` - \`c!volume\` - \`nowplaying\`
 \`c!suffle\` - \`c!search\` - \`c!resume\`
