@@ -124,7 +124,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setColor("RANDOM")
     .setImage(``)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:music<a:emoji_20:813716400408887316>`)
+    .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:emoji_20:813716400408887316>`)
     .setDescription(`
 **User Commands**
 \`c!invite\` - \`c!support\` - \`c!about\`
