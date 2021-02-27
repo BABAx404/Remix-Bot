@@ -124,13 +124,13 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setColor("RANDOM")
     .setImage(``)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:emoji_20:813716400408887316>`)
+    .setTitle(`**Remix Bot**`)
     .setDescription(`
 <a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 • ────── <a:dark:813714900777959444> ────── •
-<a:dark:813714900777959444> **Music Commands**
+<a:emoji_20:813716400408887316> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
