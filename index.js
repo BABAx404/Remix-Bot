@@ -127,15 +127,15 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:emoji_20:813716400408887316>`)
     .setDescription(`
 **User Commands**
-\`c!invite\` - \`c!support\` - \`c!about\`
-\`c!ping\` - \`c!prefix\` - \`c!uptime\`
+\`invite\` - \`support\` - \`about\`
+\`ping\` - \`prefix\` - \`uptime\`
 
 **Music Commands**
-\`c!play\` - \`c!skip\` - \`c!skipto\`
-\`c!stop\` - \`c!volume\` - \`nowplaying\`
-\`c!suffle\` - \`c!search\` - \`c!resume\`
-\`c!remove\` - \`c!queue\` - \`c!filter\`
-\`c!loop\` - \`c!lyric\` - \`c!radio\`
+\`play\` - \`skip\` - \`skipto\`
+\`stop\` - \`volume\` - \`nowplaying\`
+\`suffle\` - \`search\` - \`resume\`
+\`remove\` - \`queue\` - \`filter\`
+\`loop\` - \`lyric\` - \`radio\`
 
 **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
