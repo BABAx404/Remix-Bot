@@ -126,18 +126,18 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:emoji_20:813716400408887316>`)
     .setDescription(`
-**User Commands**
+<a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 • ────── <a:dark:813714900777959444> ────── •
-**Music Commands**
+<a:dark:813714900777959444> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`filter\`
 \`loop\` - \`lyrics\` - \`radio\`
 • ────── <a:dark:813714900777959444> ────── •
-**Links**
+<a:links:813729922643263558> **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
 `)
