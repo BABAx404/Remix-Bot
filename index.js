@@ -122,36 +122,23 @@ if(message.content.startsWith(`${prefix}invite`)){
     const embed = new Discord.MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/813727451204812820/fc9a04b21ba97a192f3afd090c16d96f.png`)
     .setColor("RANDOM")
-    .setImage(`https://cdn.discordapp.com/attachments/768196510558715925/812074440560214076/7bc45af922b2bfb55f6049335cb23879.gif`)
-    .setTimestamp()
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setTitle(`<a:music:813460704031145986> **Remix Bot** <a:music:813460704031145986>`)
+    .setImage(``)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setTitle(`<a:emoji_20:813716400408887316> **Remix Bot** <a:music<a:emoji_20:813716400408887316>`)
     .setDescription(`
-<a:emoji_20:813716400408887316> ❖ 𝗽𝗹𝗮𝘆
-<a:emoji_20:813716400408887316> ❖ 𝘀𝗸𝗶𝗽
-<a:emoji_20:813716400408887316> ❖ 𝘀𝗸𝗶𝗽𝘁𝗼
-<a:emoji_20:813716400408887316> ❖ 𝘀𝘁𝗼𝗽
-<a:emoji_20:813716400408887316> ❖ 𝘃𝗼𝗹𝘂𝗺𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗻𝗼𝘄𝗽𝗹𝗮𝘆𝗶𝗻𝗴
-<a:emoji_20:813716400408887316> ❖ 𝘀𝗵𝘂𝗳𝗳𝗹𝗲
-<a:emoji_20:813716400408887316> ❖ 𝘀𝗲𝗮𝗿𝗰𝗵
-<a:emoji_20:813716400408887316> ❖ 𝗿𝗲𝘀𝘂𝗺𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗿𝗲𝗺𝗼𝘃𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗾𝘂𝗲𝘂𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗽𝗮𝘂𝘀𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗳𝗶𝗹𝘁𝗲𝗿
-<a:emoji_20:813716400408887316> ❖ 𝗹𝗼𝗼𝗽
-<a:emoji_20:813716400408887316> ❖ 𝗹𝘆𝗿𝗶𝗰𝘀
-<a:emoji_20:813716400408887316> ❖ 𝗿𝗮𝗱𝗶𝗼
-<a:emoji_20:813716400408887316> ❖ 𝘂𝗽𝘁𝗶𝗺𝗲
-<a:emoji_20:813716400408887316> ❖ 𝗽𝗶𝗻𝗴
-=====================
-<a:lodaing:813403104384647238> ❖ 𝗶𝗻𝘃𝗶𝘁𝗲
-<a:lodaing:813403104384647238> ❖ 𝗮𝗯𝗼𝘂𝘁
-<a:lodaing:813403104384647238> ❖ 𝗵𝗲𝗹𝗽
-=====================
-<a:links:813729922643263558> **Links**
-**[Support Server](https://discord.gg/FRZ5vAJ4Rm) | [Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+**User Commands**
+\`c!invite\` - \`c!support\` - \`c!about\`
+\`c!ping\` - \`c!prefix\` - \`c!uptime\`
+
+Music Commands
+\`c!play\` - \`c!skip\` - \`c!skipto\`
+\`c!stop\` - \`c!volume\` - \`nowplaying\`
+\`c!suffle\` - \`c!search\` - \`c!resume\`
+\`c!remove\` - \`c!queue\` - \`c!filter\`
+\`c!loop\` - \`c!lyric\` - \`c!radio\`
+
+**Links**
+**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
 `)
 
