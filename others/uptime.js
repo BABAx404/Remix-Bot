@@ -19,7 +19,7 @@ module.exports = {
     //react with approve emoji
     message.react("<a:time:813403485902864435>");
     return message.channel.send(new MessageEmbed().setColor("RANDOM")
-        .setTitle(`<a:time:813403485902864435> 𝗨𝗽𝘁𝗶𝗺𝗲\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+        .setTitle(`<a:time:813403485902864435> 𝗨𝗽𝘁𝗶𝗺𝗲 𝗥𝗲𝗺𝗶𝘅 𝗕𝗼𝘁\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
   }
 }
