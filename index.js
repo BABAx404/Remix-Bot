@@ -130,7 +130,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 • ────── <a:dark:813714900777959444> ────── •
-<a:emoji_20:813716400408887316> **Music Commands**
+<a:remix:815540220031533087> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
