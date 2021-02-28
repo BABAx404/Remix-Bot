@@ -40,7 +40,7 @@ client.on(`ready`, () => {
      client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "PLAYING"});   
            
            
-     client.user.setActivity(`Type: ${client.guilds.cache.size} Guilds`, { type: "PLAYING"});
+     client.user.setActivity(`Type: ${client.guilds.cache.size} Guilds | Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, { type: "PLAYING"});
            
            
       }, (5000));    
