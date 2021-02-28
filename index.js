@@ -128,7 +128,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setDescription(`
 <a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
-\`ping\` - \`prefix\` - \`uptime\`
+\`ping\` - \`prefix\` - \`uptime\` - \`embed\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:remix:815540220031533087> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
