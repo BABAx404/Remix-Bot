@@ -154,6 +154,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
     const embed = new Discord.MessageEmbed()
     .setImage(`https://cdn.discordapp.com/attachments/796122909533405195/815540935924252682/image0-7.gif`)
+    .setColor("RANDOM")
 
     //send the Message
     message.channel.send(embed)
