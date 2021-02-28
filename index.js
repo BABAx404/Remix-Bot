@@ -138,8 +138,8 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`loop\` - \`lyrics\` - \`radio\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:DarkMan:814434932591820812> **Gif Commands**
-\`boy\` - \`boy1\` - \`boy2\` - \`boy3\`
-\`boy4\` - \`boy5\` - \`boy6\`
+\`boy1\` - \`boy2\` - \`boy3\`
+\`boy4\` - \`boy5\` - \`boy6\` - \`boy7\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:links:813729922643263558> **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
@@ -151,7 +151,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
    
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}boy`)){
+  if(message.content.startsWith(`${prefix}boy7`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
