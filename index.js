@@ -144,7 +144,20 @@ if(message.content.startsWith(`${prefix}invite`)){
 
     //send the Message
     message.channel.send(embed)
-  } 
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}gif`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/796122909533405195/815540935924252682/image0-7.gif`)
+
+    //send the Message
+    message.channel.send(embed)
+  }   
   
  client.on("guildCreate" , DarkMan => {
   if(DarkMan.memberCount < 250){
