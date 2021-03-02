@@ -323,7 +323,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     message.channel.send(embed)
   }
  //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl1`)){
+  if(message.content.startsWith(`${prefix}girl1`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -337,7 +337,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl2`)){
+  if(message.content.startsWith(`${prefix}girl2`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -351,7 +351,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl3`)){
+  if(message.content.startsWith(`${prefix}girl3`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -365,7 +365,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl4`)){
+  if(message.content.startsWith(`${prefix}girl4`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -379,7 +379,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl5`)){
+  if(message.content.startsWith(`${prefix}girl5`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -393,7 +393,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
 
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl6`)){
+  if(message.content.startsWith(`${prefix}girl6`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -407,7 +407,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   }
    
 //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix} girl7`)){
+  if(message.content.startsWith(`${prefix}girl7`)){
     //define saymsg
     message.react("<a:DarkMan:814434932591820812>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
