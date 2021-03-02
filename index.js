@@ -137,6 +137,12 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`remove\` - \`queue\` - \`filter\`
 \`loop\` - \`lyrics\` - \`radio\`
 • ────── <a:dark:813714900777959444> ────── •
+<:file:813460388057972736> **Gif Commands**
+\`boy1\` - \`boy2\` - \`boy3\` - \`boy4\`
+\`boy5\` - \`boy6\` - \`boy7\` - \`boy8\`
+\`boy9\` - \`boy10\` - \`girl1\` - \`girl2\`
+\`girl3\` - \`girl4\` - \`girl5\` - \`girl6\` - \` girl7\`
+• ────── <a:dark:813714900777959444> ────── •
 <a:links:813729922643263558> **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
 
@@ -175,7 +181,244 @@ if(message.content.startsWith(`${prefix}invite`)){
     
     //send the Message
     message.channel.send(embed)
-  }   
+  }  
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy1`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/813689623364239370/giphy.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy2`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/813689623364239370/giphy.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy3`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/813689882203521095/image0_44.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy4`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/813689927567933449/image0_24.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy5`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/796122909533405195/815540935924252682/image0-7.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy6`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618863588311050/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  } 
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy7`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618863588311050/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy8`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618862547468350/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy9`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618832067854406/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}boy10`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618813524967434/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+ //An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl1`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816385790246256690/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl2`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://media.discordapp.net/attachments/811677719003529226/811846974814158958/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl3`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816386252684525658/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl4`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816385946580025414/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl5`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816385865500459008/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl6`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816385827529424906/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
+   
+//An gif announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix} girl7`)){
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setImage(`https://cdn.discordapp.com/attachments/793945035455856660/816385719274307654/image0.gif`)
+    .setColor("RANDOM")
+
+    //send the Message
+    message.channel.send(embed)
+  }
    
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
