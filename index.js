@@ -37,10 +37,10 @@ client.on(`ready`, () => {
       });
       
    
-     client.user.setActivity(`Type: ${PREFIX}help | Music Bot`, { type: "LISTENING"});   
+     client.user.setActivity(`${PREFIX}help | Music Bot`, { type: "LISTENING"});   
            
            
-     client.user.setActivity(`Type: ${client.guilds.cache.size} Guilds | Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, { type: "LISTENING"});
+     client.user.setActivity(`${client.guilds.cache.size} Guilds | Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, { type: "LISTENING"});
            
            
       }, (5000));    
