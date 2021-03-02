@@ -140,8 +140,8 @@ if(message.content.startsWith(`${prefix}invite`)){
 <:file:813460388057972736> **Gif Commands**
 \`boy1\` - \`boy2\` - \`boy3\` - \`boy4\`
 \`boy5\` - \`boy6\` - \`boy7\` - \`boy8\`
-\`boy9\` - \`boy10\` - \`girl1\` - \`girl2\`
-\`girl3\` - \`girl4\` - \`girl5\` - \`girl6\` - \`girl7\`
+\`boy9\` - \`girl1\` - \`girl2\`\`girl3\`
+\`girl4\` - \`girl5\` - \`girl6\` - \`girl7\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:links:813729922643263558> **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
@@ -204,7 +204,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/813689623364239370/giphy.gif`)
+    .setImage(`https://cdn.discordapp.com/attachments/811929643027398677/816395234648784926/20210228_004338.gif`)
     .setColor("RANDOM")
 
     //send the Message
@@ -274,7 +274,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618863588311050/image0.gif`)
+    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618240771391519/image0.gif`)
     .setColor("RANDOM")
 
     //send the Message
@@ -309,19 +309,6 @@ if(message.content.startsWith(`${prefix}invite`)){
     message.channel.send(embed)
   }
    
-//An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}boy10`)){
-    //define saymsg
-    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
-     const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setImage(`https://cdn.discordapp.com/attachments/813646250871095337/815618813524967434/image0.gif`)
-    .setColor("RANDOM")
-
-    //send the Message
-    message.channel.send(embed)
-  }
  //An gif announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}girl1`)){
     //define saymsg
