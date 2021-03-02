@@ -141,7 +141,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`boy1\` - \`boy2\` - \`boy3\` - \`boy4\`
 \`boy5\` - \`boy6\` - \`boy7\` - \`boy8\`
 \`boy9\` - \`boy10\` - \`girl1\` - \`girl2\`
-\`girl3\` - \`girl4\` - \`girl5\` - \`girl6\` - \` girl7\`
+\`girl3\` - \`girl4\` - \`girl5\` - \`girl6\` - \`girl7\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:links:813729922643263558> **Links**
 **[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
