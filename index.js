@@ -128,7 +128,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
  __**>**__
-
+• ────── <a:dark:813714900777959444> ────── •
 <a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\` - \`embed\`
