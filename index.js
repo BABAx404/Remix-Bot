@@ -126,7 +126,7 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setTitle(`**Remix Bot**`)
     .setDescription(`
-     \`≪  Prefix Bot __**>**__  ≫\`
+     **≪  Prefix Bot __**>**__  ≫**
 <a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\` - \`embed\`
