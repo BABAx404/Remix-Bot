@@ -113,24 +113,6 @@ if(message.content.startsWith(`${prefix}invite`)){
     message.author.send(embed)
   }   
   
- //An gif announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}slots`)){
-    //define saymsg
-    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
-     const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-.setDescription(`\`___SLOTS___\`
-<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303> ${message.author.username} bet <:3umar:816726823060635729>
-\`|         |\`
-\`|         |\`
-`) 
-     //send the Message
-
-    message.channel.send()
-
-  }
-   
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
