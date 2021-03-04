@@ -93,7 +93,7 @@ client.on(`message`, async (message) => {
     .setColor("RANDOM")
     .setDescription(saymsg)
     .setAuthor(message.author.username,message.author.avatarURL())
-    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setFooter(`${message.guild.username}#${message.guild.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
