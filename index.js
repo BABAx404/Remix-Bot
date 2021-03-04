@@ -124,7 +124,12 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303> ${message.author.username} bet <:3umar:816726823060635729>
 \`|         |\`
 \`|         |\`
-`)  
+`) 
+     //send the Message
+
+    message.channel.send()
+
+  }
    
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
