@@ -117,21 +117,10 @@ if(message.content.startsWith(`${prefix}invite`)){
   if(message.content.startsWith(`${prefix}slots`)){
   //define the temporary Embed
     let temEmbed = new MessageEmbed()
-    .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1").setFooter("Lyrics")
+    .setAuthor("<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303>")
     .setColor("RANDOM")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
-    //try to find lyrics
-    try {
-      //use lyricsfinder
-      lyrics = await lyricsFinder(queue.songs[0].title,"");
-      //If no Lyrics define no lyrics
-      if (!lyrics) lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-    }
-    //catch any error
-    catch (error) {
-      lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-    }
     //define lyrics Embed
     let lyricsEmbed = new MessageEmbed()
       .setTitle("✳️ | Lyrics")
