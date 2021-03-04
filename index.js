@@ -111,33 +111,21 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setColor("RANDOM")
     //send the Message
     message.author.send(embed)
-  } 
-   
-//An slots announcement for everyone but no one knows so fine ^w^
+  }   
+  
+ //An gif announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}slots`)){
-  //define the temporary Embed
-    let temEmbed = new MessageEmbed()
-    .setDescription(`\`___SLOTS___\`
+    //define saymsg
+    message.react("<a:DarkMan:814434932591820812>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+.setDescription(`\`___SLOTS___\`
 <a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303> ${message.author.username} bet <:3umar:816726823060635729>
 \`|         |\`
 \`|         |\`
-`)
-    .setColor("RANDOM")
-    //send it and safe it in a variable
-    let result = await message.channel.send(temEmbed)
-    //define lyrics Embed
-    let lyricsEmbed = new MessageEmbed()
-      .setTitle("✳️ | Lyrics")
-      .setDescription(lyrics)
-      .setColor("RANDOM")
-    //if to long make slice it
-    if (lyricsEmbed.description.length >= 2048)
-      //slice the embed description and redefine it
-      lyricsEmbed.description = `${lyricsEmbed.description.substr(0, 2045)}...`;
-      //edit to approve
-    return result.edit().catch(console.error);
-  }   
-  
+`)  
+   
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
