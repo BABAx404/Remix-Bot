@@ -117,7 +117,7 @@ if(message.content.startsWith(`${prefix}invite`)){
   if(message.content.startsWith(`${prefix}slots`)){
   //define the temporary Embed
     let temEmbed = new MessageEmbed()
-    .setAuthor("<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303>")
+    .setDescription("<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303>")
     .setColor("RANDOM")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
