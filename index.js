@@ -117,7 +117,11 @@ if(message.content.startsWith(`${prefix}invite`)){
   if(message.content.startsWith(`${prefix}slots`)){
   //define the temporary Embed
     let temEmbed = new MessageEmbed()
-    .setDescription("<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303>")
+    .setDescription(`\`___SLOTS___\`
+<a:slots:816723092763574303><a:slots:816723092763574303><a:slots:816723092763574303> ${message.author.username} bet <:3umar:816726823060635729>
+\`|         |\`
+\`|         |\`
+`)
     .setColor("RANDOM")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
@@ -131,7 +135,7 @@ if(message.content.startsWith(`${prefix}invite`)){
       //slice the embed description and redefine it
       lyricsEmbed.description = `${lyricsEmbed.description.substr(0, 2045)}...`;
       //edit to approve
-    return result.edit(lyricsEmbed).catch(console.error);
+    return result.edit().catch(console.error);
   }   
   
    //An help announcement for everyone but no one knows so fine ^w^
