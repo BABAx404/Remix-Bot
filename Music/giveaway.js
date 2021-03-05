@@ -49,7 +49,7 @@ Hosted by: ${message.author}`)
         .users.cache.filter((u) => !u.bot)
         .random();
       channel.send(
-        `The winner of the giveaway for **${prize}** is... ${winner}`
+        `Congratulations ${message.author} You won the **${prize}**`
       );
     }, ms(args[0]));
   },
