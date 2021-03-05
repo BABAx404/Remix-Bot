@@ -51,7 +51,9 @@ Hosted by: ${message.author}`)
         .users.cache.filter((u) => !u.bot)
         .random();
       channel.send(
-        `Congratulations ${message.author} You won the **${prize}**`
+        `**The winner of the giveaway for**
+<a:rast:813403866472251399> ${channel}
+<a:winner:817425780992114708> ${message.author}`
       );
     }, ms(args[0]));
   },
