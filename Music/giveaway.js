@@ -3,6 +3,7 @@ const ms = require("ms");
 module.exports = {
   name: "giveaway",
   description: "Create a simple giveaway",
+  cooldown: 1.5,
   usage: "<time> <channel> <prize>",
   category: "fun",
   async execute(message, args) {
