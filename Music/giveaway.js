@@ -5,7 +5,7 @@ module.exports = {
   description: "Create a simple giveaway",
   usage: "<time> <channel> <prize>",
   category: "fun",
-  run: async (bot, message, args) => {
+  async execute(message, args) {
     if (!args[0]) return message.channel.send(`You did not specify your time!`);
     if (
       !args[0].endsWith("d") &&
