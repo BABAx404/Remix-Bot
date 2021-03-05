@@ -34,6 +34,8 @@ Hosted by: ${message.author}`)
       .setTimestamp()
       .setFooter(`Ends at`)
       .setColor(`RANDOM`);
+    //delete the Command
+    message.delete({timeout: 300})
     let m = await channel.send(Embed);
     m.react("🎉");
     setTimeout(() => {
