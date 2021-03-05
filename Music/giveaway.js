@@ -52,8 +52,8 @@ Hosted by: ${message.author}`)
         .random();
       channel.send(
         `**The winner of the giveaway for**
-<a:rast:813403866472251399> ${channel}
-<a:winner:817425780992114708> ${message.author}`
+#️⃣|${channel}
+<a:winner:817425780992114708>|${message.author}`
       );
     }, ms(args[0]));
   },
