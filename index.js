@@ -130,7 +130,7 @@ if(message.content.startsWith(`${prefix}invite`)){
  __**>**__
 • ────── <a:dark:813714900777959444> ────── •
 <:settings:817446402841772063> **Fun Commands**
-\`start <time> <winner> <channel> <prize>\`
+\`start (time winner channel prize)\`
 • ────── <a:dark:813714900777959444> ────── •
 <a:discord:813406342173818910> **User Commands**
 \`invite\` - \`support\` - \`about\`
