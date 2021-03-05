@@ -24,7 +24,7 @@ module.exports = {
       );
     let prize = args.slice(2).join(" ");
     if (!prize) return message.channel.send(`No prize specified!`);
-    message.channel.send(`*Giveaway created in ${channel}*`);
+    message.channel.send(`🎉**|Giveaway created in** ${channel}`);
     let Embed = new MessageEmbed()
       .setTitle(`<a:giveaway:817399361201766410> New giveaway!`)
       .setDescription(
@@ -33,7 +33,7 @@ React with 🎉 to enter!
 Hosted by: ${message.author}`)
       .setTimestamp()
       .setFooter(`Ends at`)
-      .setColor(`BLUE`);
+      .setColor(`RANDOM`);
     let m = await channel.send(Embed);
     m.react("🎉");
     setTimeout(() => {
