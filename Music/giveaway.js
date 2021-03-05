@@ -4,7 +4,7 @@ module.exports = {
   name: "giveaway",
   description: "Create a simple giveaway",
   cooldown: 1.5,
-  usage: "<time> <channel> <prize>",
+  usage: "<time> <winner> <prize>",
   category: "fun",
   async execute(message, args) {
     if (!args[0]) return message.channel.send(`You did not specify your time!`);
