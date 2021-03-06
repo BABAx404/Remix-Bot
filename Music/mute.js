@@ -16,7 +16,7 @@ module.exports = {
     usage: "mute @User <Time+Format(e.g: 10m)> [REASON]",
     description: "Mutes a User for a specific Time!",
     memberpermissions: ["KICK_MEMBERS"],
-    run: async (client, message, args, cmduser, text, prefix) => {
+    async execute(message, args, client) { => {
     try{
       let member = message.mentions.members.first();
       if (!member)
