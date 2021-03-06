@@ -16,8 +16,7 @@ module.exports = {
     usage: "mute @User <Time+Format(e.g: 10m)> [REASON]",
     description: "Mutes a User for a specific Time!",
     memberpermissions: ["KICK_MEMBERS"],
-    async execute(message, args, client) { => {
-    try{
+    async execute(message, args, client) {
       let member = message.mentions.members.first();
       if (!member)
         return message.channel.send(new MessageEmbed()
