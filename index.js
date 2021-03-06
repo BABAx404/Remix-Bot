@@ -130,7 +130,7 @@ if(message.content.startsWith(`${prefix}invite`)){
  __**>**__
 • ────── <a:dark:813714900777959444> ────── •
 ☢◢__**Fun Commands**__
-\`start (time winner channel prize)\`
+\`>start (time winner channel prize)\`
 • ────── <a:dark:813714900777959444> ────── •
 ☢◢__**User Commands**__
 \`>invite\` - \`>support\` - \`>about\`
