@@ -129,28 +129,28 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:Erore:813505315534405632> **Prefix Bot**
  __**>**__
 • ────── <a:dark:813714900777959444> ────── •
-<:settings:817446402841772063> **Fun Commands**
+☢◢__**Fun Commands**__
 \`start (time winner channel prize)\`
 • ────── <a:dark:813714900777959444> ────── •
-<a:discord:813406342173818910> **User Commands**
-\`invite\` - \`support\` - \`about\`
-\`ping\` - \`prefix\` - \`uptime\` - \`embed\`
+☢◢__**User Commands**__
+\`>invite\` - \`>support\` - \`>about\`
+\`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 • ────── <a:dark:813714900777959444> ────── •
-<a:remix:815540220031533087> **Music Commands**
-\`play\` - \`skip\` - \`skipto\`
-\`stop\` - \`volume\` - \`nowplaying\`
-\`shuffle\` - \`search\` - \`resume\`
-\`remove\` - \`queue\` - \`filter\`
-\`loop\` - \`lyrics\` - \`radio\`
+☢◢__**Music Commands**__
+\`>play\` - \`>skip\` - \`>skipto\`
+\`>stop\` - \`>volume\` - \`>nowplaying\`
+\`>shuffle\` - \`>search\` - \`>resume\`
+\`>remove\` - \`>queue\` - \`>filter\`
+\`>loop\` - \`>lyrics\` - \`>radio\`
 • ────── <a:dark:813714900777959444> ────── •
-<:file:813460388057972736> **Gif Commands**
-\`boy1\` - \`boy2\` - \`boy3\` - \`boy4\`
-\`boy5\` - \`boy6\` - \`boy7\` - \`boy8\`
-\`boy9\` - \`girl1\` - \`girl2\`\`girl3\`
-\`girl4\` - \`girl5\` - \`girl6\` - \`girl7\`
+☢◢__**Gif Commands**__
+\`>boy1\` - \`>boy2\` - \`>boy3\` - \`>boy4\`
+\`>boy5\` - \`>boy6\` - \`>boy7\` - \`>boy8\`
+\`>boy9\` - \`>girl1\` - \`>girl2\`\`>girl3\`
+\`>girl4\` - \`>girl5\` - \`>girl6\` - \`>girl7\`
 • ────── <a:dark:813714900777959444> ────── •
-<a:links:813729922643263558> **Links**
-**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+☢◢__**Links**__
+__**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
 
 `)
 
