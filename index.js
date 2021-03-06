@@ -128,14 +128,14 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setDescription(`
 __**☢◢Prefix Bot**__
  __**>**__
-• ────── <a:dark:813714900777959444> ────── •
+• ────── <a:Erore:813505315534405632> ────── •
 __**☢◢Fun Commands**__
 \`>start (time winner channel prize)\`
-• ────── <a:dark:813714900777959444> ────── •
+• ────── <:settings:817446402841772063> ────── •
 __**☢◢User Commands**__
 \`>invite\` - \`>support\` - \`>about\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
-• ────── <a:dark:813714900777959444> ────── •
+• ────── <a:discord:813406342173818910> ────── •
 __**☢◢Music Commands**__
 \`>play\` - \`>skip\` - \`>skipto\`
 \`>stop\` - \`>volume\` - \`>nowplaying\`
@@ -148,7 +148,7 @@ __**☢◢Gif Commands**__
 \`>boy5\` - \`>boy6\` - \`>boy7\` - \`>boy8\`
 \`>boy9\` - \`>girl1\` - \`>girl2\`\`>girl3\`
 \`>girl4\` - \`>girl5\` - \`>girl6\` - \`>girl7\`
-• ────── <a:dark:813714900777959444> ────── •
+• ────── <a:DarkMan:814434932591820812> ────── •
 __**☢◢Links**__
 __**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
 
