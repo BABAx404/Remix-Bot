@@ -159,7 +159,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/
   }
    
  client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 250){
+  if(DarkMan.memberCount < 100){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
