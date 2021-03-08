@@ -126,30 +126,20 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
     .setDescription(`
-__**☢◢Prefix Bot**__
- __**>**__
-• ────── <a:Erore:813505315534405632> ────── •
-__**☢◢Fun Commands**__
+<a:Erore:813505315534405632> **Prefix Bot**
+ **>**
+<a:lodaing:813403104384647238> **Fun Commands**
 \`>start (time winner channel prize)\`
-• ────── <:settings:817446402841772063> ────── •
-__**☢◢User Commands**__
+<a:discord:813406342173818910>**User Commands**
 \`>invite\` - \`>support\` - \`>about\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
-• ────── <a:discord:813406342173818910> ────── •
-__**☢◢Music Commands**__
+<a:dark:813714900777959444>**Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
 \`>stop\` - \`>volume\` - \`>nowplaying\`
 \`>shuffle\` - \`>search\` - \`>resume\`
 \`>remove\` - \`>queue\` - \`>filter\`
 \`>loop\` - \`>lyrics\` - \`>radio\`
-• ────── <a:dark:813714900777959444> ────── •
-__**☢◢Gif Commands**__
-\`>boy1\` - \`>boy2\` - \`>boy3\` - \`>boy4\`
-\`>boy5\` - \`>boy6\` - \`>boy7\` - \`>boy8\`
-\`>boy9\` - \`>girl1\` - \`>girl2\`\`>girl3\`
-\`>girl4\` - \`>girl5\` - \`>girl6\` - \`>girl7\`
-• ────── <a:DarkMan:814434932591820812> ────── •
-__**☢◢Links**__
+<a:links:813729922643263558> **Links**
 __**[Support](https://discord.gg/FRZ5vAJ4Rm) - [Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
 
 `)
