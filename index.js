@@ -127,16 +127,15 @@ if(message.content.startsWith(`${prefix}invite`)){
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
  **>**
-<a:lodaing:813403104384647238> **Fun Commands**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:lodaing:813403104384647238> **Fun Commands**
 \`>start (time winner channel prize)\`
-<a:discord:813406342173818910>**User Commands**
+<a:discord:813406342173818910> **User Commands**
 \`>invite\` - \`>support\` - \`>about\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
-<a:dark:813714900777959444> **Music Commands**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
 \`>stop\` - \`>volume\` - \`>nowplaying\`
 \`>shuffle\` - \`>search\` - \`>resume\`
