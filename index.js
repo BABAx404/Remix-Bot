@@ -129,7 +129,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 <a:Erore:813505315534405632> **Prefix Bot**
  **>**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:lodaing:813403104384647238> **Fun Commands**
+<a:setting:813404135181385759> **Fun Commands**
 \`>start (time winner channel prize)\`
 <a:discord:813406342173818910> **User Commands**
 \`>invite\` - \`>support\` - \`>about\`
