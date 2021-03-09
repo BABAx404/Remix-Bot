@@ -90,7 +90,7 @@ async execute(message, args, client) {
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RANDOM")
-            .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
+            .setDescription(`<:Youtube:813453040929210379> \`Searching\`  🔍 __**${args.join(" ")}**__`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
