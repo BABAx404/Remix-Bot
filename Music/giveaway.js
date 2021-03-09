@@ -28,8 +28,7 @@ module.exports = {
     let Embed = new MessageEmbed()
       .setTitle(`<a:giveaway:817399361201766410> New giveaway!`)
       .setDescription(
-        `is hosting a giveaway for the prize of
-**${prize}**
+        `**${prize}**
 React with 🎉 to enter!
 Hosted by: ${message.author}`)
       .setTimestamp()
