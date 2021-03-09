@@ -131,6 +131,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
 \`>start (time winner channel prize)\`
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:discord:813406342173818910> **User Commands**
 \`>invite\` - \`>support\` - \`>about\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
@@ -143,7 +144,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 \`>loop\` - \`>lyrics\` - \`>radio\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:links:813729922643263558> **Links**
-__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **×** __**[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
+__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
 
 `)
 
