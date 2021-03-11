@@ -177,7 +177,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     //define embed
     const embed = new Discord.MessageEmbed()
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-    .setColor("RANDOM")
+    .setColor("RED")
     .setImage(``)
     .setTimestamp()
     .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
