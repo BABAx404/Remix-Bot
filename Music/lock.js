@@ -2,9 +2,8 @@ const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports = {
   name: "lock",
-  description: "Create a simple giveaway",
+  description: "",
   cooldown: 1.5,
-  usage: "",
   category: "fun",
   async execute(message, args) {
   if (cooldown.has(message.author.id)) {
