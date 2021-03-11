@@ -168,7 +168,7 @@ module.exports = {
         .setImage(thumb)
         .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
 
-• ────── <a:emoji_20:813716400408887316> ────── •`)
+• ─────── <a:emoji_20:813716400408887316> ─────── •`)
        
       
         .setTimestamp()
