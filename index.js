@@ -119,12 +119,12 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
      message.react("<:github:819533772311101451>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription(`<a:rast:813403866472251399> **[Click Here](https://github.com/slawwwy/-) to open the project.**
-             **By :**  <@637299944939585576>   
+    .setDescription(`<:github:819533772311101451> Project Github
+<a:rast:813403866472251399> **[Click Here](https://github.com/slawwwy/-) to open the project.**
+      **By :**  <@637299944939585576>   
      
                    `)
     .setColor("RANDOM")
-    .setTitle(`<:github:819533772311101451> Project Github`)
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
