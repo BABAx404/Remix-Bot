@@ -180,13 +180,13 @@ module.exports = {
       var playingMessage = await queue.textChannel.send(newsong);
 
 
-      await playingMessage.react("⏭️"); //skip
-      await playingMessage.react("⏹️"); //pause
-      await playingMessage.react("🔁"); //loop
-      await playingMessage.react("⏸️"); //stop
-      await playingMessage.react("▶️"); //np
-      await playingMessage.react("📶"); //queue
-      await playingMessage.react("🔀"); //lyrics
+      await playingMessage.react("<a:Rr:819584963133440130>"); //skip
+      await playingMessage.react("<a:Ee:819585050915635250>"); //pause
+      await playingMessage.react("<a:Mm:819585136223977472>"); //loop
+      await playingMessage.react("<a:Ii:819585197636452414>"); //stop
+      await playingMessage.react("<a:Xx:819585265126604820>"); //np
+      await playingMessage.react(""); //queue
+      await playingMessage.react(""); //lyrics
     } catch (error) {
       console.error(error);
     }
