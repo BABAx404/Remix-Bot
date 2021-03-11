@@ -119,9 +119,9 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
      message.react("<:github:819533772311101451>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription(`<:github:819533772311101451> Project Github
+    .setDescription(`<:github:819533772311101451> **Project Github**
 <a:rast:813403866472251399> **[Click Here](https://github.com/slawwwy/-) to open the project.**
-**By :**  <@637299944939585576>   
+**By :** <@637299944939585576>   
      
                    `)
     .setColor("RANDOM")
