@@ -176,7 +176,9 @@ module.exports = {
         .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
         .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
         .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
-var playingMessage = await queue.textChannel.send(
+
+     try {
+       var playingMessage = await queue.textChannel.send(
         i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
       );
       await playingMessage.react("⏭");
