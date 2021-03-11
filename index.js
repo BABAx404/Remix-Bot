@@ -125,7 +125,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
@@ -143,7 +143,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
@@ -161,7 +161,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
