@@ -183,7 +183,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
-__** **>** **__
+** __**>**__ **
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
 \`>start{time winner channel prize}\`
