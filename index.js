@@ -125,7 +125,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
@@ -143,7 +143,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
@@ -161,7 +161,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
      
                    `)
     .setColor("RANDOM")
-    .setFooter(`**KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ**`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
     message.author.send(embed)
@@ -179,11 +179,12 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setColor("RANDOM")
     .setImage(``)
+    .setTimestamp()
     .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
-** __**>**__ **
+__** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
 \`>start{time winner channel prize}\`
@@ -248,7 +249,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     .setColor("RANDOM")
     .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setFooter(`message.author.username, message.author.displayAvatarURL`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setTimestamp()
     .setDescription(`
 
