@@ -176,10 +176,10 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/813727451204812820/fc9a04b21ba97a192f3afd090c16d96f.png`)
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setColor("RANDOM")
     .setImage(``)
-    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
@@ -247,7 +247,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
