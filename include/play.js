@@ -176,185 +176,110 @@ module.exports = {
         .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
         .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
         .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
-
-      var playingMessage = await queue.textChannel.send(newsong);
-
-
-      await playingMessage.react(""); //skip
-      await playingMessage.react(""); //pause
-      await playingMessage.react(""); //loop
-      await playingMessage.react(""); //stop
-      await playingMessage.react(""); //np
-      await playingMessage.react(""); //queue
-      await playingMessage.react(""); //lyrics
+var playingMessage = await queue.textChannel.send(
+        i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
+      );
+      await playingMessage.react("⏭");
+      await playingMessage.react("⏯");
+      await playingMessage.react("🔇");
+      await playingMessage.react("🔉");
+      await playingMessage.react("🔊");
+      await playingMessage.react("🔁");
+      await playingMessage.react("⏹");
     } catch (error) {
       console.error(error);
     }
-
-
 
     const filter = (reaction, user) => user.id !== message.client.user.id;
     var collector = playingMessage.createReactionCollector(filter, {
       time: song.duration > 0 ? song.duration * 1000 : 600000
     });
 
-    collector.on("collect", async (reaction, user) => {
+    collector.on("collect", (reaction, user) => {
       if (!queue) return;
-     
       const member = message.guild.member(user);
-      
-     
-      if (member.voice.channel !== member.guild.me.voice.channel) {
 
-        member.send(new MessageEmbed()
-        .setTitle("<a:Erore:813505315534405632> | You must be in the Same Voice Channel as me!")
-        .setColor("RANDOM"))
-        
-        reaction.users.remove(user).catch(console.error);
-        
-        console.log("not in the same ch."); 
-        
-        return; 
-      }
-      
-      switch (reaction.emoji.id) {
-        //queue
-        case "📶":
-          reaction.users.remove(user).catch(console.error);
-          const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
-
-          let queueEmbed = new MessageEmbed()
-            .setTitle("Music Queue")
-            .setDescription(description)
-            .setColor("RANDOM")
-             ;
-
-          const splitDescription = splitMessage(description, {
-            maxLength: 2048,
-            char: "\n",
-            prepend: "",
-            append: ""
-          });
-
-          splitDescription.forEach(async (m) => {
-
-            queueEmbed.setDescription(m);
-            message.react(approveemoji)
-            message.channel.send(queueEmbed);
-          });
-          break;
-        //np
-        case "▶️":
-        reaction.users.remove(user).catch(console.error);
-        const song = queue.songs[0];
-        //get current song duration in s
-        let minutes = song.duration.split(":")[0];
-        let seconds = song.duration.split(":")[1];
-        let ms = (Number(minutes)*60+Number(seconds));
-        //get thumbnail
-        let thumb;
-        if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
-        else thumb = song.thumbnail.url;
-        //define current time
-        const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
-        //define left duration
-        const left = ms - seek;
-        //define embed
-        let nowPlaying = new MessageEmbed()
-          .setTitle("Now playing")
-          .setDescription(`[**${song.title}**](${song.url})`)
-          .setThumbnail(song.thumbnail.url)
-          .setColor("RANDOM")
-          .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
-          //if its a stream
-          if(ms >= 10000) {
-            nowPlaying.addField("\u200b", "🔴 LIVE", false);
-            //send approve msg
-            return message.channel.send(nowPlaying);
-          }
-          //If its not a stream
-          if (ms > 0 && ms<10000) {
-            nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "<:currentposition:770098066552258611>")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
-            //send approve msg
-            return message.channel.send(nowPlaying);
-          }
-
-        break;
-        //skip
-        case "⏭️":
+      switch (reaction.emoji.name) {
+        case "⏭":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.connection.dispatcher.end();
-          const skipembed = new MessageEmbed().setColor("#c219d8").setAuthor(`${user.username} skipped the song.`, "https://cdn.discordapp.com/attachments/748633941912584333/753201474691137647/next.png")
-          queue.textChannel.send(skipembed).catch(console.error);
-
+          queue.textChannel.send(i18n.__mf("play.skipSong", { author: user })).catch(console.error);
           collector.stop();
-
           break;
-        //lyrics
-        case "🔀":
 
+        case "⏯":
           reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
-          let lyrics = null;
-          let temEmbed = new MessageEmbed()
-          .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1").setFooter("Lyrics")
-          .setColor("#c219d8")
-          let result = await message.channel.send(temEmbed)
-          try {
-            lyrics = await lyricsFinder(queue.songs[0].title,"");
-            if (!lyrics) lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-          } catch (error) {
-            lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-          }
-
-          let lyricsEmbed = new MessageEmbed()
-            .setTitle("<:lyrics:769938447279456296> Lyrics")
-            .setDescription(lyrics)
-            .setColor("#c219d8")
-
-          if (lyricsEmbed.description.length >= 2048)
-
-            lyricsEmbed.description = `${lyricsEmbed.description.substr(0, 2045)}...`;
-            message.react(approveemoji);
-          return result.edit(lyricsEmbed).catch(console.error);
-
-          break;
-          //pause
-        case "⏹️":
-          reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           if (queue.playing) {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.pause(true);
-            const pausemebed = new MessageEmbed().setColor("#c219d8")
-              .setAuthor(`${user.username} paused the music.`, "https://cdn.discordapp.com/emojis/769912238236106793.png")
-            queue.textChannel.send(pausemebed).catch(console.error);
+            queue.textChannel.send(i18n.__mf("play.pauseSong", { author: user })).catch(console.error);
           } else {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
-            const playembed = new MessageEmbed().setColor("#c219d8")
-              .setAuthor(`${user.username} resumed the music!`, "https://cdn.discordapp.com/emojis/769912238236106793.png")
-            queue.textChannel.send(playembed).catch(console.error);
+            queue.textChannel.send(i18n.__mf("play.resumeSong", { author: user })).catch(console.error);
           }
           break;
-          //loop
+
+        case "🔇":
+          reaction.users.remove(user).catch(console.error);
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
+          if (queue.volume <= 0) {
+            queue.volume = 100;
+            queue.connection.dispatcher.setVolumeLogarithmic(100 / 100);
+            queue.textChannel.send(i18n.__mf("play.unmutedSong", { author: user })).catch(console.error);
+          } else {
+            queue.volume = 0;
+            queue.connection.dispatcher.setVolumeLogarithmic(0);
+            queue.textChannel.send(i18n.__mf("play.mutedSong", { author: user })).catch(console.error);
+          }
+          break;
+
+        case "🔉":
+          reaction.users.remove(user).catch(console.error);
+          if (queue.volume == 0) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
+          if (queue.volume - 10 <= 0) queue.volume = 0;
+          else queue.volume = queue.volume - 10;
+          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
+          queue.textChannel
+            .send(i18n.__mf("play.decreasedVolume", { author: user, volume: queue.volume }))
+            .catch(console.error);
+          break;
+
+        case "🔊":
+          reaction.users.remove(user).catch(console.error);
+          if (queue.volume == 100) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
+          if (queue.volume + 10 >= 100) queue.volume = 100;
+          else queue.volume = queue.volume + 10;
+          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
+          queue.textChannel
+            .send(i18n.__mf("play.increasedVolume", { author: user, volume: queue.volume }))
+            .catch(console.error);
+          break;
+
         case "🔁":
           reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.loop = !queue.loop;
-          const loopembed = new MessageEmbed().setColor("#c219d8")
-            .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/769913064194834511.png")
-          queue.textChannel.send(loopembed).catch(console.error);
+          queue.textChannel
+            .send(
+              i18n.__mf("play.loopSong", {
+                author: user,
+                loop: queue.loop ? i18n.__("common.on") : i18n.__("common.off")
+              })
+            )
+            .catch(console.error);
           break;
-          //stop
-        case "⏸️":
+
+        case "⏹":
           reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
+          if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.songs = [];
-          const stopembed = new MessageEmbed().setColor("#c219d8").setAuthor(`${user.username} stopped the music!`, "https://cdn.discordapp.com/emojis/769915194066862080.png")
-          queue.textChannel.send(stopembed).catch(console.error);
+          queue.textChannel.send(i18n.__mf("play.stopSong", { author: user })).catch(console.error);
           try {
             queue.connection.dispatcher.end();
           } catch (error) {
@@ -372,7 +297,7 @@ module.exports = {
 
     collector.on("end", () => {
       playingMessage.reactions.removeAll().catch(console.error);
-      if (playingMessage && !playingMessage.deleted) {
+      if (PRUNING && playingMessage && !playingMessage.deleted) {
         playingMessage.delete({ timeout: 3000 }).catch(console.error);
       }
     });
