@@ -117,9 +117,12 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-     message.react("<a:setting:813404135181385759>").catch(console.error);
+     message.react("<:github:819533772311101451>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("<a:rast:813403866472251399> **[Project](https://github.com/slawwwy/-) to open the project.**")
+    .setDescription(`<a:rast:813403866472251399> **[Click Here](https://github.com/slawwwy/-) to open the project.**
+             **By :**  <@637299944939585576>   
+     
+                   `)
     .setColor("RANDOM")
     .setTitle(`<:github:819533772311101451> Project Github`)
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
