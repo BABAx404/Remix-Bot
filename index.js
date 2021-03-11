@@ -131,6 +131,44 @@ if(message.content.startsWith(`${prefix}invite`)){
     message.author.send(embed)
   } 
   
+ if(message.content.startsWith(`${prefix}accfake-github`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:github:819533772311101451>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription(`<:github:819533772311101451> **Project Github**
+<a:rast:813403866472251399> **[Click Here](https://github.com/dark-man99/Progress-Home-Acc-Fake) to open the project.**
+**By :** <@637299944939585576>   
+     
+                   `)
+    .setColor("RANDOM")
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setTimestamp()
+    //send the Message
+    message.author.send(embed)
+  } 
+  
+if(message.content.startsWith(`${prefix}seastem-github`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:github:819533772311101451>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription(`<:github:819533772311101451> **Project Github**
+<a:rast:813403866472251399> **[Click Here](https://github.com/dark-man99/Progress-Home) to open the project.**
+**By :** <@637299944939585576>   
+     
+                   `)
+    .setColor("RANDOM")
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setTimestamp()
+    //send the Message
+    message.author.send(embed)
+  }
+   
+   
+   
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
