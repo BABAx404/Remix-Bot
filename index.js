@@ -181,7 +181,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setImage(``)
     .setTimestamp()
     .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/814606427887763456/fc9a04b21ba97a192f3afd090c16d96f.png")
+    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
 __** **>** **__
