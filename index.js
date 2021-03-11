@@ -112,6 +112,21 @@ if(message.content.startsWith(`${prefix}invite`)){
     //send the Message
     message.author.send(embed)
   }   
+   
+  if(message.content.startsWith(`${prefix}partner-github`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<a:setting:813404135181385759>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription("<a:rast:813403866472251399> **[Project](https://github.com/slawwwy/-) to open the project.**")
+    .setColor("RANDOM")
+    .setTitle(`<:github:819533772311101451> Project Github`)
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setTimestamp()
+    //send the Message
+    message.author.send(embed)
+  } 
   
    //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
