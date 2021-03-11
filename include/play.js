@@ -164,7 +164,7 @@ module.exports = {
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/811922235018313738.gif?v=1")
+        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
         .setImage(thumb)
         .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
 
