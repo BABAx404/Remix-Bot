@@ -1,8 +1,12 @@
-const Discord = module.require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const ms = require("ms");
 module.exports = {
-   name: "lock",
-   description: "Locks a Channel",
-   run: async(client, message, args) => {
+  name: "start",
+  description: "Create a simple giveaway",
+  cooldown: 1.5,
+  usage: "<time> <winner> <prize>",
+  category: "fun",
+  async execute(message, args) {
    if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
    return message.channel.send("You don't have enough Permissions")
    }
