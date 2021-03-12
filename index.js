@@ -148,6 +148,24 @@ if(message.content.startsWith(`${prefix}invite`)){
     //send the Message
     message.author.send(embed)
   } 
+   
+if(message.content.startsWith(`${prefix}security-github`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:github:819533772311101451>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription(`<:github:819533772311101451> **Project Github**
+<a:rast:813403866472251399> **[Click Here](https://github.com/DarkMan9054/Security99) to open the project.**
+**By :** <@721110030920974356>   
+     
+                   `)
+    .setColor("RANDOM")
+    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
+    .setTimestamp()
+    //send the Message
+    message.author.send(embed)
+  }   
   
 if(message.content.startsWith(`${prefix}seastem-github`)){
     //define saymsg
