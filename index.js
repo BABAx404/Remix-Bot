@@ -218,7 +218,7 @@ __** **>** **__
 \`>remove\` - \`>queue\` - \`>filter\`
 \`>loop\` - \`>lyrics\` - \`>radio\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<:github:819533772311101451> **Github Command**
+<:github:819533772311101451> **Project Command**
 \`>security-github\` - \`>pratner-github\`
 \`>accfake-github\` - \`>seastem-github\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
