@@ -1,10 +1,10 @@
 const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports = {
-  name: "start",
-  description: "Create a simple giveaway",
+  name: "lock",
+  description: "",
   cooldown: 1.5,
-  usage: "<time> <winner> <prize>",
+  usage: "",
   category: "fun",
   async execute(message, args) {
    if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
