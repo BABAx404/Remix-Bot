@@ -220,7 +220,7 @@ __** **>** **__
 \`>accfake-github\` - \`>seastem-github\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:links:813729922643263558> **Links**
-__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**__
+__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
 
 `)
 
@@ -248,7 +248,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
 
 [Support Sever](https://discord.gg/FRZ5vAJ4Rm)
 ====
-[Add Bot](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)`)
+[Add Bot](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__ <a:discord:813406342173818910>`) 
@@ -272,7 +272,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     .setTimestamp()
     .setDescription(`
 
-**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 <a:rast:813403866472251399> \`Owner Bot :\`
 <@637299944939585576>
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
