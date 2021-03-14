@@ -260,7 +260,7 @@ Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permi
     //send the Message
     message.channel.send(embed)
   }  
-      
+ 
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
@@ -272,14 +272,27 @@ Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permi
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setTimestamp()
-    .setDescription(`**Info Bot**`)
-    .addField("**Servers**", `${clinet.guilds.size}`,  true)
-    .addField("**Channels", `${clinet.channels.size}`,  true)
-    .addField("**Users**", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`,  true)
+    .setDescription(`
+**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+<a:rast:813403866472251399> \`Owner Bot :\`
+<@637299944939585576>
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:waya:813455060864073788> \`Set Status :\`
+ **Online**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:time:813403485902864435> \`Time Create :\`
+**Dec 25, 2020**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:DarkMan:813510767386165263> \`Prefix Bot :\`
+__** **>** **__
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:setting:813404135181385759> \`Moderation :\`
+**Music Bot**
+`)
 
     //send the Message
     message.channel.send(embed)
-  }    
+  }   
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
