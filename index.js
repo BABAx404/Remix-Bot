@@ -236,19 +236,17 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription (`
-━────╮🛠️╭────━
-<a:KING:820738504036188181>**[
-Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+
+<a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+
 <a:lodaing:813403104384647238>
-<a:king:820738463770869832>**[
-Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+
+<a:rast:813403866472251399> **[Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setImage(``)
-    .setTitle(`<a:discord:813406342173818910> __**Support Remix Bot**__ <a:discord:813406342173818910>`) 
-    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-    .setTimestamp()
+    .setTitle(`**Support Remix Bot**`, `https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
+    .setImage(`https://cdn.discordapp.com/attachments/795388713659269150/820761124310876160/23-51-29-image0-40.gif`)
     
     //send the Message
     message.channel.send(embed)
