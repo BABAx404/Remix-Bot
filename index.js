@@ -243,7 +243,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
 
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor(`**Support Remix Bot**`, `https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
+    .setAuthor(`Support Remix Bot`, `https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
     .setImage(`https://cdn.discordapp.com/attachments/795388713659269150/820761124310876160/23-51-29-image0-40.gif`)
     
     //send the Message
