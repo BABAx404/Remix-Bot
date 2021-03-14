@@ -243,12 +243,12 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription (`
-**Thanks Support :** ${message.author.tag}
-**Channel Support :** ${message.channel.name}
-[🛠️
-**Invite**](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
-[🏘️
-**Support**](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
+**Thanks Support:**\`${message.author.tag}\`
+**Channel Support:**\`${message.channel.name}\`
+**[🛠️
+Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+**[🏘️
+Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
