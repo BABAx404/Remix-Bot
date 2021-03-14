@@ -236,11 +236,11 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription (`
-**Thanks Support:**\`${message.author.tag}\`
-**Channel Support:**\`${message.channel.name}\`
-**[🛠️
+━────╮🛠️╭────━
+**[<a:KING:820738504036188181>
 Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-**[🏘️
+<a:lodaing:813403104384647238>
+**[<a:king:820738463770869832>
 Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 
 `)
