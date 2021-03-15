@@ -100,6 +100,23 @@ client.on(`message`, async (message) => {
     //send the Message
     message.channel.send(embed)
   }
+   
+ //An vote announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}vote`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    message.react("<a:like:813847731285393439>").catch(console.error);
+    message.react("<a:close:813455155991019543>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setDescription(saymsg)
+    .setFooter(`${message.author.username}`, `Vote By`)
+    //delete the Command
+    message.delete({timeout: 300})
+    //send the Message
+    message.channel.send(embed)
+  }  
 
 if(message.content.startsWith(`${prefix}invite`)){
     //define saymsg
