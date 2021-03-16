@@ -171,7 +171,7 @@ module.exports = {
 • ────── <a:emoji_20:813716400408887316> ────── •`)
        
      
-        .setFooter("Request by:", `${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         .addField("<a:rast:813403866472251399> Requested by :", `${message.author}`, true)
         .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
         .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
