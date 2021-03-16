@@ -164,13 +164,20 @@ module.exports = {
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setThumbnail(thumb)
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
-        .setImage()
-        .setFooter("Request by:",`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
-        .addField("Text Channel 🗯 :", `\`#${message.channel.name}\``, true)
-        .addField("Volume ❄ :", `\`${queue.volume}\``, true)
+        .setImage(thumb)
+        .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
+
+• ────── <a:emoji_20:813716400408887316> ────── •`)
+       
+      
+        .setTimestamp()
+        .setFooter(`Remix Bot ✨`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
+        .addField("<a:rast:813403866472251399> Requested by :", `${message.author}`, true)
+        .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
+        .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
+        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
+
       var playingMessage = await queue.textChannel.send(newsong);
       
 
