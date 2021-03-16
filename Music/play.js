@@ -74,8 +74,8 @@ async execute(message, args, client) {
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
-          .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         }
       } else {
         //If nothing is playing join the channel
@@ -88,14 +88,14 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
-          .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:Youtube:813453040929210379> \`Searching\`  🔍 __**${args.join(" ")}**__`))
-          .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
