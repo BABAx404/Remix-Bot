@@ -40,8 +40,8 @@ execute(message) {
     const left = ms - seek;
     //define embed
     let nowPlaying = new MessageEmbed()
-      .setTitle("✅ Now playing")
-      .setDescription(`[**${song.title}**](${song.url})`)
+      .setTitle("<a:like:813847731285393439> Now playing")
+      .setDescription(`**[${song.title}](${song.url})**`)
       .setThumbnail(song.thumbnail.url)
       .setColor("RANDOM")
       .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
