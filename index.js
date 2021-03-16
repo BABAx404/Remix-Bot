@@ -218,7 +218,7 @@ __** **>** **__
 <:github:819533772311101451> **Project Command**
 \`>security-github\` - \`>pratner-github\`
 \`>accfake-github\` - \`>seastem-github\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
 <a:links:813729922643263558> **Links**
 __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
 
