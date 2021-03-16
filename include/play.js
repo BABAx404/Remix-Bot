@@ -331,7 +331,7 @@ module.exports = {
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
           const loopembed = new MessageEmbed().setColor("RANDOM")
-            .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/821365089025261579.gif?v=1")
+            .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/813403485902864435.gif?v=1")
           queue.textChannel.send(loopembed).catch(console.error);
           break;
           //stop
