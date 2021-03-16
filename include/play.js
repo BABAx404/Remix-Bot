@@ -167,12 +167,10 @@ module.exports = {
         .setThumbnail(thumb)
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
         .setImage()
-        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-        .addField("<a:rast:813403866472251399> Requested by :", `${message.author}`, true)
-        .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
-        .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
-        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
-
+        .setFooter("Request by:",`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField("Text Channel 🗯 :", `\`#${message.channel.name}\``, true)
+        .addField("Volume ❄ :", `\`${queue.volume}\``, true)
       var playingMessage = await queue.textChannel.send(newsong);
       
 
