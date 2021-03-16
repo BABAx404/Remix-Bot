@@ -214,7 +214,7 @@ __** **>** **__
 \`>shuffle\` - \`>search\` - \`>resume\`
 \`>remove\` - \`>queue\` - \`>filter\`
 \`>loop\` - \`>lyrics\` - \`>radio\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
 <:github:819533772311101451> **Project Command**
 \`>security-github\` - \`>pratner-github\`
 \`>accfake-github\` - \`>seastem-github\`
