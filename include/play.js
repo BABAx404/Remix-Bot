@@ -179,15 +179,15 @@ module.exports = {
         .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
+      
 
-
-      await playingMessage.react(""); //skip
-      await playingMessage.react(""); //pause
-      await playingMessage.react(""); //loop
-      await playingMessage.react(""); //stop
-      await playingMessage.react(""); //np
-      await playingMessage.react(""); //queue
-      await playingMessage.react(""); //lyrics
+      await playingMessage.react("⏭"); //skip
+      await playingMessage.react("⏯"); //pause
+      await playingMessage.react("🔄"); //loop
+      await playingMessage.react("⏹"); //stop
+      await playingMessage.react("❓"); //np
+      await playingMessage.react("🎵"); //queue
+      await playingMessage.react("📑"); //lyrics
     } catch (error) {
       console.error(error);
     }
@@ -201,57 +201,42 @@ module.exports = {
 
     collector.on("collect", async (reaction, user) => {
       if (!queue) return;
-     
       const member = message.guild.member(user);
-      
-     
-      if (member.voice.channel !== member.guild.me.voice.channel) {
 
-        member.send(new MessageEmbed()
-        .setTitle("<a:Erore:813505315534405632> | You must be in the Same Voice Channel as me!")
-        .setColor("RANDOM"))
-        
-        reaction.users.remove(user).catch(console.error);
-        
-        console.log("not in the same ch."); 
-        
-        return; 
-      }
-      
-      switch (reaction.emoji.id) {
+      switch (reaction.emoji.name) {
         //queue
-        case "📶":
+        case "🎵":
           reaction.users.remove(user).catch(console.error);
           const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
           let queueEmbed = new MessageEmbed()
             .setTitle("Music Queue")
             .setDescription(description)
-            .setColor("RANDOM")
+            .setColor("#c219d8")
              ;
-
+      
           const splitDescription = splitMessage(description, {
             maxLength: 2048,
             char: "\n",
             prepend: "",
             append: ""
           });
-
+      
           splitDescription.forEach(async (m) => {
-
+      
             queueEmbed.setDescription(m);
-            message.react(approveemoji)
+            message.react("✅")
             message.channel.send(queueEmbed);
           });
           break;
         //np
-        case "▶️":
+        case "❓":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
-        let minutes = song.duration.split(":")[0];
-        let seconds = song.duration.split(":")[1];
-        let ms = (Number(minutes)*60+Number(seconds));
+        let minutes = song.duration.split(":")[0];   
+        let seconds = song.duration.split(":")[1];    
+        let ms = (Number(minutes)*60+Number(seconds));   
         //get thumbnail
         let thumb;
         if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
@@ -265,7 +250,7 @@ module.exports = {
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("RANDOM")
+          .setColor("#c219d8")
           .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
           //if its a stream
           if(ms >= 10000) {
@@ -273,16 +258,16 @@ module.exports = {
             //send approve msg
             return message.channel.send(nowPlaying);
           }
-          //If its not a stream
+          //If its not a stream 
           if (ms > 0 && ms<10000) {
-            nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "<:currentposition:770098066552258611>")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
+            nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "⚪️")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
             //send approve msg
             return message.channel.send(nowPlaying);
           }
-
+        
         break;
         //skip
-        case "⏭️":
+        case "⏭":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -294,8 +279,8 @@ module.exports = {
 
           break;
         //lyrics
-        case "🔀":
-
+        case "📑":
+        
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           let lyrics = null;
@@ -309,21 +294,21 @@ module.exports = {
           } catch (error) {
             lyrics = `No lyrics found for ${queue.songs[0].title}.`;
           }
-
+      
           let lyricsEmbed = new MessageEmbed()
-            .setTitle("<:lyrics:769938447279456296> Lyrics")
+            .setTitle("📑 Lyrics")
             .setDescription(lyrics)
             .setColor("#c219d8")
-
+      
           if (lyricsEmbed.description.length >= 2048)
-
+      
             lyricsEmbed.description = `${lyricsEmbed.description.substr(0, 2045)}...`;
-            message.react(approveemoji);
+            message.react("✅");
           return result.edit(lyricsEmbed).catch(console.error);
 
           break;
           //pause
-        case "⏹️":
+        case "⏯":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -340,8 +325,8 @@ module.exports = {
             queue.textChannel.send(playembed).catch(console.error);
           }
           break;
-          //loop
-        case "🔁":
+          //loop  
+        case "🔄":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
@@ -350,7 +335,7 @@ module.exports = {
           queue.textChannel.send(loopembed).catch(console.error);
           break;
           //stop
-        case "⏸️":
+        case "⏹":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
@@ -373,7 +358,7 @@ module.exports = {
 
     collector.on("end", () => {
       playingMessage.reactions.removeAll().catch(console.error);
-      if (playingMessage && !playingMessage.deleted) {
+      if (PRUNING && playingMessage && !playingMessage.deleted) {
         playingMessage.delete({ timeout: 3000 }).catch(console.error);
       }
     });
