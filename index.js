@@ -194,34 +194,30 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-    .setColor("#CE1616")
+    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
+    .setColor("RANDOM")
     .setImage(``)
+    .setTitle(`REMIX BOT Help!`)
     .setTimestamp()
-    .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png")
+    .setFooter(``)
+    .setAuthor("")
     .setDescription(`
-<a:Erore:813505315534405632> **Prefix Bot**
-__** **>** **__
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:discord:813406342173818910> **User Commands**
-\`>invite\` - \`>support\` - \`>about\`
-\`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:dark:813714900777959444> **Music Commands**
-\`>play\` - \`>skip\` - \`>skipto\`
-\`>stop\` - \`>volume\` - \`>nowplaying\`
-\`>shuffle\` - \`>search\` - \`>resume\`
-\`>remove\` - \`>queue\` - \`>filter\`
-\`>loop\` - \`>lyrics\` - \`>radio\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
-<:github:819533772311101451> **Project Command**
-\`>security-github\` - \`>pratner-github\`
-\`>accfake-github\` - \`>seastem-github\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
-<a:links:813729922643263558> **Links**
-__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
-
+** __**Prefix: **__ **\`>\`
+  ** __**INFORMATION COMMANDS**__ **
+   \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
+\`embed\` ,\`support\` 
+  ** __**MUSIC COMMANDS**__ **
+   \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
+   \`shuffle\` ,\`resum\` ,\`remove \`
+   \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
+  **  __**FILTER COMMANDS**__ **
+    \`filter bassboost\` ,\`filter 8D\`,\`filter vaporwave\`,\`filter nightcore\`
+    \`filter phaser\`,\`filter tremolo\`,\`filter vibrato\`,\`filter surrounding\`
+    \`filter subboost\`,\`filter clear\` ,\`filter pulsator\`
+   
+   ** __**USEFUL LINKS**__ **
+   Support Server - [Click Me](https://discord.gg/B6cAbrFDcN)
+   Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
 `)
 
     //send the Message
