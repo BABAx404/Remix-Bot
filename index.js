@@ -199,6 +199,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setImage(``)
     .setTitle(`REMIX BOT Help!`)
     .setFooter(``)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor("")
     .setDescription(`
  __**Prefix: **__ \`>\`
