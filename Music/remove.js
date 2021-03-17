@@ -34,8 +34,8 @@ execute(message, args) {
     message.react("769665713124016128")
     //send approve
     queue.textChannel.send(new MessageEmbed()
-    .setDescription(`❗| ${message.author} removed **${song[0].title}** from the Queue`)
-    .setColor("RANDOM")
+    .setDescription(`<a:Erore:813505315534405632> ${message.author} removed **${song[0].title}** from the Queue`)
+    .setColor("BLACK")
     );
   }
 };
