@@ -25,8 +25,8 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor("#F0EAD6")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif")
+      const endembed = new MessageEmbed().setColor("RANDOM")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/emojis/813505072704913419.gif?v=1")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
