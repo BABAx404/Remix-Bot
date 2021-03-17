@@ -258,7 +258,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setTimestamp()
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-<a:rast-1:813403866472251399> \`Owner Bot :\`
+<a:arbelearbele:780373854039572501> \`Owner Bot :\`
 <@637299944939585576>
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:waya:813455060864073788> \`Set Status :\`
