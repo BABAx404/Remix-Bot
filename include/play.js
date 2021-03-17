@@ -164,9 +164,11 @@ module.exports = {
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
         .setURL(song.url)
         .setColor("RANDOM")
-        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
-        .setImage(thumb)
+        .setAuthor("")
+        .setImage()
+        .setThumbnail(thumb)
         .setDescription(``)
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
        
      .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
      .addField("Text Channel 🗯 :", `\`#${message.channel.name}\``, true)
