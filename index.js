@@ -321,7 +321,7 @@ __** **>** **__
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("RANDOM")
+      new MessageEmbed().setColor("BLACK")
       .setTitle(`<a:halaya:813455108577689601> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
@@ -332,7 +332,7 @@ __** **>** **__
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("RANDOM")
+   message.reply( new MessageEmbed().setColor("BLACK")
    .setTitle(`<a:halaya:813455108577689601> There was an error executing that command.`)).catch(console.error);
  }
 
