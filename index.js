@@ -197,7 +197,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
     .setColor("BLACK")
     .setImage(``)
-    .setTitle(`<a:discord:813406342173818910> Remix Bot Help! <a:discord:813406342173818910>`)
+    .setTitle(`<a:discord:813406342173818910> Remix Bot Help <a:discord:813406342173818910>`)
     .setFooter(``)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor("")
