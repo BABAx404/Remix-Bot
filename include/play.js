@@ -141,14 +141,14 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle("<:Youtube:813453040929210379>"+song.title)
-        .addField("Time ⏱ :", `\`${song.duration}\`Minutes`, true)
+        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Text Channel 🗯️:",message.channel.name)
         .addField("Voice Channel 📣:",channel.name)
         .addField("Voulome ❄ :",100)
         .setURL(song.url)
         .setColor("RANDOM")
         .setThumbnail(thumb)
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
