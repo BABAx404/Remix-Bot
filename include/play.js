@@ -144,7 +144,7 @@ module.exports = {
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Text Channel 🗯️ :",message.channel.name)
         .addField("Voice Channel 📣 :",channel.name)
-        .addField("Voulome ❄ :",queue.volume)
+        .addField("Voulome ❄ :",100)
         .setURL(song.url)
         .setColor("RANDOM")
         .setThumbnail(thumb)
