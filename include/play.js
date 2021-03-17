@@ -141,12 +141,12 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle(":gem:Playing"   +song.title)
-        .addField("Time Song⏱️:", `\`${song.duration}\`Minutes`, true)
-        .addField("Text Channel🗯️:",message.channel.name)
-        .addField("Voice Channel📣:",channel.name)
-        .addField("Voulome💥:",100)
+        .addField("Time ⏱ :", `\`${song.duration}\`Minutes`, true)
+        .addField("Text Channel 🗯️:",message.channel.name)
+        .addField("Voice Channel 📣:",channel.name)
+        .addField("Voulome ❄ :",100)
         .setURL(song.url)
-        .setColor("#c219d8")
+        .setColor("RANDOM")
         .setThumbnail(thumb)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
