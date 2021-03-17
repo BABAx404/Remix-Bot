@@ -168,11 +168,12 @@ module.exports = {
         .setImage()
         .setThumbnail(thumb)
         .setDescription(``)
-        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+
        
      .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
-     .addField("Text Channel 🗯 :", `\`#${message.channel.name}\``, true)
-     .addField("Volume ❄ :", `\`${queue.volume}\``, true)
+     .addField("Text Channel 🗯 :", `#${message.channel.name}`, true)
+     .addField("Volume ❄ :", `${queue.volume}`, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
