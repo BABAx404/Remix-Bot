@@ -90,7 +90,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setDescription(saymsg)
     .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setFooter(`${message.author.username}`)
@@ -108,7 +108,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) to invite the bot.**")
-    .setColor("RANDOM")
+    .setColor("BLACK")
     //send the Message
     message.author.send(embed)
   }   
@@ -124,7 +124,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 **By :** <@637299944939585576>   
      
                    `)
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
@@ -142,7 +142,7 @@ if(message.content.startsWith(`${prefix}invite`)){
 **By :** <@637299944939585576>   
      
                    `)
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
@@ -160,7 +160,7 @@ if(message.content.startsWith(`${prefix}security-github`)){
 **By :** <@721110030920974356>   
      
                    `)
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
@@ -178,7 +178,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
 **By :** <@637299944939585576>   
      
                    `)
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
     .setTimestamp()
     //send the Message
@@ -229,7 +229,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setDescription (`
 
 <a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
@@ -251,7 +251,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
     .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
     .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
@@ -284,7 +284,7 @@ __** **>** **__
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setTitle(`REMIX BOT Project!`)
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setDescription (`
