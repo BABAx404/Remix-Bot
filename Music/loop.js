@@ -27,7 +27,7 @@ async execute(message) {
     queue.loop = !queue.loop;
     //Define the Loop embed
     const loopembed = new MessageEmbed()
-    .setColor(queue.loop ? "RANDOM" : "RANDOM")
+    .setColor(queue.loop ? "BLACK" : "BLACK")
     .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/821365089025261579.gif?v=1")
     //react with approve emoji
     message.react("🔁");
