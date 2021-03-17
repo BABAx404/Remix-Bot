@@ -295,11 +295,11 @@ module.exports = {
         const left = ms - seek;
         //define embed
         let nowPlaying = new MessageEmbed()
-          .setAuthor('♪Now playing♪','https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif','http://harmonymusic.tk')
+          .setAuthor('Now playing','https://cdn.discordapp.com/emojis/813716400408887316.gif?v=1','http://harmonymusic.tk')
           .setDescription(`[${song.title}](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("#F0EAD6")
-          .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+          .setColor("RANDOM")
+          .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       //if its a stream
       if(ms >= 10000) {
         nowPlaying.addField("\u200b", "🔴 LIVE", false);
@@ -319,9 +319,9 @@ module.exports = {
           const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
           let queueEmbed = new MessageEmbed()
-            .setTitle("Music Queue")
+            .setTitle("<a:stop:813505072704913419> Music Queue")
             .setDescription(description)
-            .setColor("#F0EAD6")
+            .setColor("RANDOM")
              ;
       
           const splitDescription = splitMessage(description, {
@@ -345,8 +345,8 @@ module.exports = {
           if (!canModifyQueue(member)) return;
           let lyrics = null;
           let temEmbed = new MessageEmbed()
-          .setAuthor("Searching...", "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif").setFooter("Lyrics")
-          .setColor("#F0EAD6")
+          .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/813403104384647238.gif?v=1").setFooter("Lyrics")
+          .setColor("RANDOM")
           let result = await message.channel.send(temEmbed)
           try {
             lyrics = await lyricsFinder(queue.songs[0].title,"");
