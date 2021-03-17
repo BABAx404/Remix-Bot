@@ -198,24 +198,23 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setColor("RANDOM")
     .setImage(``)
     .setTitle(`REMIX BOT Help!`)
-    .setTimestamp()
     .setFooter(``)
     .setAuthor("")
     .setDescription(`
-** __**Prefix: **__ **\`>\`
-  ** __**INFORMATION COMMANDS**__ **
+ __**Prefix: **__ \`>\`
+   __**INFORMATION COMMANDS**__ 
    \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
 \`embed\` ,\`support\` 
-  ** __**MUSIC COMMANDS**__ **
+   __**MUSIC COMMANDS**__ 
    \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
    \`shuffle\` ,\`resum\` ,\`remove \`
    \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
-  **  __**FILTER COMMANDS**__ **
+    __**FILTER COMMANDS**__ 
     \`filter bassboost\` ,\`filter 8D\`,\`filter vaporwave\`,\`filter nightcore\`
     \`filter phaser\`,\`filter tremolo\`,\`filter vibrato\`,\`filter surrounding\`
     \`filter subboost\`,\`filter clear\` ,\`filter pulsator\`
    
-   ** __**USEFUL LINKS**__ **
+    __**USEFUL LINKS**__ 
    Support Server - [Click Me](https://discord.gg/B6cAbrFDcN)
    Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
 `)
