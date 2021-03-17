@@ -258,19 +258,19 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setTimestamp()
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-<a<a:rast:813455191180705883>813403866472251399> \`Owner Bot :\`
+<a:rast:813455191180705883> \`Owner Bot :\`
 <@637299944939585576>
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a<a:waya:813455060864073788>813455060864073788> \`Set Status :\`
+<a:waya:813455060864073788> \`Set Status :\`
  **Online**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a<a:time:813403485902864435>813403485902864435> \`Time Create :\`
+<a:time:813403485902864435> \`Time Create :\`
 **Dec 25, 2020**
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a<a:DarkMan:814434932591820812>813510767386165263> \`Prefix Bot :\`
+<a:DarkMan:814434932591820812> \`Prefix Bot :\`
 __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a<a:setting:813404135181385759>813404135181385759> \`Moderation :\`
+<a:setting:813404135181385759> \`Moderation :\`
 **Music Bot**
 `)
 
