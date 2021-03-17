@@ -250,38 +250,37 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     message.channel.send(embed)
   }  
  
-//An about announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}about`)){
+if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setTimestamp()
+    .setThumbnail(message.author.avatarURL())
+    .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
-**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-<a:rast:813403866472251399> \`Owner Bot :\`
+**[ SUPPORT ](https://discord.gg/B6cAbrFDcN)** | **[ INVITE ](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+**Owner Bot**
 <@637299944939585576>
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:waya:813455060864073788> \`Set Status :\`
- **Online**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:time:813403485902864435> \`Time Create :\`
-**Dec 25, 2020**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:DarkMan:813510767386165263> \`Prefix Bot :\`
-__** **>** **__
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:setting:813404135181385759> \`Moderation :\`
-**Music Bot**
-`)
-
-    //send the Message
-    message.channel.send(embed)
-  }   
+●
+**Name Bot**
+Remix Bot ✨#9054
+●
+**Prefix Bot**
+${prefix}
+●
+**Job Bot**
+Music
+●
+**Guilds**
+${client.guilds.cache.size}
+●
+**Ping**
+${client.ws.ping}ms
+●
+**Version**
+V2
+`)   
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
