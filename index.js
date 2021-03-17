@@ -279,6 +279,27 @@ __** **>** **__
     message.channel.send(embed)
   }  
 
+//An suuport announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}project`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setTitle(`REMIX BOT Project!`)
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
+    .setDescription (`
+<:github:819533772311101451> **Project Github**
+**[Support](https://discord.gg/rhynyy2j)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+
+\`security-github\` ,\`seastem-github\` 
+\`accfake-github\` ,\`partner-github\`
+
+`)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    //send the Message
+    message.channel.send(embed)
+  }
    
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
