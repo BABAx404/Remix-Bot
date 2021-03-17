@@ -23,7 +23,7 @@ module.exports = {
     message.react("769665713124016128");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setTitle(`Current Prefix: \`${prefix}\``)
     .setFooter('Please provide a new prefix')
     );
@@ -33,13 +33,13 @@ module.exports = {
     );
 
     if(args[1]) return message.channel.send(new MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setTitle(`'The prefix can\'t have two spaces'`));
 
     db.set(`prefix_${message.guild.id}`, args[0])
 
     message.channel.send(new MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setTitle(`<a:yes:813397195771740182> Successfully set new prefix to **\`${args[0]}\`**`))
   }
 }
