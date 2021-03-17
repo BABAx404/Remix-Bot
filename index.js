@@ -195,7 +195,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     //define embed
     const embed = new Discord.MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setImage(``)
     .setTitle(`REMIX BOT Help!`)
     .setFooter(``)
