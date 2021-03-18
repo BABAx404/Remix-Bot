@@ -266,7 +266,7 @@ Remix Bot ✨#9054
 ●
 **Prefix Bot**
 ${prefix}
-●
+● 
 **Job Bot**
 Music
 ●
