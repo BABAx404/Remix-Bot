@@ -147,6 +147,7 @@ module.exports = {
         .addField("Voulome ❄ :",100)
         .setURL(song.url)
         .setColor("BLACK")
+        .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/emojis/813716400408887316.gif?v=1")
         .setThumbnail(thumb)
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
