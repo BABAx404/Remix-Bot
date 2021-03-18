@@ -194,7 +194,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024`)
     .setColor("BLACK")
     .setImage(``)
     .setTitle(`<a:discord:813406342173818910> Remix Bot Help <a:discord:813406342173818910>`)
@@ -254,9 +254,8 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     const embed = new Discord.MessageEmbed()
     .setColor("BLACK")
     .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setFooter(`${message.author.username}`, `https://cdn.discordapp.com/attachments/795388713659269150/819546988240306206/PicsArt_03-11-01.27.10.png`)
-    .setTimestamp()
+    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024`)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 **Owner Bot**
