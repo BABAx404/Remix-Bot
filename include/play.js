@@ -245,7 +245,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
-          queue.textChannel.Embedsend(`${user} ⏹ stopped the music!`).catch(console.error);
+          queue.textChannel.send(`${user} ⏹ stopped the music!`).catch(console.error);
           try {
             queue.connection.dispatcher.end();
           } catch (error) {
