@@ -271,6 +271,9 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
 <a:DarkMan:814434932591820812> \`Prefix Bot :\`
 __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+\`Servers\`
+**${client.guilds.cache.size}**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> \`Moderation :\`
 **Music Bot**
 `)
