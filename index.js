@@ -259,20 +259,26 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setTimestamp()
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-<a:arbelearbele:780373854039572501> \`Name Bot :\`
-**Remix Bot ✨#9054**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:discord:813406342173818910> \`ping :\`
-**${clinet.ws.ping}ms**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:time:813403485902864435> \`Time Create :\`
-**Dec 25, 2020**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:winner:817425780992114708> \`Servers :\`
-**${client.guilds.cache.size}**
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-<a:setting:813404135181385759> \`Moderation :\`
-**Music Bot**
+**Owner Bot**
+<@637299944939585576>
+●
+**Name Bot**
+Remix Bot ✨#9054 
+●
+**Prefix Bot**
+${prefix}
+●
+**Job Bot**
+Music
+●
+**Guilds**
+${client.guilds.cache.size}
+●
+**Ping**
+${client.ws.ping}ms
+●
+**Version**
+V2
 `)
 
     //send the Message
