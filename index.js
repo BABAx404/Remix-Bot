@@ -260,22 +260,22 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 **Owner Bot**
 <@637299944939585576>
-●
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Name Bot**
 Remix Bot ✨#9054 
-●
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Prefix Bot**
 ${prefix}
-● 
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Job Bot**
 Music
-●
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Guilds**
 ${client.guilds.cache.size}
-●
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Ping**
 ${client.ws.ping}ms
-●
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 **Version**
 V2
 `)
