@@ -209,6 +209,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
    __**MUSIC COMMANDS**__ 
    \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
    \`shuffle\` ,\`resum\` ,\`remove \`
+   \`search\` ,\`radio\` ,\`volume\`
    \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
     __**FILTER COMMANDS**__ 
     \`filter bassboost\` ,\`filter 8D\`,\`filter vaporwave\`,\`filter nightcore\`
