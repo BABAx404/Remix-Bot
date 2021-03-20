@@ -352,26 +352,26 @@ V2
 
 client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("822923806812667974");
-  let embed = new MessageEmbed().setColor("#fc0303")
+  let embed = new MessageEmbed().setColor("BLACK")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅: Join Server`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Name**", `${guild.name}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Owner**", `${guild.owner}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Id**", `${guild.id}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Member Count**", `${guild.memberCount}`)
+  .setTitle( `<a:like:813847731285393439> Join Server`)
+  .addField("<a:rast:813403866472251399> **Server Name**", `${guild.name}`)
+  .addField("<a:rast:813403866472251399> **Server Owner**", `${guild.owner}`)
+  .addField("<a:rast:813403866472251399> **Server Id**", `${guild.id}`)
+  .addField("<a:rast:813403866472251399> **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("822923852568461323");
   let embed = new MessageEmbed()
-  .setColor("#fc0303")
+  .setColor("BLACK")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `:446EEE23FF984C2BA05ACA9897C6F076: Left Server`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Name**", `${guild.name}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Owner**", `${guild.owner}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Id**", `${guild.id}`)
-  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Member Count**", `${guild.memberCount}`)
+  .setTitle(`<a:close:813455155991019543> Left Server`)
+  .addField("<a:rast:813403866472251399> **Server Name**", `${guild.name}`)
+  .addField("<a:rast:813403866472251399> **Server Owner**", `${guild.owner}`)
+  .addField("<a:rast:813403866472251399> **Server Id**", `${guild.id}`)
+  .addField("<a:rast:813403866472251399> **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
