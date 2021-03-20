@@ -195,7 +195,6 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setColor("BLACK")
     .setImage(``)
-    .setTimestamp()
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024")
     .setDescription(`
@@ -288,28 +287,6 @@ V2
     message.channel.send(embed)
   }  
 
-//An suuport announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}project`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setColor("BLACK")
-    .setTitle(`REMIX BOT Project!`)
-    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-    .setDescription (`
-<:github:819533772311101451> **Project Github**
-**[Support](https://discord.gg/rhynyy2j)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-
-\`security-github\` ,\`seastem-github\` 
-\`accfake-github\` ,\`partner-github\`
-
-`)
-    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    //send the Message
-    message.channel.send(embed)
-  }
-   
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
