@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
    
-     client.user.setActivity(`${PREFIX}help | New Update, Remix Bot ✨`, { type: "LISTENING"});   
+     client.user.setActivity(`${PREFIX}help | PROGRESS HOME IS ONE ✅`, { type: "LISTENING"});   
            
            
      client.user.setActivity(`${client.guilds.cache.size} | Servers`, { type: "LISTENING"});
