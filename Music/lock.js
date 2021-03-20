@@ -14,10 +14,18 @@ module.exports = {
      },
     ],);
    const embed = new Discord.MessageEmbed()
-   .setTitle("Channel Updates")
-   .setDescription(`🔒 ${message.channel} has been Locked`)
+   .setTitle("")
+   .setTimestamp()
+   .setThumbnail(message.author.avatarURL({dynamic: "true"}))
+   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   .setDescription(`
+🔒 Locked Channel
+Channel Name : <#${message.channel.id}>
+Locked By : <@${message.author.id}>
+Channel Status : Send Message :<a:like:813847731285393439>
+
+`)
    .setColor("RANDOM");
    await message.channel.send(embed);
-   message.delete();
 }
 }
