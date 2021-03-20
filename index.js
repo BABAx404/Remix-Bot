@@ -204,23 +204,23 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setDescription(`
  __**Prefix:**__ \`>\`
    __**INFORMATION COMMANDS**__ 
-  > \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
-  > \`embed\` ,\`support\` 
+    \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
+    \`embed\` ,\`support\` 
    __**MUSIC COMMANDS**__ 
-  > \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
-  > \`shuffle\` ,\`resum\` ,\`remove \`
-  > \`search\` ,\`radio\` ,\`volume\`
-  > \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
+    \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
+    \`shuffle\` ,\`resum\` ,\`remove \`
+    \`search\` ,\`radio\` ,\`volume\`
+    \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
     __**FILTER COMMANDS**__ 
-   > \`filter bassboost\` ,\`filter 8D\`,
-   > \`filter vaporwave\`,\`filter nightcore\`
-   > \`filter phaser\`,\`filter tremolo\`,
-   > \`filter vibrato\`,\`filter surrounding\`
-   > \`filter subboost\`,\`filter clear\` ,
-   > \`filter pulsator\`
+     \`filter bassboost\` ,\`filter 8D\`,
+     \`filter vaporwave\`,\`filter nightcore\`
+     \`filter phaser\`,\`filter tremolo\`,
+     \`filter vibrato\`,\`filter surrounding\`
+     \`filter subboost\`,\`filter clear\` ,
+     \`filter pulsator\`
     __**USEFUL LINKS**__ 
-  > Support Server - [Click Me](https://discord.gg/B6cAbrFDcN)
-  > Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
+       Support Server - [Click Me](https://discord.gg/B6cAbrFDcN)
+       Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
 `)
 
     //send the Message
