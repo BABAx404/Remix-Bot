@@ -23,7 +23,7 @@ module.exports = {
 🔓 Unlocked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
-Channel Status : Send Message <a:close:813455155991019543>
+Channel Status : Send Message <a:like:813847731285393439>
 
 `)
    .setColor("BLACK");
