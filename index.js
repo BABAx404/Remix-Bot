@@ -206,6 +206,8 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
    __**INFORMATION COMMANDS**__ 
     \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
     \`embed\` ,\`support\` 
+   __**FUN COMMANDS**__
+     \`lock(l)\` ,\`unlock(ul)\` 
    __**MUSIC COMMANDS**__ 
     \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
     \`shuffle\` ,\`resum\` ,\`remove \`
