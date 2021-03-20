@@ -185,49 +185,48 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     message.author.send(embed)
   }
    
-   
-   
-   //An help announcement for everyone but no one knows so fine ^w^
+//An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
     message.react("<a:yes:813397195771740182>").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024`)
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setColor("BLACK")
     .setImage(``)
-    .setTitle(`<a:discord:813406342173818910> Remix Bot Help <a:discord:813406342173818910>`)
-    .setFooter(``)
+    .setTimestamp()
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor("")
+    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024")
     .setDescription(`
- __**Prefix:**__ \`>\`
-   __**INFORMATION COMMANDS**__ 
-    \`about\` ,\`invite\` ,\`uptime\` ,\`ping\` ,\`project\` ,
-    \`embed\` ,\`support\` 
-   __**FUN COMMANDS**__
-     \`lock(l)\` ,\`unlock(ul)\` 
-   __**MUSIC COMMANDS**__ 
-    \`play\` ,\`pause\` ,\`stop\` ,\`skip\` ,\`skipto\` 
-    \`shuffle\` ,\`resum\` ,\`remove \`
-    \`search\` ,\`radio\` ,\`volume\`
-    \`queue\` ,\`nowplaying\` ,\`lyrics\` ,\`loop\` 
-    __**FILTER COMMANDS**__ 
-     \`filter bassboost\` ,\`filter 8D\`,
-     \`filter vaporwave\`,\`filter nightcore\`
-     \`filter phaser\`,\`filter tremolo\`,
-     \`filter vibrato\`,\`filter surrounding\`
-     \`filter subboost\`,\`filter clear\` ,
-     \`filter pulsator\`
-    __**USEFUL LINKS**__ 
-       Support Server - [Click Me](https://discord.gg/B6cAbrFDcN)
-       Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
+<a:Erore:813505315534405632> **Prefix Bot**
+__** **>** **__
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:discord:813406342173818910> **User Commands**
+\`>invite\` - \`>support\` - \`>about\`
+\`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:setting:813404135181385759> **Fun Commands**
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:dark:813714900777959444> **Music Commands**
+\`>play\` - \`>skip\` - \`>skipto\`
+\`>stop\` - \`>volume\` - \`>nowplaying\`
+\`>shuffle\` - \`>search\` - \`>resume\`
+\`>remove\` - \`>queue\` - \`>filter\`
+\`>loop\` - \`>lyrics\` - \`>radio\`
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
+<:github:819533772311101451> **Project Command**
+\`>security-github\` - \`>pratner-github\`
+\`>accfake-github\` - \`>seastem-github\`
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
+<a:links:813729922643263558> **Links**
+__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
 `)
 
     //send the Message
     message.channel.send(embed)
-  } 
+  }   
    
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
