@@ -147,7 +147,7 @@ module.exports = {
         .addField("Voulome ❄ :",100)
         .setURL(song.url)
         .setColor("BLACK")
-        .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024")
+        .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/attachments/793959216506994718/822900696516788284/20210320_212656.gif")
         .setThumbnail(thumb)
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
