@@ -227,6 +227,26 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     message.channel.send(embed)
   }   
    
+//An help announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}user`)){
+    //define saymsg
+    message.react("<a:yes:813397195771740182>").catch(console.error);
+     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
+    .addField("**Joined Discord : **", prof.author.createdAt.toLocaleString())
+    .addField("**Joined Server :**",
+        moment(prof.joinedAt).format("D/M/YYYY h:mm a"),
+        true
+      )
+
+
+
+    //send the Message
+    message.channel.send(embed)
+  }   
+   
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
