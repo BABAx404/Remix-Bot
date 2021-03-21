@@ -234,6 +234,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
+    .setDescription(`Test`)
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .addField("**Joined Discord : **", message.author.createdAt.toLocaleString())
