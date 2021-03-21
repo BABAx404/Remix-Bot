@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 
 module.exports = {
-   name: "unlock",
+   name: "lockdown",
    aliases: ["ul"],
    description: "Unlocks a Channel",
    async execute(message, args) {
