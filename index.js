@@ -352,6 +352,17 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
+client.on("message", storm => {
+  if (storm.content.startsWith(prefix + "invites")) {
+    storm.guild.fetchInvites().then(invs => {
+      let user = storm.mentions.users.first() || storm.author;
+      let personalInvites = invs.filter(i => i.inviter.id === user.id);
+      let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
+      storm.channel.send(`${user} has ${inviteCount} invites.`);
+    });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
