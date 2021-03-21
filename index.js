@@ -236,10 +236,6 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     const embed = new Discord.MessageEmbed()
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .addField("**Joined Discord : **", prof.author.createdAt.toLocaleString())
-    .addField("**Joined Server :**",
-        moment(prof.joinedAt).format("D/M/YYYY h:mm a"),
-        true
-      )
 
 
 
