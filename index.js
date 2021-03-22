@@ -326,32 +326,6 @@ V2
 
 });
 
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("822923806812667974");
-  let embed = new MessageEmbed().setColor("BLACK")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `<a:like:813847731285393439> Join Server`)
-  .addField("<a:rast:813403866472251399> **Server Name**", `${guild.name}`)
-  .addField("<a:rast:813403866472251399> **Server Owner**", `${guild.owner}`)
-  .addField("<a:rast:813403866472251399> **Server Id**", `${guild.id}`)
-  .addField("<a:rast:813403866472251399> **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("822923852568461323");
-  let embed = new MessageEmbed()
-  .setColor("BLACK")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle(`<a:close:813455155991019543> Left Server`)
-  .addField("<a:rast:813403866472251399> **Server Name**", `${guild.name}`)
-  .addField("<a:rast:813403866472251399> **Server Owner**", `${guild.owner}`)
-  .addField("<a:rast:813403866472251399> **Server Id**", `${guild.id}`)
-  .addField("<a:rast:813403866472251399> **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
