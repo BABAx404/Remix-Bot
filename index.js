@@ -273,10 +273,10 @@ Music
 <a:discord:813406342173818910> **Guilds**
 ${client.guilds.cache.size}
 ●
-<a:ping-1:823238369769160734> **Ping**
+<a:ping:823238369769160734> **Ping**
 ${client.ws.ping}ms
 ●
-<a:emoji_148-1:768871719561592894> **Version**
+<a:3arz:823238395895349358> **Version**
 V2
 `)
 
