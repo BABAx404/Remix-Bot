@@ -206,7 +206,7 @@ __** **>** **__
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`clear\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
@@ -261,25 +261,22 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Invite](https://disc
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-**Owner Bot**
+<a:arbelearbele:780373854039572501> **Owner Bot**
 <@637299944939585576>
 ●
-**Name Bot**
-Remix Bot ✨#9054 
-●
-**Prefix Bot**
+<a:Erore:813505315534405632> **Prefix Bot**
 ${prefix}
 ●
-**Job Bot**
+<a:setting:813404135181385759> **Job Bot**
 Music
 ●
-**Guilds**
+<a:discord:813406342173818910> **Guilds**
 ${client.guilds.cache.size}
 ●
-**Ping**
+<a:ping-1: 823238369769160734> **Ping**
 ${client.ws.ping}ms
 ●
-**Version**
+<a:emoji_148-1: 768871719561592894> **Version**
 V2
 `)
 
