@@ -107,7 +107,19 @@ if(message.content.startsWith(`${prefix}invite`)){
     //define embed
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("<a:rast:813403866472251399> **[Click here](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot) to invite the bot.**")
+    .setDescription("<a:rast:813403866472251399> **[Click here](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot) to invite the bot.**")
+    .setColor("BLACK")
+    //send the Message
+    message.author.send(embed)
+  }  
+   
+if(message.content.startsWith(`${prefix}vote`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<a:setting:813404135181385759>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription("<a:rast:813403866472251399> **[Click here](https://top.gg/bot/792047204361175091) to vote the bot.**")
     .setColor("BLACK")
     //send the Message
     message.author.send(embed)
@@ -204,6 +216,7 @@ __** **>** **__
 <a:discord:813406342173818910> **User Commands**
 \`>invite\` - \`>support\` - \`>about\` - \`avatar\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
+\`vote\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
 \`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`clear\`
