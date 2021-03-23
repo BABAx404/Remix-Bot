@@ -206,7 +206,7 @@ __** **>** **__
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`clear\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
