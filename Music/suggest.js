@@ -17,9 +17,8 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle("New Suggestion")
             .setDescription(suggestion)
-            .setColor("RANDOM")
+            .setColor("BLACK")
             .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setTimestamp()
         SuggestionChannel.send(embed).then(msg => {
             msg.react("✅")
             msg.react("❎")
