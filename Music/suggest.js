@@ -7,7 +7,7 @@ module.exports = {
     usage: "i!suggest <suggestion>",
   async execute(message, args) {
         let suggestion = args.slice(0).join(" ");
-        let SuggestionChannel = message.guild.channels.cache.find(channel => channel.name === "『💡』suggestions");
+        let SuggestionChannel = message.guild.channels.cache.find(channel => channel.name === "🏮╟𝑹𝑼𝑳𝑬𝑺-𝑪𝑯𝑨𝑻");
       
       if(!suggestion) {
         return message.reply("Please describe what you want to suggest!")
