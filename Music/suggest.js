@@ -7,7 +7,7 @@ module.exports = {
     usage: "i!suggest <suggestion>",
   async execute(message, args) {
         let suggestion = args.slice(0).join(" ");
-        let SuggestionChannel = message.guild.channels.cache.find(channel => channel.name === "🏮╟𝑹𝑼𝑳𝑬𝑺-𝑪𝑯𝑨𝑻");
+        let SuggestionChannel = message.guild.channels.cache.find(channel => channel.name === "💡┃sᴜɢɢᴇsᴛɪᴏɴ");
       
       if(!suggestion) {
         return message.reply("Please describe what you want to suggest!")
@@ -18,12 +18,12 @@ module.exports = {
             .setTitle("New Suggestion")
             .setDescription(suggestion)
             .setColor("RANDOM")
-            .setFooter(`${message.author.tag} | ID: ${message.author.id}`)
+            .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
         SuggestionChannel.send(embed).then(msg => {
             msg.react("✅")
             msg.react("❎")
-        message.channel.send("Your suggestion has been sent!");
+        message.channel.send("");
         });
     }
 }
