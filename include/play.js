@@ -140,7 +140,7 @@ module.exports = {
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
         .setURL(song.url)
         .setColor("BLACK")
-        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
+        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/attachments/795388713659269150/812079882552475678/20210217_195031.gif")
         .setImage(thumb)
         .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
 
