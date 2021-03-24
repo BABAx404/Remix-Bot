@@ -81,8 +81,18 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
-  } 
+    message.reply(new Discord.MessageEmbed()
+                  .setColor("RANDOM")
+                  .setDescription(`
+Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
+Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
+Bot Vote - [Click Me](https://top.gg/bot/792047204361175091)
+`)
+                  .setTitle(`
+**Join a voice channel and** \`>play\` **a song.
+Type** \`>help\` **for the list of commands.**`));
+    
+} 
    
    //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
