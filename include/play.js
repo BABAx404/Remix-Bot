@@ -141,14 +141,15 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
-        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
-        .addField("Voice Channel 📣 :",channel.name)
-        .addField("Text Channel 🗯️ :",message.channel.name)
-        .addField("Voulome ❄ :",100)
+        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField("<:Sixo:783660007849328670> Voice Channel :",channel.name)
+        .addField("<:file:813460388057972736> Text Channel :",message.channel.name)
+        .addField("<a:Voulome:813460704031145986> Voulome :",100)
         .setURL(song.url)
         .setColor("BLACK")
         .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/attachments/793959216506994718/822900696516788284/20210320_212656.gif")
-        .setThumbnail(thumb)
+        .setThumbnail()
+        .setImage(`thmub`)
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
