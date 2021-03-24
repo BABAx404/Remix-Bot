@@ -89,8 +89,8 @@ Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=79204720436
 Bot Vote - [Click Me](https://top.gg/bot/792047204361175091)
 `)
                   .setTitle(`
-**Join a voice channel and** \`>play\` **a song.
-Type** \`>help\` **for the list of commands.**`));
+Join a voice channel and \`>play\` a song.
+Type \`>help\` for the list of commands.`));
     
 } 
    
