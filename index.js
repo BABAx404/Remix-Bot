@@ -82,7 +82,7 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-                  .setColor("RANDOM")
+                  .setColor("BLACK")
                   .setDescription(`
 Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
 Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
