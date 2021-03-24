@@ -243,7 +243,7 @@ __** **>** **__
 \`>accfake-github\` - \`>seastem-github\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
 <a:links:813729922643263558> **Links**
-__**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Vote](https://top.gg/bot/792047204361175091)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
+__**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg/bot/792047204361175091)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
 `)
 
     //send the Message
@@ -261,7 +261,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Vote](https://top.gg
 
 <a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 <a:lodaing:813403104384647238>
-<a:rast:813403866472251399> **[Support](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+<a:rast:813403866472251399> **[Support](https://discord.gg/u4CbGW4qTT)**
 <a:lodaing:813403104384647238>
 <a:rast:813403866472251399> **[Vote](https://top.gg/bot/792047204361175091)**
 
@@ -285,7 +285,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Vote](https://top.gg
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
-**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Vote](https://top.gg/bot/792047204361175091)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+**[Support](https://discord.gg/u4CbGW4qTT)** | **[Vote](https://top.gg/bot/792047204361175091)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 <a:arbelearbele:780373854039572501> **Owner Bot**
 <@637299944939585576>
 ●
