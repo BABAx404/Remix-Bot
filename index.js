@@ -218,7 +218,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
     .setColor("BLACK")
     .setImage(``)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024")
+    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=1024")
     .setDescription(`
 <a:Erore:813505315534405632> **Prefix Bot**
 __** **>** **__
