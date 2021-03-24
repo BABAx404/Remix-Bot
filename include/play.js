@@ -142,7 +142,7 @@ module.exports = {
         .setColor("BLACK")
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/attachments/795388713659269150/812079882552475678/20210217_195031.gif")
         .setImage(thumb)
-        .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
+        .setDescription(`**[Support](https://discord.gg/u4CbGW4qTT)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
 
 • ────── <a:emoji_20:813716400408887316> ────── •`)
        
