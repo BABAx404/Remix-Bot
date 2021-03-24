@@ -131,28 +131,30 @@ module.exports = {
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     }
-    
-  let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif";
+    let thumb;
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
     else thumb = song.thumbnail.url;
 
-  try {
-      let embed = new MessageEmbed()
-           const channel = message.member.voice.channel
+    try {
       const newsong = new MessageEmbed()
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
-        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
-        .addField("<:Sixo:783660007849328670> Voice Channel :",channel.name)
-        .addField("<:file:813460388057972736> Text Channel :",message.channel.name)
-        .addField("<a:Voulome:813460704031145986> Voulome :",100)
         .setURL(song.url)
         .setColor("BLACK")
-        .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/attachments/793959216506994718/822900696516788284/20210320_212656.gif")
-        .setThumbnail()
+        .setAuthor("Play Now Music...", "https://cdn.discordapp.com/emojis/819601617132191804.gif?v=1")
         .setImage(thumb)
+        .setDescription(`**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
+
+• ────── <a:emoji_20:813716400408887316> ────── •`)
+       
+      
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-      var playingMessage = await queue.textChannel.send(newsong);
-      await playingMessage.react("⏭");
+        .addField("<a:rast:813403866472251399> Requested by :", `${message.author}`, true)
+        .addField("<:file:813460388057972736> Text Channel :", `\`#${message.channel.name}\``, true)
+        .addField("<a:music:813460704031145986> Volume :", `\`100\``, true)
+        .addField("<a:time:813403485902864435> Time :", `\`${song.duration} Minutes 🖇\``, true)
+
+      var playingMessage = await queue.textChannel.send(newsong
+      await playingMessage.react("⏭"); 
       await playingMessage.react("⏯");
       await playingMessage.react("🔉");
       await playingMessage.react("🔊");
