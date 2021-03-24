@@ -14,15 +14,15 @@ module.exports = {
       }
       
       
-        message.react("✅").catch(console.error);
+        message.react("<a:yes:813397195771740182>").catch(console.error);
         const embed = new MessageEmbed()
             .setTitle("New Suggestion")
             .setDescription(suggestion)
             .setColor("BLACK")
             .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         SuggestionChannel.send(embed).then(msg => {
-            msg.react("✅")
-            msg.react("❎")
+            msg.react("<a:like:813847731285393439>")
+            msg.react("<a:close:813455155991019543>")
         message.channel.send("");
         });
     }
