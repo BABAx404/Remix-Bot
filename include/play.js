@@ -149,7 +149,7 @@ module.exports = {
         .setColor("BLACK")
         .setAuthor(`Play Now Music...`, "https://cdn.discordapp.com/attachments/793959216506994718/822900696516788284/20210320_212656.gif")
         .setThumbnail()
-        .setImage(`thmub`)
+        .setImage(thumb)
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
