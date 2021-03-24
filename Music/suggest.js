@@ -15,6 +15,7 @@ module.exports = {
       
       
         const embed = new MessageEmbed()
+            message.react("✅").catch(console.error);
             .setTitle("New Suggestion")
             .setDescription(suggestion)
             .setColor("BLACK")
