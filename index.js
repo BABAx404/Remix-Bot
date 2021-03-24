@@ -257,7 +257,7 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Vote](https://top.gg
 
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor(`Support Remix Bot`, `https://cdn.discordapp.com/avatars/792047204361175091/52bf0de2825637fcf588b1d672ad81f7.png?size=1024`)
+    .setAuthor(`Support Remix Bot`, `https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048`)
     .setImage(`https://cdn.discordapp.com/attachments/795388713659269150/820761124310876160/23-51-29-image0-40.gif`)
     
     //send the Message
@@ -271,8 +271,8 @@ __**[Support](https://discord.gg/FRZ5vAJ4Rm)**__ **-** __**[Vote](https://top.gg
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("BLACK")
-    .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
-    .setThumbnail(`https://cdn.discordapp.com/avatars/792047204361175091/c63ae917073804dcc2412c264a56c7c5.png?size=1024`)
+    .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
 **[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Vote](https://top.gg/bot/792047204361175091)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
