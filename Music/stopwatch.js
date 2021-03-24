@@ -1,6 +1,4 @@
-const ms = require("ms");
-const Discord = require("discord.js");
-const db = require("quick.db");
+const Discord = module.require("discord.js");
 
 module.exports = {
   name: "stopwatch",
