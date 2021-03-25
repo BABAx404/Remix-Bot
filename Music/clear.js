@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-    name: "suggest",
+    name: "clear",
     description: "Make a suggestion and have the community vote",
     category: "utility",
     usage: "i!suggest <suggestion>",
