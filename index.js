@@ -210,7 +210,7 @@ if(message.content.startsWith(`${prefix}seastem-github`)){
 //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
-    message.react("<a:yes:813397195771740182>").catch(console.error);
+    message.react("✅").catch(console.error);
      const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
@@ -277,6 +277,7 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
+    message.react("✅").catch(console.error);
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
@@ -297,6 +298,9 @@ Music
 ●
 <a:discord:813406342173818910> **Guilds**
 ${client.guilds.cache.size}
+●
+<a:discord:813406342173818910> **Users**
+${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
 ●
 <a:ping:823238369769160734> **Ping**
 ${client.ws.ping}ms
