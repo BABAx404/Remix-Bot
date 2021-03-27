@@ -299,9 +299,6 @@ Music
 <a:discord:813406342173818910> **Guilds**
 ${client.guilds.cache.size}
 ●
-<a:discord:813406342173818910> **Users**
-${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-●
 <a:ping:823238369769160734> **Ping**
 ${client.ws.ping}ms
 ●
