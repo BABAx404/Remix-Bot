@@ -13,7 +13,7 @@ module.exports =  {
 		async execute(message, args) {
 			//prefix checking and fecthing
 			let prefix;
-			let fetched = await db.fetch(`prefix_${message.guild.id}`);
+			let fetched = await db.fetch(`PREFIX_${message.guild.id}`);
 	
 			if (fetched === null) {
 				prefix = PREFIX
