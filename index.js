@@ -211,13 +211,13 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
     .setDescription(`
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
-<a:setting:813404135181385759> **Servers:**
+<a:setting:813404135181385759> **Servers**
 \`${client.guilds.cache.size}\`
 ●
-<a:discord:813406342173818910> **Users:**
+<a:discord:813406342173818910> **Users**
 \`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\`
 ●
-<a:ping:823238369769160734> **Ping:**
+<a:ping:823238369769160734> **Ping**
 \`${client.ws.ping}\`
 `)
 
