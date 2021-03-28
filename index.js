@@ -208,9 +208,9 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
     .setColor("BLACK")
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setTitle(`Hey My name is **Remix Bot** and My Work is to play Music`)
     .setDescription(`
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-Hey My name is **Remix Bot** and My Work is to play Music
 <a:setting:813404135181385759> **Servers**
 \`${client.guilds.cache.size}\`
 ●
