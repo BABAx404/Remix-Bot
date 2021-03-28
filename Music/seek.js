@@ -1,8 +1,7 @@
-const { PREFIX } = require("../config.json")
-const db = require("quick.db")
+const Discord = module.require("discord.js");
 
 module.exports =  {
-
+	
 	config: {
 		name: 'seek',
 		description: 'Skips to a timestamp in the song.',
