@@ -211,7 +211,6 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
     .setDescription(`
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
-
 **Servers:**
 \`${client.guilds.cache.size}\`
 ●
