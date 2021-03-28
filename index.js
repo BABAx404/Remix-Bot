@@ -201,33 +201,28 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
-    message.react("✅").catch(console.error);
+    message.react("<a:emoji_83:779961659631730689>").catch(console.error);
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("BLACK")
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
-    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
-**[Support](https://discord.gg/u4CbGW4qTT)** | **[Vote](https://top.gg/bot/792047204361175091)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
-<a:arbelearbele:780373854039572501> **Owner Bot**
-<@637299944939585576>
+[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
+
+Hey My name is **Remix Bot** and My Work is to play Music
+**Servers:**
+\`${client.guilds.cache.size}\`
 ●
-<a:Erore:813505315534405632> **Prefix Bot**
-${prefix}
+**Users:**
+\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\`
 ●
-<a:setting:813404135181385759> **Job Bot**
-Music
+**Ping:**
+\`${client.ws.ping}ms\`
 ●
-<a:discord:813406342173818910> **Guilds**
-${client.guilds.cache.size}
-●
-<a:ping:823238369769160734> **Ping**
-${client.ws.ping}ms
-●
-<a:3arz:823238395895349358> **Version**
-V2
+**Uptime:**
+\`${days}days\` \`${hours}hours\` \`${minutes} minutes and\` \`${seconds}seconds\`
 `)
 
     //send the Message
