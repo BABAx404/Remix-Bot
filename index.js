@@ -152,7 +152,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:discord:813406342173818910> **User Commands**
-\`>invite\` - \`>support\` - \`>about\` - \`avatar\`
+\`>invite\` - \`>support\` - \`>stats\` - \`avatar\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 \`>vote\` - \`>se\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
@@ -199,7 +199,7 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
   }
    
 //An about announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}about`)){
+  if(message.content.startsWith(`${prefix}stats`)){
     //define saymsg
     message.react("<a:emoji_83:779961659631730689>").catch(console.error);
     const saymsg = message.content.slice(Number(prefix.length) + 5)
@@ -209,9 +209,9 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
-[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
-
+**[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
+
 **Servers:**
 \`${client.guilds.cache.size}\`
 ●
