@@ -22,6 +22,7 @@ module.exports = {
         .setTitle("Emoji Converter")
         .setColor(`BLACK`)
         .addField('<a:links:813729922643263558> ```Link```', `[Click Me](${Link})`)
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         .setImage(Link
         );
       return message.channel.send(Added);
