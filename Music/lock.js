@@ -3,6 +3,7 @@ const Discord = module.require("discord.js");
 module.exports = {
    name: "lock",
    aliases: ["l"],
+   cooldown: 1.5,
    description: "Locks a Channel",
    async execute(message, args) {
    if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
