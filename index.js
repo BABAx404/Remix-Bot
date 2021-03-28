@@ -218,7 +218,7 @@ Hey My name is **Remix Bot** and My Work is to play Music
 \`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\`
 ●
 <a:ping:823238369769160734> **Ping:**
-\`${client.ws.ping}ms\`
+\`${client.ws.ping}\`
 `)
 
     //send the Message
