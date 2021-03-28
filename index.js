@@ -220,9 +220,6 @@ Hey My name is **Remix Bot** and My Work is to play Music
 ●
 **Ping:**
 \`${client.ws.ping}ms\`
-●
-**Uptime:**
-\`${days}days\` \`${hours}hours\` \`${minutes} minutes and\` \`${seconds}seconds\`
 `)
 
     //send the Message
