@@ -135,78 +135,6 @@ if(message.content.startsWith(`${prefix}vote`)){
     message.author.send(embed)
   }   
    
-  if(message.content.startsWith(`${prefix}partner-github`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<:github:819533772311101451>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`<:github:819533772311101451> **Project Github**
-<a:rast:813403866472251399> **[Click Here](https://github.com/slawwwy/-) to open the project.**
-**By :** <@637299944939585576>   
-     
-                   `)
-    .setColor("BLACK")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
-    .setTimestamp()
-    //send the Message
-    message.author.send(embed)
-  } 
-  
- if(message.content.startsWith(`${prefix}accfake-github`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<:github:819533772311101451>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`<:github:819533772311101451> **Project Github**
-<a:rast:813403866472251399> **[Click Here](https://github.com/dark-man99/Progress-Home-Acc-Fake) to open the project.**
-**By :** <@637299944939585576>   
-     
-                   `)
-    .setColor("BLACK")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
-    .setTimestamp()
-    //send the Message
-    message.author.send(embed)
-  } 
-   
-if(message.content.startsWith(`${prefix}security-github`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<:github:819533772311101451>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`<:github:819533772311101451> **Project Github**
-<a:rast:813403866472251399> **[Click Here](https://github.com/DarkMan9054/Security99) to open the project.**
-**By :** <@721110030920974356>   
-     
-                   `)
-    .setColor("BLACK")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
-    .setTimestamp()
-    //send the Message
-    message.author.send(embed)
-  }   
-  
-if(message.content.startsWith(`${prefix}seastem-github`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<:github:819533772311101451>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`<:github:819533772311101451> **Project Github**
-<a:rast:813403866472251399> **[Click Here](https://github.com/dark-man99/Progress-Home) to open the project.**
-**By :** <@637299944939585576>   
-     
-                   `)
-    .setColor("BLACK")
-    .setFooter(`KᑌᖇᗪIՏᕼᶜᵒᵈᵉʳ`, `https://cdn.discordapp.com/attachments/811929643027398677/819534203942207498/20-19-42-779963428713529355.png`)
-    .setTimestamp()
-    //send the Message
-    message.author.send(embed)
-  }
-   
 //An help announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}help`)){
     //define saymsg
@@ -229,7 +157,7 @@ __** **>** **__
 \`>vote\` - \`>se\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`clear\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`>clear\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
@@ -237,10 +165,6 @@ __** **>** **__
 \`>shuffle\` - \`>search\` - \`>resume\`
 \`>remove\` - \`>queue\` - \`>filter\`
 \`>loop\` - \`>lyrics\` - \`>radio\`
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
-<:github:819533772311101451> **Project Command**
-\`>security-github\` - \`>pratner-github\`
-\`>accfake-github\` - \`>seastem-github\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈ 
 <a:links:813729922643263558> **Links**
 __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg/bot/792047204361175091)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__
