@@ -219,6 +219,9 @@ Hey My name is **Remix Bot** and My Work is to play Music
 ●
 <a:ping:823238369769160734> **Ping**
 \`${client.ws.ping}\`
+●<a:time:813403485902864435> **Uptime**
+\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\
+
 `)
 
     //send the Message
