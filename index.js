@@ -206,7 +206,6 @@ __**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("BLACK")
-    .addField("<a:time:813403485902864435> **Uptime**", `\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\ `, true)
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
