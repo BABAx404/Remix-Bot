@@ -209,7 +209,7 @@ Hey My name is **Remix Bot** and My Work is to play Music
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("BLACK")
-      .setTitle(`<a:halaya:813455108577689601> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
+      .setDescription(`<a:halaya:813455108577689601> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
  }
