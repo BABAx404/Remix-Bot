@@ -173,12 +173,12 @@ if(message.content.startsWith(`${prefix}vote`)){
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
 `)
- .addField('Servers', `\`${client.guilds.cache.size}\``, true)
-.addField('Channels', `\`${client.channels.cache.size}\``, true)
-.addField('Users', `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
-.addField('My Name' , `\`${client.user.tag}\`` , true)
-.addField('My ID' , `\`${client.user.id}\`` , true)
-.addField('My Ping' , ``${client.ws.ping}\`` , true)
+ .addField(`Servers`, `\`${client.guilds.cache.size}\``, true)
+.addField(`Channels`, `\`${client.channels.cache.size}\``, true)
+.addField(`Users`, `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
+.addField(`My Name`, `\`${client.user.tag}\`` , true)
+.addField(`My ID`, `\`${client.user.id}\`` , true)
+.addField(`My Ping`, `\`${client.ws.ping}\`` , true)
 
     //send the Message
     message.channel.send(embed)
