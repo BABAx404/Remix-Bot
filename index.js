@@ -160,7 +160,7 @@ if(message.content.startsWith(`${prefix}vote`)){
   }
    
 //An about announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}stats`)){
+  if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
     message.react("<a:emoji_83:779961659631730689>").catch(console.error);
     const saymsg = message.content.slice(Number(prefix.length) + 5)
