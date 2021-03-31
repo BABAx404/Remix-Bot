@@ -35,7 +35,7 @@ execute(message, args) {
     //send approve
     queue.textChannel.send(new MessageEmbed()
     .setDescription(`<a:Erore:813505315534405632> ${message.author} removed **${song[0].title}** from the Queue`)
-    .setColor(color)
+    .setColor("#FC00FF")
     );
   }
 };
