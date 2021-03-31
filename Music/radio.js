@@ -163,7 +163,7 @@
         channel.leave();
         return message.reply(
         new MessageEmbed()
-        .setColor("#ff0e7a")
+        .setColor("#FC00FF")
         .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``)
       );}
 
@@ -252,7 +252,7 @@
     //the new song embed
     const newsong = new MessageEmbed()
       .setTitle("📻:"+ song.title)
-      .setColor(color)
+      .setColor("#FC00FF")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
