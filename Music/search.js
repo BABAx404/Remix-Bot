@@ -46,7 +46,7 @@ async execute(message,args,client) {
     let resultsEmbed = new MessageEmbed()
       .setTitle("⚙️ Results for: ")
       .setDescription(`\`${search}\``)
-      .setColor(color)
+      .setColor("#FC00FF")
       .setFooter("Response with your favorite number", client.user.displayAvatarURL() )
     //try to find top 5 results
     try {
