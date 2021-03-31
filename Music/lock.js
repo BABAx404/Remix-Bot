@@ -27,7 +27,7 @@ Locked By : <@${message.author.id}>
 Channel Status : Send Message <a:close:813455155991019543>
 
 `)
-   .setColor("BLACK");
+   .setColor(color);
    await message.channel.send(embed);
 }
 }
