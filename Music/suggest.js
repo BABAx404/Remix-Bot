@@ -18,7 +18,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle("New Suggestion")
             .setDescription(suggestion)
-            .setColor(color)
+            .setColor("#FC00FF")
             .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         SuggestionChannel.send(embed).then(msg => {
             msg.react("<a:like:813847731285393439>")
