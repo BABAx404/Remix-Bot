@@ -25,7 +25,7 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor(color)
+      const endembed = new MessageEmbed().setColor("#FC00FF")
         .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/emojis/813505072704913419.gif?v=1")
       return queue.textChannel.send(endembed).catch(console.error);
     }
@@ -139,7 +139,7 @@ module.exports = {
       const newsong = new MessageEmbed()
         .setTitle("<:Youtube:813453040929210379>:"+song.title)
         .setURL(song.url)
-        .setColor(color)
+        .setColor("#FC00FF")
         .setAuthor("Play Now Music...", "https://cdn.discordapp.com/attachments/795388713659269150/812079882552475678/20210217_195031.gif")
         .setImage(thumb)
         .setDescription(`**[Support](https://discord.gg/u4CbGW4qTT)** | **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**  
