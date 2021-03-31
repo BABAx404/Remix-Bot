@@ -16,7 +16,7 @@ execute(message, args) {
 
     const Embed = new MessageEmbed()
 
-      .setColor(color)
+      .setColor("#FC00FF")
 
       .setTitle(` ${member.username} ` )
 .setURL(URL)
