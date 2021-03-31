@@ -10,7 +10,7 @@ module.exports = {
     //define the EMBED
     let resultsEmbed = new MessageEmbed()
       .setTitle("<a:Erore:813505315534405632> You must be in the Same Voice Channel as me!")
-      .setColor(color)
+      .setColor("#FC00FF")
     //wenn memberchannel nicht der botchannel ist
     if (member.voice.channel !== member.guild.me.voice.channel) {
     //Send the message to the MEMBER
