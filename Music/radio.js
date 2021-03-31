@@ -215,11 +215,11 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("BLACK")
+  message.channel.send(    new MessageEmbed().setColor(color)
   .setDescription(`**👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("BLACK")
+  message.channel.send(new MessageEmbed().setColor(color)
   .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
@@ -252,7 +252,7 @@
     //the new song embed
     const newsong = new MessageEmbed()
       .setTitle("📻:"+ song.title)
-      .setColor("BLACK")
+      .setColor(color)
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
