@@ -31,7 +31,7 @@ module.exports = {
     let queueEmbed = new MessageEmbed()
       .setAuthor("Music Queue...", "https://cdn.discordapp.com/emojis/783663031846305802.gif?v=1")
       .setDescription(description)
-      .setColor(color);
+      .setColor("#FC00FF");
     //split the description
     const splitDescription = splitMessage(description, {
       maxLength: 2048,
