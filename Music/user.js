@@ -17,16 +17,13 @@ module.exports = {
     .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setColor("#FC00FF")
     .setImage(``)
-.setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-.setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setDescription(``)
-.setTitle("Info User")
-  .addField('Name', `**${message.author.tag}**`, true)
-  .addField('ID', `**${message.author.id}**`, true)  
-  .addField('Created At', `**${message.author.createdAt.toLocaleString()}**`, true)
- .addField("**Joined Server At**",        moment(message.joinedAt).format("D/M/YYYY h:mm a"),
-        true
-      )
+   .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   .setDescription(``)
+   .setTitle("Info User")
+   .addField('Name', `**${message.author.tag}**`, true)
+   .addField('ID', `**${message.author.id}**`, true)  
+   .addField('Created At', `**${message.author.createdAt.toLocaleString()}**`, true)
    helpEmbed
    message.react("")
     return message.channel.send(helpEmbed).catch(console.error);
