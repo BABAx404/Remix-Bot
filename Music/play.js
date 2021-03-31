@@ -165,7 +165,7 @@ async execute(message, args, client) {
       //the new song embed
       const newsong = new MessageEmbed()
         .setTitle("<:Youtube:813453040929210379>:" + song.title)
-        .setColor(""#FC00FF")
+        .setColor("#FC00FF")
         .setThumbnail(thumb)
         .setURL(song.url)
         .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
