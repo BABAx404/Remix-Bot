@@ -5,6 +5,7 @@ const { join } = require(`path`);
 const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
+const color = "BLUE";
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 client.login('NzkyMDQ3MjA0MzYxMTc1MDkx.X-YBcQ.CS9YRnwFxlRAVG1fhUhyA-6oYkI');
 client.commands = new Collection();
@@ -100,7 +101,7 @@ Type \`>help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("BLACK")
+    .setColor(color)
     .setDescription(saymsg)
     .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setFooter(`${message.author.username}`)
