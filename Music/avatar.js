@@ -6,6 +6,7 @@ const Color = `RANDOM`;
 module.exports = {
 
   name: "avatar",
+  aliases: ["A"],
 description: " ``` Avatar @user```",
   category: "fun",
 execute(message, args) {
