@@ -5,7 +5,7 @@ const { join } = require(`path`);
 const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
-const color = "BLUE";
+const color = "#FC00FF";
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 client.login('NzkyMDQ3MjA0MzYxMTc1MDkx.X-YBcQ.CS9YRnwFxlRAVG1fhUhyA-6oYkI');
 client.commands = new Collection();
