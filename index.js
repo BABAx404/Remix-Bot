@@ -83,7 +83,7 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-                  .setColor("BLACK")
+                  .setColor(color)
                   .setDescription(`
 Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
 Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
@@ -119,7 +119,7 @@ if(message.content.startsWith(`${prefix}invite`)){
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("<a:rast:813403866472251399> **[Click here](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot) to invite the bot.**")
-    .setColor("BLACK")
+    .setColor(color)
     //send the Message
     message.author.send(embed)
   }  
@@ -131,7 +131,7 @@ if(message.content.startsWith(`${prefix}vote`)){
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("<a:rast:813403866472251399> **[Click here](https://top.gg/bot/792047204361175091) to vote the bot.**")
-    .setColor("BLACK")
+    .setColor(color)
     //send the Message
     message.author.send(embed)
   }   
@@ -142,7 +142,7 @@ if(message.content.startsWith(`${prefix}vote`)){
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("BLACK")
+    .setColor(color)
     .setDescription (`
 
 <a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
@@ -167,7 +167,7 @@ if(message.content.startsWith(`${prefix}vote`)){
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("BLACK")
+    .setColor(color)
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
@@ -205,7 +205,7 @@ Hey My name is **Remix Bot** and My Work is to play Music
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("BLACK")
+      new MessageEmbed().setColor(color)
       .setTitle(`<a:halaya:813455108577689601> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\``)    
      );
    }
@@ -216,7 +216,7 @@ Hey My name is **Remix Bot** and My Work is to play Music
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("BLACK")
+   message.reply( new MessageEmbed().setColor(color)
    .setTitle(`<a:halaya:813455108577689601> There was an error executing that command.`)).catch(console.error);
  }
 
