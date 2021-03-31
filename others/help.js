@@ -9,7 +9,6 @@ const db = require('quick.db');
 module.exports = {
   name: "help",
   aliases: ["h"],
-  cooldown: 8,
   description: "",
   execute(message) {
     let commands = message.client.commands.array();
