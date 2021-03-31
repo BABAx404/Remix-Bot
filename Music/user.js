@@ -18,7 +18,6 @@ module.exports = {
     .setColor("#FC00FF")
     .setImage(``)
    .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setDescription(``)
    .setTitle("Info User")
    .addField(`Name`, `**${message.author.tag}**`, true)
