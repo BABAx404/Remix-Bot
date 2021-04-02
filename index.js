@@ -172,12 +172,28 @@ if(message.content.startsWith(`${prefix}vote`)){
     .setDescription(`
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
+
+**Owner Bot**
+<@637299944939585576>
+●
+**Name Bot**
+Remix Bot ✨#9054 
+●
+**Prefix Bot**
+${prefix}
+●
+**Job Bot**
+Music
+●
+**Guilds**
+${client.guilds.cache.size}
+●
+**Ping**
+${client.ws.ping}
+●
+**Version**
+V2
 `)
- .addField(`<a:setting:813404135181385759> Servers`, `\`${client.guilds.cache.size}\``, true)
-.addField(`<a:discord:813406342173818910> Users`, `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
-.addField(`<a:emoji_148:768871719561592894> My Name`, `\`${client.user.tag}\`` , true)
-.addField(`<a:peroza:802005416442855455> My ID`, `\`${client.user.id}\`` , true)
-.addField(`<a:ping:823238369769160734> My Ping`, `\`${client.ws.ping}\`` , true)
 
     //send the Message
     message.channel.send(embed)
