@@ -172,26 +172,25 @@ if(message.content.startsWith(`${prefix}vote`)){
     .setDescription(`
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
-
-**Owner Bot**
+**Owner Bot :**
 <@637299944939585576>
 ●
-**Name Bot**
+**Name Bot :**
 Remix Bot ✨#9054 
 ●
-**Prefix Bot**
+**Prefix Bot :**
 ${prefix}
 ●
-**Job Bot**
+**Job Bot :**
 Music
 ●
-**Guilds**
+**Server :**
 ${client.guilds.cache.size}
 ●
-**Ping**
+**Ping :**
 ${client.ws.ping}
 ●
-**Version**
+**Version :**
 V2
 `)
 
