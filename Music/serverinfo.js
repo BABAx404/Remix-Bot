@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 
 
 module.exports = {
-    name: 'serverinfo',
+    name: 'server',
     description: "Displays the information on the server.",
 
     execute(message, args) {
@@ -12,10 +12,11 @@ module.exports = {
         const { icon, name, region, memberCount, large, verified, owner, maximumMembers, premiumTier, vanityURLCode, premiumSubscriptionCount, afkChannel, createdAt, channels, verificationLevel, mfaLevel, id, roles } = guild
         const serverinfoEmbed = new Discord.MessageEmbed()
         .setTitle(`Server information for **${message.guild.name}**:`)
-        .setColor("#a72B4")
-        .setThumbnail(guild.iconURL({dynamic: true}))
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setColor("#FC00FF")
+        .setThumbnail(message.guild.iconURL({ dynamic: true }))
+        .setFooter(`${message.author.tag}`)
         .setTimestamp()
+        .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
         .addFields(
             {
                 name: 'Server Name',
