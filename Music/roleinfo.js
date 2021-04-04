@@ -4,6 +4,7 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'roleinfo',
     description: "Retrieve information based on a role.",
+    cooldown: 5,
 
     async execute(message, args) {
 
