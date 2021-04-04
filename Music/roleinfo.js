@@ -19,10 +19,10 @@ module.exports = {
         if(!role) return message.channel.send(`The role name specified was not found in the guild.`)
 
         const roleinfoEmbed = new Discord.MessageEmbed()
-        .setAuthor(member.user.tag, member.user.displayAvatarURL())
+        .setThumbnail(message.author.avatarURL({dynamic: "true"}))
         .setTitle(`Role information for ${rolename}:`)
-        .setColor("RANDOM")
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setColor("#FC00FF")
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
         .addFields(
             {
                 name: 'Role Name',
