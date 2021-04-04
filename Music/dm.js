@@ -6,7 +6,7 @@ module.exports = {
 	cooldown: 5,
     
 	execute(message, args) {
-        if (message.member.id !== '637299944939585576', '618832717102055430')
+        if (message.member.id !== '618832717102055430')
       return message.channel.send("The bot creator may only use this command.");
     let user =
       message.mentions.members.first() ||
