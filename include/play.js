@@ -156,17 +156,17 @@ module.exports = {
       var playingMessage = await queue.textChannel.send(newsong);
       
       
-      await playingMessage.react("<:emoji_132:828363646961844226>"); 
-      await playingMessage.react("<:emoji_131:828362049959624774>");
-      await playingMessage.react("<:emoji_128:828361953276723211>");
-      await playingMessage.react("<:emoji_129:828361979784724540>");
-      await playingMessage.react("<:emoji_127:828361890253504593>");
-      await playingMessage.react("<:emoji_dark:828361863040860231>");
-      await playingMessage.react("<:emoji_man:828361788642295840>");
-      await playingMessage.react("<:emoji_124:828361716336689212>");
-      await playingMessage.react("<:emoji_123:828361648594223116>");
-      await playingMessage.react("<:emoji_122:828361621612003361>");
-      await playingMessage.react("<:emoji_133:828372252789178379>");
+      await playingMessage.react("⏭"); 
+      await playingMessage.react("⏯");
+      await playingMessage.react("🔉");
+      await playingMessage.react("🔊");
+      await playingMessage.react("🔇");
+      await playingMessage.react("🔁");
+      await playingMessage.react("🔀");
+      await playingMessage.react("⏹");
+      await playingMessage.react("🎵");
+      await playingMessage.react("🎶");
+      await playingMessage.react("📑");
     } catch (error) {
       console.error(error);
     }
@@ -181,7 +181,7 @@ module.exports = {
       const member = message.guild.member(user);
 
       switch (reaction.emoji.name) {
-        case "<:emoji_132:828363646961844226>":
+        case "⏭":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -190,7 +190,7 @@ module.exports = {
           collector.stop();
           break;
 
-        case "<:emoji_131:828362049959624774>":
+        case "⏯":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -204,7 +204,7 @@ module.exports = {
           }
           break;
 
-        case "<:emoji_128:828361953276723211>":
+        case "🔇":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.volume <= 0) {
@@ -218,7 +218,7 @@ module.exports = {
           }
           break;
 
-        case "<:emoji_129:828361979784724540>":
+        case "🔉":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.volume - 10 <= 0) queue.volume = 0;
@@ -229,7 +229,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "<:emoji_127:828361890253504593>":
+        case "🔊":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.volume + 10 >= 100) queue.volume = 100;
@@ -240,14 +240,14 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "<:emoji_dark:828361863040860231>":
+        case "🔁":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
           queue.textChannel.send(`Loop is now ${queue.loop ? "**on**" : "**off**"}`).catch(console.error);
           break;
 
-        case "<:emoji_man:828361788642295840>":
+        case "⏹":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
@@ -265,7 +265,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           break;
 
-          case "<:emoji_124:828361716336689212>":
+          case "🔀":
         reaction.users.remove(user).catch(console.error);
         if (!queue)
             return message.channel
@@ -284,7 +284,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-         case "<:emoji_123:828361648594223116>":
+         case "🎵":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
@@ -320,7 +320,7 @@ module.exports = {
           }
           break;
 
-          case "<:emoji_122:828361621612003361>":
+          case "🎶":
           reaction.users.remove(user).catch(console.error);
           const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
@@ -345,7 +345,7 @@ module.exports = {
           });
           break;
 
-          case "<:emoji_133:828372252789178379>":
+          case "📑":
         
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -362,7 +362,7 @@ module.exports = {
           }
       
           let lyricsEmbed = new MessageEmbed()
-            .setTitle("<:emoji_133:828372252789178379> Lyrics")
+            .setTitle("🗒️ Lyrics")
             .setDescription(lyrics)
             .setColor("BLACK")
       
