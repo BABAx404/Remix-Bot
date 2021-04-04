@@ -4,6 +4,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'server',
+    aliases: ["serverinfo"],
     description: "Displays the information on the server.",
 
     execute(message, args) {
