@@ -3,6 +3,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'roleinfo',
+    aliases: ["role"],
     description: "Retrieve information based on a role.",
     cooldown: 5,
 
