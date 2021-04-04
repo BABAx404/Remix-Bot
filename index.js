@@ -12,7 +12,6 @@ client.setMaxListeners(0);
 client.prefix = PREFIX;
 client.queue = new Map();
 const cooldowns = new Collection();
-const client = new Discord.Client()
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 //this fires when the BOT STARTS DO NOT TOUCH
