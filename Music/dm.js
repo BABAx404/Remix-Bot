@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'dm',
     description: 'DM a user in the guild.',
+	cooldown: 5,
     
 	execute(message, args) {
         if (message.member.id !== '637299944939585576')
