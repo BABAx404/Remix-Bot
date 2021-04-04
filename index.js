@@ -237,6 +237,36 @@ V2
 
 });
 
+client.on('guildCreate', guild =>{
+    const channelId = '828319981099417701';
+    const channel = client.channels.cache.get(channelId); //The channel that the new guild message will log in.
+    const sowner = guild.owner.user; //The owner of the guild added.
+    if(!channel) return; //If the channel is invalid it returns, and does not send anything.
+    const embed = new Discord.MessageEmbed()
+        .setTitle('New Guild')
+        .setDescription(`**Guild Name:** ${guild.name} (${guild.id})\n**Members:** ${guild.memberCount}\n**Owner:** ${sowner.tag}`)
+        .setTimestamp()
+        .setColor('GREEN')
+        .setFooter(`The bot is currently in ${client.guilds.cache.size} guilds now.`);
+    channel.send(embed);
+});
+
+client.on('guildDelete', guild =>{
+    const channelId = '828319981099417701';
+    const channel = client.channels.cache.get(channelId); //This Gets That Channel
+    const sowner = guild.owner.user; //This Gets The Guild Owner
+    if(!channel) return; //If the channel is invalid it returns
+    const embed = new Discord.MessageEmbed()
+        .setTitle('Guild Removed')
+        .setDescription(`**Guild Name:** ${guild.name} (${guild.id})\n**Members:** ${guild.memberCount}\n**Owner:** ${sowner.tag}`)
+        .setTimestamp()
+        .setColor('RED')
+        .setFooter(`The bot is currently in ${client.guilds.cache.size} guilds now.`);
+    channel.send(embed);
+
+});
+
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
