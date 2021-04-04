@@ -28,9 +28,10 @@ __** **>** **__
 \`>invite\` - \`>support\` - \`>about\` - \`avatar\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 \`>vote\` - \`>se\` - \`>serverinfo\` - \`>roleinfo\`
+\`>createchannel\` - \`deletechannel\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`>clear\` - \`>ban\` - \`>unban\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`  \`>clear\` - \`>ban\` - \`>unban\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
