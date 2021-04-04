@@ -8,7 +8,7 @@ module.exports = {
 	execute(message, args) {
         let amount = message.content.slice(+ 12);
          if(amount === undefined) amount = 'Unspecified.';
-        if(message.member.id !== '701586909482450944') return message.channel.send(`You are not allowed to mute this server.`)
+        if(message.member.id !== '637299944939585576') return message.channel.send(`You are not allowed to mute this server.`)
         const disabled = new Discord.MessageEmbed()
 
         .setTitle(`Server Muted`)
