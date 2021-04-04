@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'create-channel',
     description: "Creates a channel within a guild.",
-    cooldown: 3,
+    cooldown: 5,
 
     execute(message, args) {
         if(!message.member.hasPermission('MANAGE_CHANNELS')) return message.channel.send(`You do not have the required permissions to execute this command.`)
