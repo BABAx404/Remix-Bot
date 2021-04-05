@@ -29,7 +29,7 @@ module.exports = {
         const userEmbed = new Discord.MessageEmbed()
         .setAuthor(member.user.tag, member.user.displayAvatarURL())
         .setTimestamp()
-        .setColor("#FC00FF")
+        .setColor('#FC00FF')
         .setThumbnail(message.author.avatarURL({dynamic: "true"}))
         .addField("User ID:", member.id)
         .addField('Role(s):', `<@&${member._roles.join('> <@&')}>`)
