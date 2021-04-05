@@ -4,7 +4,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'servericon',
-   aliases: ["avatar-server"],
+   aliases: ["avatar-server", "icon"],
    cooldown: 5,
     description: "Displays the icon of the server.",
 
