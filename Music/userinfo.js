@@ -34,7 +34,6 @@ module.exports = {
         .addField("User ID:", member.id)
         .addField('Role(s):', `<@&${member._roles.join('> <@&')}>`)
         .addField('Server Nickname:', member.nickname || `None`)
-        .addField("Account Created:", ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY, HH:mm:ss")}`, true) 
         .addField('Joined the Guild:', `${joineddate} \n (${joined} day(s) ago)`)
         .addField("Current Status:", status)
         .addField("Highest Ranked Role:", member.roles.highest)
