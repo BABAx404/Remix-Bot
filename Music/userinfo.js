@@ -31,12 +31,12 @@ module.exports = {
             .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
             .addFields(
                 {
-                    name: "Name: ",
+                    name: "<a:arbelearbele:780373854039572501> Name : ",
                     value: user.user.username,
                     inline: true
                 },
                 {
-                    name: "<a:Hashtag:828283220118339635> Discriminator: ",
+                    name: "#️⃣ Discriminator: ",
                     value: `#${user.user.discriminator}`,
                     inline: true
                 },
