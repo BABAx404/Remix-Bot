@@ -36,36 +36,36 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "#️⃣ Discriminator: ",
+                    name: "<a:Hashtag:828283220118339635> Discriminator: ",
                     value: `#${user.user.discriminator}`,
                     inline: true
                 },
                 {
-                    name: "🆔 ID: ",
+                    name: "🆔 ID : ",
                     value: user.user.id,
                 },
                 
                 {
-                    name: "Activity: ",
+                    name: "<a:waya:813455060864073788> Activity : ",
                     value: user.presence.activities[0] ? user.presence.activities[0].name : `User isn't playing a game!`,
                     inline: true
                 },
                 {
-                    name: 'Avatar link: ',
+                    name: '<a:links:813729922643263558> Avatar link : ',
                     value: `[Click Here](${user.user.displayAvatarURL()})`
                 },
                 {
-                    name: 'Creation Date: ',
+                    name: '<a:time:813403485902864435> Creation Date : ',
                     value: user.user.createdAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: 'Joined Date: ',
+                    name: '<a:discord:813406342173818910> Joined Date : ',
                     value: user.joinedAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: 'User Roles: ',
+                    name: '<a:KING:820738504036188181> User Roles : ',
                     value: user.roles.cache.map(role => role.toString()).join(" ,"),
                     inline: true
                 }
