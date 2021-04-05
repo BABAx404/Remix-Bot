@@ -5,7 +5,7 @@ const client = new Discord.Client()
 module.exports = {
     name: 'userinfo',
     description: 'Display the information for a specific member.',
-    aliases: ["user", "u", "U"],
+    aliases: ['user'],
     cooldown: 2,
     execute(message, args){
         const { guild } = message
