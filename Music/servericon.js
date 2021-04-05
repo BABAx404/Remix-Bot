@@ -13,11 +13,10 @@ module.exports = {
         let icon = guild.iconURL({size: 4096, dynamic: true})
 
         const servericonEmbed = new Discord.MessageEmbed()
-        .setDescription(`Server icon for ${guild.name}:`)
+        .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
         .setImage(icon)
         .setColor("#FC00FF")
-        .setFooter(`Requested by ${message.author.tag}`)
-        .setTimestamp();
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 
         message.channel.send(servericonEmbed)
     }
