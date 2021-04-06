@@ -252,6 +252,7 @@ client.on("guildCreate", guild => {
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
+
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("828976490971922462");
   let embed = new MessageEmbed()
