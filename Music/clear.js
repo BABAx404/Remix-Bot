@@ -9,6 +9,8 @@ module.exports = {
 		}catch(err) {
 			return message.reply('Please provide the number of messages to delete. (max 100)')
 		}
+				if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
         
 
 		if (!deleteCount || deleteCount < 2 || deleteCount > 100)
