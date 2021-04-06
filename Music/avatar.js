@@ -24,7 +24,7 @@ execute(message, args) {
    
 .setImage(member.avatarURL({size: 2048, dynamic: true, format: "png"}))
     .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setDescription(`[png](message.author.avatarURL()) | [jpg](message.author.avatarURL()) | [webp](${member.displayAvatarURL()})`);
+    .setDescription(`[png](${message.author.avatarURL()}) | [jpg](${message.author.avatarURL()}) | [webp](${member.displayAvatarURL()})`);
     message.channel.send(Embed);
 
   }
