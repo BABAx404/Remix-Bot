@@ -8,7 +8,7 @@ module.exports = {
   memberPermissions: [ "SEND_MESSAGES" ],            
   botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],        
   ownerOnly: false,            
-  cooldown: 3000,
+  cooldown: 5,
    async execute(message, args) {
 
         try {
@@ -27,10 +27,11 @@ module.exports = {
             memberInvites.forEach(invite => index += invite.uses);
 
             let embed = new Discord.MessageEmbed()
-                .setColor("#f76fe3")
-                .setFooter(message.guild.name, message.guild.iconURL())
-                .setAuthor(`Invite Tracker for ${message.guild.name}`)
+                .setColor("#FC00FF")
+                .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
+                .setThumbnail(message.author.avatarURL({dynamic: "true"}))
                 .setDescription(`Information on Invites of ${member.displayName}`)
+                .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
                 .addField("**No. Invited Persons**", index)
                 .addField("Invitation Codes\n\n", content);
             message.channel.send(embed);
