@@ -13,6 +13,9 @@ module.exports = {
 
 		if (!deleteCount || deleteCount < 2 || deleteCount > 100)
 			return message.reply('Please provide a number between 2 and 100 for the number of messages to delete');
+		if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
+      return;
 
 		const fetched = await message.channel.messages.fetch({
 			limit: deleteCount,
