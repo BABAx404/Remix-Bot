@@ -101,9 +101,6 @@ Type \`>help\` for the list of commands.`));
     if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
     if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
       return;
-     return message.reply(
-      `**You Dont Have \`MANAGE_CHANNELS\` Permission ❌**`
-    );
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FC00FF")
