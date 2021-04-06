@@ -98,6 +98,9 @@ Type \`>help\` for the list of commands.`));
   if(message.content.startsWith(`${prefix}embed`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
+      return;
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FC00FF")
