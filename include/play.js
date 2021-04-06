@@ -57,6 +57,49 @@ module.exports = {
         encoderArgstoset = ['-af', queue.filters]
     }
  
+ let songInfo = null;
+    let song = null;
+    if (url.match(/^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi)) {
+       try {
+          songInfo = await ytdl.getInfo(url)
+          if(!songInfo)return sendError("Looks like i was unable to find the song on YouTube", message.channel);
+        song = {
+       id: songInfo.videoDetails.videoId,
+       title: songInfo.videoDetails.title,
+       url: songInfo.videoDetails.video_url,
+       img: songInfo.player_response.videoDetails.thumbnail.thumbnails[0].url,
+      duration: songInfo.videoDetails.lengthSeconds,
+      ago: songInfo.videoDetails.publishDate,
+      views: String(songInfo.videoDetails.viewCount).padStart(1, ' '),
+      req: message.author
+
+        };
+
+      } catch (error) {
+        console.error(error);
+        return message.reply(error.message).catch(console.error);
+      }
+    }else {
+      try {
+        var searched = await yts.search(searchString);
+    if(searched.videos.length === 0)return sendError("Looks like i was unable to find the song on YouTube", message.channel)
+    
+     songInfo = searched.videos[0]
+        song = {
+      id: songInfo.videoId,
+      title: Util.escapeMarkdown(songInfo.title),
+      views: String(songInfo.views).padStart(1, ' '),
+      url: songInfo.url,
+      ago: songInfo.ago,
+      duration: songInfo.duration.toString(),
+      img: songInfo.image,
+      req: message.author
+        };
+      } catch (error) {
+        console.error(error);
+        return message.reply(error.message).catch(console.error);
+      }
+    }   
 
     try {
       if (song.url.includes("youtube.com")) {
