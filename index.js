@@ -240,6 +240,32 @@ V2
 
 });
 
+client.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("828976490971922462");
+  let embed = new MessageEmbed().setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `:32BE6B8C118C490A8830CC26F9BB8D43: Join Server`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Name**", `${guild.name}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Owner**", `${guild.owner}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Id**", `${guild.id}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+client.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("828976490971922462");
+  let embed = new MessageEmbed()
+  .setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `:446EEE23FF984C2BA05ACA9897C6F076: Left Server`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Name**", `${guild.name}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Owner**", `${guild.owner}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Server Id**", `${guild.id}`)
+  .addField(":AE9A526B60104F5296F1D87DADF24C4F: **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
