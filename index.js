@@ -113,18 +113,6 @@ Type \`>help\` for the list of commands.`));
     //send the Message
     message.channel.send(embed)
   }
- 
-if(message.content.startsWith(`${prefix}invite`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<a:setting:813404135181385759>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription("<a:rast:813403866472251399> **[Click here](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot) to invite the bot.**")
-    .setColor("#FC00FF")
-    //send the Message
-    message.author.send(embed)
-  }  
    
 if(message.content.startsWith(`${prefix}vote`)){
     //define saymsg
