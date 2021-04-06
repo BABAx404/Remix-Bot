@@ -31,7 +31,7 @@ module.exports = {
                 .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
                 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
                 .setDescription(`Information on Invites of ${member.displayName}`)
-                .setFooter(`${message.author.username}#${message.author.discriminator}`, message.author.user.displayAvatarURL({ dynamic: true }))
+                .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
                 .addField("**No. Invited Persons**", index)
                 .addField("Invitation Codes\n\n", content);
             message.channel.send(embed);
