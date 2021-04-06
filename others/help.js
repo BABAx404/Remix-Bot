@@ -25,7 +25,7 @@ module.exports = {
 __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:discord:813406342173818910> **User Commands**
-\`>invite\` - \`>support\` - \`>about\` - \`avatar\`
+\`>invite\` - \`>support\` - \`>about\` - \`>avatar\`
 \`>ping\` - \`>prefix\` - \`>uptime\` - \`>embed\`
 \`>vote\` - \`>se\` - \`>serverinfo\` - \`>servericon(icon)\` - \`>userinfo(user)\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
