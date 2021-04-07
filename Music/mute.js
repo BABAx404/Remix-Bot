@@ -45,9 +45,9 @@ module.exports = {
     
       user.roles.add(muterole)
     
-      await message.channel.send(`**${message.mentions.users.first().username}** was muted successfully for the following reason: \`${reason}\``)
+      await message.channel.send(`✅ **${message.mentions.users.first().username} muted from the text! 🤐**`)
           
-          user.send(`You were muted in **${message.guild.name}** for the following reason: \`${reason}\``)
+          user.send(``)
 
     }
 }
