@@ -30,7 +30,7 @@ __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
 \`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`  \`>clear\` - \`>ban\` - \`>unban\`
-\`>createchannel\` - \`deletechannel\` - \`>mute\` - \`>unmute\`
+\`>createchannel\` - \`deletechannel\` - \`>mute\`   \`>unmute\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
