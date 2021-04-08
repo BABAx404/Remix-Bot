@@ -20,7 +20,7 @@ execute(message, args) {
 
      .setTitle(` ${member.username} ` )
     .setURL(URL)
-    .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setImage(member.avatarURL({size: 2048, dynamic: true, format: "png"}))
     .addField(`Link`, `[Click Me](${member.displayAvatarURL()})`);
     message.channel.send(Embed);
