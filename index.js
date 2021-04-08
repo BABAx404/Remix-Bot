@@ -120,7 +120,7 @@ if(message.content.startsWith(`${prefix}vote`)){
     //define embed
      message.react("<a:setting:813404135181385759>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("<a:rast:813403866472251399> **[Click here](https://top.gg/bot/792047204361175091) to vote the bot.**")
+    .setDescription("<a:rast:813403866472251399> **[Click here](https://top.gg/bot/792047204361175091/vote) to vote the bot.**")
     .setColor("#FC00FF")
     //send the Message
     message.author.send(embed)
