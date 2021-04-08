@@ -5,28 +5,26 @@ const Color = `RANDOM`;
 
 module.exports = {
 
-  name: "avatar",
-  aliases: ["A"],
+  name: "avatar",
 description: " ``` Avatar @user```",
-  category: "fun",
+  category: "fun",
 execute(message, args) {
- 
+ 
 
-    const member = message.mentions.users.first() || message.author;
+    const member = message.mentions.users.first() || message.author;
 
 
-    const Embed = new MessageEmbed()
+    const Embed = new MessageEmbed()
 
-      .setColor("#FC00FF")
+      .setColor(`${Color}`)
 
-      .setTitle(` ${member.username} ` )
+      .setTitle(` ${member.username} ` )
 .setURL(URL)
    
 .setImage(member.avatarURL({size: 2048, dynamic: true, format: "png"}))
-    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .addFiled(`Link`, `[Avatar Link](${member.displayAvatarURL()})`);
-    message.channel.send(Embed);
+    .addField(`Link`, `[Click Me](${member.displayAvatarURL()})`);
+    message.channel.send(Embed);
 
-  }
+  }
 
 };
