@@ -17,7 +17,6 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setImage(`https://cdn.discordapp.com/attachments/797594039864131644/830058241522270218/standard_4.gif`)
     .setColor("#FC00FF")
-    .setImage(``)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=1024")
     .setDescription(`
