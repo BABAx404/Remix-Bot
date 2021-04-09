@@ -28,7 +28,7 @@ __** **>** **__
 \`>vote\` - \`>se\` - \`>serverinfo\`  \`>servericon(icon)\` - \`>userinfo(user)\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\`  \`>clear\` - \`>ban\`   \`>unban\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`>ban\`   \`>unban\`
 \`>createchannel\` - \`deletechannel\` - \`>mute\` - \`>unmute\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
