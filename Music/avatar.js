@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 module.exports = {
         name: 'avatar',
         description: 'Show user avatar',
-        aliases: ["av"],
+        aliases: ["av", "a", "A"],
     async execute(message, args) {
     
         const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
