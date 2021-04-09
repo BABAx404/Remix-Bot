@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'clear',
 	description: 'Delete the last messages in all chats.',
+	memberpermissions: [`MANAGE_MESSAGES`],
 	async execute(message) {
 		const args = message.content.split(' ');
 		let deleteCount = 0;
