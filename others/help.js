@@ -25,10 +25,10 @@ __** **>** **__
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:discord:813406342173818910> **User Commands**
 \`>invite\` - \`>invites\` - \`>support\` - \`>about\` - \`>avatar\`   \`>ping\` - \`>prefix\` - \`>uptime\`   \`>embed\`
-\`>vote\` - \`>se\` - \`>serverinfo\`  \`>servericon(icon)\` - \`>userinfo(user)\`
+\`>vote\` - \`>se\` - \`>serverinfo\`  \`>servericon(icon)\`   \`>userinfo(user)\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:setting:813404135181385759> **Fun Commands**
-\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`>ban\`   \`>unban\`
+\`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` - \`>ban\` - \`>unban\`
 \`>createchannel\` - \`deletechannel\` - \`>mute\` - \`>unmute\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
