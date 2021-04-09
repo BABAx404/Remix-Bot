@@ -12,7 +12,7 @@ module.exports = {
         .setAuthor(member.user.tag, member.user.displayAvatarURL({ dynamic: true, size: 1024 }))
         .setColor("#FC00FF")
         .setTitle(`Link as`)
-        .setDescription(`[png](${member.user.displayAvatarURL({format: "png", size: 1024})}) | [jpg](${member.user.displayAvatarURL({format: "jpg", size: 1024})}) | [gif](${member.user.displayAvatarURL({format: "webp", size: 1024, dynamic: true})})`)
+        .setDescription(`[png](${member.user.displayAvatarURL({format: "png", size: 1024})}) | [jpg](${member.user.displayAvatarURL({format: "jpg", size: 1024})}) | [webp](${member.user.displayAvatarURL({format: "webp", size: 1024, dynamic: true})})`)
         .setImage(member.user.displayAvatarURL({ dynamic: true, size: 1024 }))
         .setFooter(`Requested By ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true, size: 1024 }))
     return message.channel.send(embed)
