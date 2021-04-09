@@ -130,7 +130,7 @@ Type \`>help\` for the list of commands.`));
     .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
     .setDescription(saymsg)
     .setFooter(`${message.author.username}`)
-    .setThumbnail(message.guild.iconURL({ dynamic: true }))
+    .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
