@@ -5,7 +5,7 @@ module.exports = {
   name: "slap",
   description: "Slap somebody",
   category: "image",
-  async execute(bot, message) {
+  async execute(message, args) {
     const data = await fetch("https://nekos.life/api/v2/img/slap").then((res) =>
       res.json()
     );
