@@ -18,12 +18,12 @@ module.exports = {
   .setColor("#00f8ff")
     .setTitle("Global Cases")
     .setDescription("Number of cases may be differ from other sources")
-    .addField("Cases", `data.cases`, true)
-    .addField("Active", `data.active`, true)
-    .addField("Cases Today", `data.todayCases`, true)
-    .addField("Critical Cases", `data.criticalw`, true)
-    .addField("Deaths", `data.deaths`, true)
-    .addField("Recovered", `data.recovered`, true)
+    .addField("Cases", `${data.cases}`, true)
+    .addField("Active", `${data.active}`, true)
+    .addField("Cases Today", `${data.todayCases}`, true)
+    .addField("Critical Cases", `${data.criticalw}`, true)
+    .addField("Deaths", `${data.deaths}`, true)
+    .addField("Recovered", `${data.recovered}`, true)
    helpEmbed
    message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
