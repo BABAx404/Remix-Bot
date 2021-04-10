@@ -6,7 +6,7 @@ module.exports = {
   description: "Slap somebody",
   category: "image",
   async execute(message, args) {
-    const data = await fetch("https://nekos.life/api/v2/img/love").then((res) =>
+    const data = await fetch("https://media.discordapp.net/attachments/738277612039962688/775017085948133406/image4.gif").then((res) =>
       res.json()
     );
     const user = message.mentions.users.first() || message.author;
