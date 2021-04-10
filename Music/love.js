@@ -6,9 +6,6 @@ module.exports = {
   description: "Slap somebody",
   category: "image",
   async execute(message, args) {
-    const data = await fetch("https://media.discordapp.net/attachments/738277612039962688/775017085948133406/image4.gif").then((res) =>
-      res.json()
-    );
     const user = message.mentions.users.first() || message.author;
     const slapped = message.author.id === user.id ? "themselfs" : user.username;
 
@@ -16,8 +13,8 @@ module.exports = {
       .setFooter(message.author.username)
       .setColor("#FC00FF")
       .setTitle(`${message.author.username} Loved ${slapped}`)
-      .setDescription(`[Click here if the image failed to load.](${data.url})`)
-      .setImage(`${data.url}`)
+      .setDescription(`[Click here if the image failed to load.](https://media.discordapp.net/attachments/738277612039962688/775017085948133406/image4.gif)`)
+      .setImage(`https://media.discordapp.net/attachments/738277612039962688/775017085948133406/image4.gif`)
       .setTimestamp();
 
     message.channel.send({ embed });
