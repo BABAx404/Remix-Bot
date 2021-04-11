@@ -301,6 +301,7 @@ client.on("message", message => {
       .send({
         embed: {
           description: `${message.author.username} MAN GIFS photos  `,
+          color: `black`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
