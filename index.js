@@ -300,8 +300,9 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} MAN GIFS photos  `,
-          color: `black`,
+          description: `Gif Boy`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FC00FF`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
