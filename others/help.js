@@ -32,7 +32,7 @@ __** **>** **__
 \`>ban\` - \`>unban\` - \`>createchannel\` - \`deletechannel\`   \`>mute\` - \`>unmute\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:loading:830814256697966602> **Gif Commands**
-\`>boy\` - \`>girl\|
+\`>boy\` - \`>girl\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
