@@ -31,6 +31,9 @@ __** **>** **__
 \`>lock(l)\` - \`>unlock(ul)\` - \`>slowmode\` 
 \`>ban\` - \`>unban\` - \`>createchannel\` - \`deletechannel\`   \`>mute\` - \`>unmute\`
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+<a:loading:830814256697966602> **Gif Commands**
+\`>boy\` - \`>girl\|
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 <a:dark:813714900777959444> **Music Commands**
 \`>play\` - \`>skip\` - \`>skipto\`
 \`>stop\` - \`>volume\` - \`>nowplaying\`
