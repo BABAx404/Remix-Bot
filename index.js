@@ -300,7 +300,45 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `Gif Boy`,
+          description: `**Gif Boy**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FC00FF`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "girl")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/608711473652563968/830788035221782558/1-28.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830789683994820608/a_f173b0560e24959c0ac615948fff0428.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830788112267345920/1-29.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830788165534220308/1-30.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830791687264796682/1-7.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830791908049158154/gif-18.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830787973166399539/1-36.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830788023028547614/1-27.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830791979281022986/kjhgfghjkl.gif",
+      "https://media.discordapp.net/attachments/694695166895849562/797086937068077106/20210106_210640.gif",
+      "https://media.discordapp.net/attachments/687763784902770691/802939838793908244/a_b4686f704471be16d09d1cc6506cb4ce.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/818633362616614912/image2.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800849143341514772/a_16743dfad984f574da0b7bc2f9a0b07f.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800850948078698566/000_1-2.gif",
+      "https://cdn.discordapp.com/attachments/820811352087330828/820954968793284658/image0.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Girl**`,
           footer: `Requested by ${message.author.username}`,
           color: `#FC00FF`,
           image: {
