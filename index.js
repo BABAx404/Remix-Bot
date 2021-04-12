@@ -372,8 +372,8 @@ client.on("message", message => {
       .send({
         embed: {
           color: `#FC00FF`,
-          description: {
-            url: man[Math.floor(Math.random() * man.length)]
+          title: {
+            description: man[Math.floor(Math.random() * man.length)]
           }
         }
       })
