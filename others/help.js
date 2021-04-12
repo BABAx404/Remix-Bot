@@ -34,7 +34,7 @@ module.exports = {
 
 
 <a:dark:813714900777959444> | **Music Commands**
-> \`play . skip . skipto . stop . volume   nowplaying . shuffle . search . resume   remove . queue . filter . loop . lyrics . radio\`
+> \`play . skip . skipto . stop . volume   nowplaying . shuffle . search . resume   remove . queue . filter . loop   lyrics . radio\`
 
 
 
