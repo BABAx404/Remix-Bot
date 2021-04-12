@@ -202,7 +202,7 @@ ${client.guilds.cache.size}
 ●
 **Ping :**
 ${client.ws.ping}
-●
+● 
 **Version :**
 V2
 `)
