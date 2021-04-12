@@ -21,12 +21,12 @@ module.exports = {
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=1024")
     .setDescription(`
 <a:discord:813406342173818910> | **User Commands**
-> \`invite . invites . support . about . avatar . ping . prefix . uptime . embed . cv . vote . se . serverinfo . servericon(icon) . userinfo(user)\`
+> \`invite . invites . support . about   avatar . ping . prefix . uptime   embed . cv . vote . se . serverinfo   servericon(icon) . userinfo(user)\`
 
 
 
-<a:setting:813404135181385759> **Fun Commands**
-> \`lock(l) . unlock(ul) . slowmode . ban . unban . createchannel . deletechannel . mute . unmute\`
+<a:setting:813404135181385759> | **Fun Commands**
+> \`lock(l) . unlock(ul) . slowmode . ban   unban . createchannel . deletechannel   mute . unmute\`
 
 
 <a:loading:830814256697966602> | **Gif Commands**
@@ -34,7 +34,7 @@ module.exports = {
 
 
 <a:dark:813714900777959444> | **Music Commands**
-> \`play . skip . skipto . stop . volume . nowplaying . shuffle . search . resume . remove . queue . filter . loop . lyrics . radio\`
+> \`play . skip . skipto . stop . volume   nowplaying . shuffle . search . resume   remove . queue . filter . loop . lyrics . radio\`
 
 
 
