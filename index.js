@@ -145,13 +145,6 @@ if(message.content.startsWith(`${prefix}vote`)){
     message.author.send(embed)
   }  
    
- client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 100){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
-   
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
