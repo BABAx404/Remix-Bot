@@ -105,9 +105,6 @@ Type \`>help\` for the list of commands.`));
     const embed = new Discord.MessageEmbed()
     .setColor("#FC00FF")
     .setDescription(saymsg)
-    .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setFooter(`${message.author.username}`)
-    .setTimestamp()
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
