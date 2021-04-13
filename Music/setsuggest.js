@@ -1,7 +1,4 @@
-const Discord = require("discord.js");
-const { MessageEmbed } = require("discord.js");
-const db = require("quick.db")
-const { Color } = require("../config.json");
+const Discord = require('discord.js')
 
 module.exports = {
   name: "setsuggest",
