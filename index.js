@@ -291,6 +291,11 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/804760463044640808/ALANIS_MAN_GIF_99.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/831638427970568202/Kapson_ckaran_airpods.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/831638427698855966/15.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/831638428751233075/image0-2.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/831638429221388318/a_0adc0e2c6daeef0758ddc31b736ff74e.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/831638428306898975/DelightfulThreadbareCarp-max-1mb.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif"
     ];
 
