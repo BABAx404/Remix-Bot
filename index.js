@@ -161,7 +161,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor(`🖇️ Social Media`)
-    .setThunnail(`https://cdn.discordapp.com/attachments/818536754775851009/831866764178096138/05-33-08-831704821367177247.png`)
+    .setThumnail(`https://cdn.discordapp.com/attachments/818536754775851009/831866764178096138/05-33-08-831704821367177247.png`)
     
     //send the Message
     message.channel.send(embed)
