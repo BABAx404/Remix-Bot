@@ -153,11 +153,11 @@ if(message.content.startsWith(`${prefix}vote`)){
     const embed = new Discord.MessageEmbed()
     .setColor("#FC00FF")
     .setDescription (`
-<:Rimexfacebook:831706935740858369>** :[Facebook](https://www.facebook.com/ahmad.mahmwd.374)**
+<:Rimexfacebook:831706935740858369>**: [Facebook](https://www.facebook.com/ahmad.mahmwd.374)**
 <a:lodaing:813403104384647238>  
-<:Rimexinstagram:831706971890909204>** :[Youtube](https://youtube.com/channel/UCwEmB4t-LUVgfsbl4GOqDdg)**
+<:Rimexinstagram:831706971890909204>**: [Youtube](https://youtube.com/channel/UCwEmB4t-LUVgfsbl4GOqDdg)**
 <a:lodaing:813403104384647238> 
-<:Rimixsnap:831707005323444234>** :[Snap](https://top.gg/bot/792047204361175091)**
+<:Rimixsnap:831707005323444234>**: [Snap](https://www.snapchat.com/add/dakr_man2021)**
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setAuthor(`<:Remixsocial:831704821367177247> Social Media`)
