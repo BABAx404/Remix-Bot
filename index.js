@@ -393,7 +393,7 @@ client.on("message", async message => {
       })
     );
   }
-}); `
+});
 
 function delay(delayInms) {
  return new Promise(resolve => {
