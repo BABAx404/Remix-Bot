@@ -387,7 +387,7 @@ client.on("message", async message => {
         files: [
           {
             name: "prfoilebycutie.png",
-            attachment: `https://api.probot.io/profile/${message.author.id}`,
+            attachment: `https://api.probot.io/profile/${message.author.id}`
           }
         ]
       })
