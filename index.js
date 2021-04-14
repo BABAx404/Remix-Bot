@@ -160,7 +160,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 <:Rimixsnap:831707005323444234>** : [Snap](https://www.snapchat.com/add/dakr_man2021)**
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor(`<:socialmedia:831718746191691797> Social Media`)
+    .setAuthor(`🖇️ Social Media`)
     
     //send the Message
     message.channel.send(embed)
