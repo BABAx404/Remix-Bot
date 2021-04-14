@@ -32,10 +32,10 @@ async  execute(message, args) {
         .setColor(`#FC00FF`)
         .setThumbnail(Link)
         .setTitle(`Emoji Information!`)
-        .addField(`Name`, Name, true)
-        .addField(`ID`, ID, true)
-        .addField(`Animated`, Animated ? "Yes" : "No", true)
-        .addField(`Link`, `[Click Me](${Link})`)
+        .addField(`Name :`, Name, true)
+        .addField(`ID :`, ID, true)
+        .addField(`Animated :`, Animated ? "Yes" : "No", true)
+        .addField(`Link :`, `[Click Me](${Link})`)
 
         return message.channel.send(Embed);
 
