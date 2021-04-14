@@ -216,7 +216,7 @@ ${prefix}
 **Job Bot :**
 Music
 ●
-**Server :**
+**Server :** 
 ${client.guilds.cache.size}
 ●
 **Ping :**
