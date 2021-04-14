@@ -30,7 +30,7 @@ module.exports = {
 
 
 <a:loading:830814256697966602> **| Gif Commands**
-> \`boy . girl\` 
+> \`boy . girl . baby . smoke\` 
 
 
 <a:dark:813714900777959444> **| Music Commands**
