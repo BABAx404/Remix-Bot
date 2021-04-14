@@ -21,7 +21,7 @@ module.exports = {
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=1024")
     .setDescription(`
 <a:discord:813406342173818910> **| User Commands**
-> \`invite . invites . support . about   avatar . ping . prefix . uptime   embed . cv . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . social\`
+> \`invite . invites . support . about   avatar . ping . prefix . uptime   embed . cv . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . emojiinfo(emoji) . social\`
 
 
 
