@@ -153,15 +153,14 @@ if(message.content.startsWith(`${prefix}vote`)){
     const embed = new Discord.MessageEmbed()
     .setColor("#FC00FF")
     .setDescription (`
-<:Rimexfacebook:831706935740858369>**[Facebook](https://www.facebook.com/ahmad.mahmwd.374)**
+<:Rimexfacebook:831706935740858369>** :[Facebook](https://www.facebook.com/ahmad.mahmwd.374)**
 <a:lodaing:813403104384647238>  
-<:Rimexinstagram:831706971890909204> **[Youtube](https://youtube.com/channel/UCwEmB4t-LUVgfsbl4GOqDdg)**
+<:Rimexinstagram:831706971890909204>** :[Youtube](https://youtube.com/channel/UCwEmB4t-LUVgfsbl4GOqDdg)**
 <a:lodaing:813403104384647238> 
-<:Rimixsnap:831707005323444234> **[Snap](https://top.gg/bot/792047204361175091)**
+<:Rimixsnap:831707005323444234>** :[Snap](https://top.gg/bot/792047204361175091)**
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setAuthor(`Support Remix Bot`, `https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=2048`)
-    .setImage(`https://cdn.discordapp.com/attachments/795388713659269150/820761124310876160/23-51-29-image0-40.gif`)
+    .setAuthor(`<:Remixsocial:831704821367177247> Social Media`)
     
     //send the Message
     message.channel.send(embed)
