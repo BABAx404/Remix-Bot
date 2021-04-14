@@ -401,7 +401,48 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `Gif Boy`,
+          description: `Smoke Boy`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FC00FF`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "baby")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/699339066029768796/831815920594714644/750687987473317938.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831875803179909160/1.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831890205606412398/10.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831811050013458462/7.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831811061388804106/2.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831811054383530044/9.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831811092908605440/3.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831811102915428362/8.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722126615642172/image4.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722126872150046/image4_1.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722157498826812/image6.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722157749960704/tenor-2.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722158413316096/Zezeee.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722091904106546/baby_9.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722125122469898/image0-4.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722125618315324/image0.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722125953335296/image0_4-1.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/831722126364246037/image2.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `Baby Boy`,
           footer: `Requested by ${message.author.username}`,
           color: `#FC00FF`,
           image: {
