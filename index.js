@@ -401,7 +401,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `**Smoke Boy**`,
+          description: `**Gif Smoke**`,
           footer: `Requested by ${message.author.username}`,
           color: `#FC00FF`,
           image: {
@@ -442,7 +442,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `**Baby Boy**`,
+          description: `**Gif Baby**`,
           footer: `Requested by ${message.author.username}`,
           color: `#FC00FF`,
           image: {
