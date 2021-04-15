@@ -24,13 +24,16 @@ module.exports = {
 > \`invite . invites . support . about   avatar . ping . prefix . uptime   embed . cv . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . emojiinfo(emoji) . social\`
 
 
-
 <a:setting:813404135181385759> **| Fun Commands**
 > \`lock(l) . unlock(ul) . slowmode . ban   unban . createchannel . deletechannel   mute . unmute . giveaway\`
 
 
 <a:loading:830814256697966602> **| Gif Commands**
 > \`boy . girl . baby . smoke\` 
+
+
+<a:emoji_84:766874263256170566> **| Game Commands**
+> \`slap . hug\`
 
 
 <a:dark:813714900777959444> **| Music Commands**
