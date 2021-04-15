@@ -3,6 +3,7 @@ const Color = `RANDOM`;
 
 module.exports = {
   name: "membercount",
+  aliases: ["count", "infocount"],
   category: "count",
   async execute(message, args) {
     const Members = message.guild.memberCount;
