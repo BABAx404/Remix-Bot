@@ -28,8 +28,9 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor(`#FC00FF`)
       .setTitle(`Members Information`)
-      .addField(`All Members`, Members)
-      .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
+      .addField(`<a:discord:813406342173818910> | All Members`, Members)
+      .setThumbnail(message.guild.iconURL({ dynamic: true }))
+      .setAuthor(`${message.guild.name}`)
       .setTimestamp();
 
     message.channel.send(embed);
