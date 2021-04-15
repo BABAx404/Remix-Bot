@@ -15,7 +15,7 @@ module.exports = {
         const servericonEmbed = new Discord.MessageEmbed()
         .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
         .setDescription(`[Banner URL](${message.guild.bannerURL}?size=2048)`)
-        .setImage(message.guild.bannerURL() + "?size=2048")
+        .setImage(banner)
         .setColor("#FC00FF")
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 
