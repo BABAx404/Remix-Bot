@@ -5,7 +5,7 @@ module.exports = {
   name: "pat",
   description: "Pat somebody",
   category: "image",
-  async execute(clinte, bot, message) {
+  async execute(client, bot, message) {
     const data = await fetch("https://nekos.life/api/v2/img/pat").then((res) =>
       res.json()
     );
