@@ -3,7 +3,7 @@ const Color = `RANDOM`;
 
 module.exports = {
   name: "membercount",
-  category: "info",
+  category: "count",
   async execute(message, args) {
     const Members = message.guild.memberCount;
     const bots = message.guild.members.cache.filter(
@@ -29,12 +29,7 @@ module.exports = {
       .setColor(`#FC00FF`)
       .setTitle(`Members Information`)
       .addField(`All Members`, Members)
-      .addField(`Humans`, humans)
-      .addField(`Bots`, bots)
-      .addField(
-        `Members Status`,
-        `Online: ${online} | Do Not Disturb: ${dnd} | Idle: ${idle} | Offline: ${offline}`
-      )
+      .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
       .setTimestamp();
 
     message.channel.send(embed);
