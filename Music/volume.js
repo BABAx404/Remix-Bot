@@ -29,7 +29,7 @@ execute(message, args) {
     //define Info Embed
     const volinfoembed = new MessageEmbed()
     .setColor("#FC00FF")
-    .setTitle(`<a:music:813460704031145986> Volume is: \`${queue.volume}%\``)
+    .setTitle(`<a:Voulome:827114142610751578> Volume is: \`${queue.volume}%\``)
     //if no args return info embed
     if (!args[0]) return message.channel.send(volinfoembed).catch(console.error);
     //if args is not a number return error
