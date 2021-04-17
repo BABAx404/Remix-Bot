@@ -206,7 +206,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 Hey My name is **Remix Bot** and My Work is to play Music
 **Owner Bot :**
 <@637299944939585576>
-● 
+●  
 **Name Bot :**
 Remix Bot ✨#9054 
 ●
