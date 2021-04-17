@@ -6,7 +6,7 @@ module.exports = {
     category: "extra",
     async execute(message, args) {
    message.guild.fetchBans().then(bans => {
-            message.channel.send(`${bans.size} Total Member Bans`)
+            message.channel.send(`\`${bans.size}\` **Total Member Bans**`)
         })
 
     }
