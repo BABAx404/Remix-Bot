@@ -25,7 +25,7 @@ module.exports = {
 
 
 <a:setting:813404135181385759> **| Fun Commands**
-> \`lock(l) . unlock(ul) . slowmode . ban   bans . unban . createchannel . deletechannel   mute . unmute . giveaway . embed .say . cv\`
+> \`lock(l) . unlock(ul) . slowmode . ban   bans . unban . createchannel . deletechannel   mute . unmute . giveaway . embed . say . cv\`
 
 
 <a:loading:830814256697966602> **| Gif Commands**
