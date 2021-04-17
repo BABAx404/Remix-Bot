@@ -14,6 +14,7 @@ module.exports = {
     
     var text = message.content.split(' ').slice(1).join(' ')
     if(!text) return message.reply('BRUHH SAY SOMETHING')
+    message.delete({timeout: 300})
     message.channel.send(text)
 }
   
