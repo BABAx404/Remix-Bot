@@ -21,11 +21,11 @@ module.exports = {
     .setAuthor("Remix Bot ✨", "https://cdn.discordapp.com/avatars/792047204361175091/c3c061050f56e58aa1f008de8b86dd26.png?size=1024")
     .setDescription(`
 <a:discord:813406342173818910> **| User Commands**
-> \`invite . invites . support . about   avatar . ping . prefix . uptime   embed . cv . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . emojiinfo(emoji) . social   membercount(count)\`
+> \`invite . invites . support . about   avatar . ping . prefix . uptime  . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . emojiinfo(emoji) . social   membercount(count)\`
 
 
 <a:setting:813404135181385759> **| Fun Commands**
-> \`lock(l) . unlock(ul) . slowmode . ban   unban . createchannel . deletechannel   mute . unmute . giveaway\`
+> \`lock(l) . unlock(ul) . slowmode . ban   bans . unban . createchannel . deletechannel   mute . unmute . giveaway . embed .say . cv\`
 
 
 <a:loading:830814256697966602> **| Gif Commands**
