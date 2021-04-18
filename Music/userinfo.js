@@ -31,7 +31,7 @@ module.exports = {
             .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
             .addFields(
                 {
-                    name: "<a:emoji_148:768871719561592894> Name : ",
+                    name: "<a:KING:820738504036188181> Name : ",
                     value: user.user.username,
                     inline: true
                 },
