@@ -271,9 +271,10 @@ V2
 
 client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("833427164124282930");
-  let embed = new MessageEmbed().setColor("#fc0303")
+  let embed = new MessageEmbed().setColor("#FC00FF")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
+  .setTimestamp()
   .addField("🔠 **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
@@ -285,7 +286,8 @@ client.on("guildCreate", guild => {
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("833427164124282930");
   let embed = new MessageEmbed()
-  .setColor("#fc0303")
+  .setColor("#FC00FF")
+  .setTimestamp()
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
