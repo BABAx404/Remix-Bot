@@ -42,7 +42,7 @@ module.exports = {
 
 
 <a:links:813729922643263558> **| Links**
-__**[Support](https://discord.gg/u4CbGW4qTT)**__ **-** __**[Vote](https://top.gg/bot/792047204361175091/vote)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__ **-** __**[Website](https://website.remixbot9054.repl.co/)**__
+__**[Support](https://discord.gg/geu89kZ7Rt)**__ **-** __**[Vote](https://top.gg/bot/792047204361175091/vote)**__ **-** __**[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**__ **-** __**[Website](https://website.remixbot9054.repl.co/)**__
 `)
    helpEmbed
    message.react("✅")
