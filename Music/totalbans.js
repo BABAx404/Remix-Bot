@@ -1,13 +1,22 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
-    name: "bans",
-    cooldown: 10,
-    category: "extra",
-    async execute(message, args) {
-   message.guild.fetchBans().then(bans => {
-            message.channel.send(`**Total Member Bans** \`${bans.size}\``)
-        })
+    name: 'bans',
+    category: "Moderation Commands",
+    description: "List all Server Bans",
+    usage: "bans",
+async execute(message, args) {
+    
 
+        message.guild.fetchBans().then(bans => {
+            let bansembed = new MessageEmbed()
+                .setTitle(`**Ban's**`)
+                .setColor("#FC00FF")
+                .setDescription(`**Banned User**: ${bans.size}`)
+                .setFooter("Status")
+                .setTimestamp()
+            message.channel.send(bansembed)
+
+        })
     }
 }
