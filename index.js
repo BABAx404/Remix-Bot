@@ -459,6 +459,15 @@ client.on("message", message => {
   }
 });
 
+client.on("guildCreate", guild => {
+  let embed = new Discord.MessageEmbed()
+    .setColor("#FC00FF")
+    .setDescription(`Thanks for adding remix, I wish you luck
+`);
+
+  guild.owner.send(embed);
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
