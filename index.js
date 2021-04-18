@@ -270,7 +270,7 @@ V2
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("833104343015751690");
+  let channel = client.channels.cache.get("833427164124282930");
   let embed = new MessageEmbed().setColor("#fc0303")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -283,7 +283,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("833104343015751690");
+  let channel = client.channels.cache.get("833427164124282930");
   let embed = new MessageEmbed()
   .setColor("#fc0303")
   .setAuthor(client.user.username, client.user.avatarURL())
