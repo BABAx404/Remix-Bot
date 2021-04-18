@@ -44,7 +44,7 @@ execute(message, args) {
     //define approve embed
     const volinfosetembed = new MessageEmbed()
     .setColor("#FC00FF")
-    .setTitle(`<a:music:813460704031145986> Volume changed to: \`${args[0]}%\`!`)
+    .setTitle(`<a:Voulome:827114142610751578> Volume changed to: \`${args[0]}%\`!`)
     //Send approve message
     return queue.textChannel.send(volinfosetembed).catch(console.error);
   }
