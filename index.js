@@ -276,7 +276,7 @@ client.on("guildCreate", guild => {
   .setTitle( `✅ Join Server`)
   .setTimestamp()
   .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("👑 **Server Owner**", `<@${guild.ownerID}>`,true)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
@@ -291,7 +291,7 @@ client.on("guildDelete", guild => {
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("👑 **Server Owner**", `<@${guild.ownerID}>`,true)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
