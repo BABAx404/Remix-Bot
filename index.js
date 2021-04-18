@@ -178,7 +178,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 
 <a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 <a:lodaing:813403104384647238>  
-<a:rast:813403866472251399> **[Support](https://discord.gg/u4CbGW4qTT)**
+<a:rast:813403866472251399> **[Support](https://discord.gg/geu89kZ7Rt)**
 <a:lodaing:813403104384647238>  
 <a:rast:813403866472251399> **[Vote](https://top.gg/bot/792047204361175091)**
 
