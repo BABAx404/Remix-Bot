@@ -23,7 +23,7 @@ module.exports = {
 <a:discord:813406342173818910> **| User Commands**
 > \`invite . invites . support . about   avatar . ping . prefix . uptime  . vote . se . serverinfo   servericon(icon) . userinfo(user)   emojify . emojiinfo(emoji) . social   membercount(count)\`
 
-
+ 
 <a:setting:813404135181385759> **| Fun Commands**
 > \`lock(l) . unlock(ul) . slowmode . ban   bans . unban . createchannel   deletechannel   mute . unmute   giveaway . embed . say . cv\`
 
