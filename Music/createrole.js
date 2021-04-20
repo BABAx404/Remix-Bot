@@ -4,7 +4,7 @@ const toHex = require("colornames");
 module.exports = {
     name: "createrole",
     description: "Creates A new role in the guild",
-    run: async (client, message, args) => {
+    async execute(bot, message, args) {
         const name = args.slice(1).join(" ")
         const regex = !/[^a-zA-Z0-9]+/g.test(name)
         if (!message.member.hasPermission("MANAGE_ROLES")) {
