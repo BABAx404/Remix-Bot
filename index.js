@@ -83,7 +83,7 @@ client.on(`message`, async (message) => {
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
                   .setColor("#FC00FF")
-                  .setDescription(`
+                  .setDescription(` 
 Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
 Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)
 Bot Vote - [Click Me](https://top.gg/bot/792047204361175091)
