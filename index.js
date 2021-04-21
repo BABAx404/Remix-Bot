@@ -33,7 +33,7 @@ client.on(`ready`, () => {
           return;
         //if alone 
         if (member.voice.channel.members.size === 1) 
-        { return member.voice.channel.leave(); }
+        { return member.voice.channel.leave(); } 
       });
       
    
