@@ -26,7 +26,7 @@ module.exports = {
     .addField('<:channel:828229201307369492> Channels :',`\`${message.guild.channels.cache.size}\``,true)
     .addField('<a:3arz:823238395895349358> Region :',`\`${message.guild.region}\``,true)
     .addField('<a:winner:817425780992114708> Roles :', `\`${message.guild.roles.cache.size}\``, true)
-    .addField('<a:BOOST:828272075436589077> Total Boost :',`\`${message.guild.premiumSubscriptionCount} Boost\``,true)
+    .addField('<:boost:821109366240575548> Total Boost :',`\`${message.guild.premiumSubscriptionCount} Boost\``,true)
     .addField('<a:Erore:813505315534405632> Emojis :',`\`${message.guild.emojis.cache.size}\``,true)
    helpEmbed
    message.react("✅")
