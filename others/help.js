@@ -28,11 +28,11 @@ module.exports = {
 > \`lock(l) . unlock(ul) . slowmode . ban   bans . unban . createchannel   deletechannel   mute . unmute   giveaway . embed . say . cv\`
 
 
-<a:loading:830814256697966602> **| Gif Commands**
+<:emoji_61:827114330608107531> **| Gif Commands**
 > \`boy . girl . baby . smoke\` 
 
 
-<:emoji_61:827114330608107531> **| Game Commands**
+ **| Game Commands**
 > \`slap . hug\`
 
 
