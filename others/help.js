@@ -32,7 +32,7 @@ module.exports = {
 > \`boy . girl . baby . smoke\` 
 
 
- **| Game Commands**
+<a:winner:817425780992114708> **| Game Commands**
 > \`slap . hug\`
 
 
