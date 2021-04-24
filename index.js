@@ -459,6 +459,45 @@ client.on("message", message => {
   }
 });
 
+client.on("guildMemberAdd", member => {
+  const channel = member.guild.channels.cache.find(
+    channel => channel.name === "・┊welcome"
+  );
+  let client = member.user.avatarURL();
+  if (!channel) return;
+  const joinembed = new Discord.MessageEmbed()
+    .setTitle(
+      `** Welcome **`
+    )
+    .setColor("RANDOM")
+    .setThumbnail("")
+    .addField(
+      "💎 | **name** : ",
+      `${member}
+    · · • • • ✤ • • • · ·`
+    )
+    .addField(
+      "👐 | **Welcome**",
+      `Welcome to the server, ${member}
+    · · • • • ✤ • • • · ·`
+    )
+    .addField(
+      "🆔 | **ID** :",
+      "**[" + `${member.id}` + "]**"
+    )
+    .addField(
+      "👤 | **All Member**",
+      `${member.guild.memberCount}
+      · · • • • ✤ • • • · ·`
+    )
+    .addField("🍁 Server", `${member.guild.name}`, true)
+    .setFooter(`**${member.guild.name}**`)
+    .setTimestamp()
+    .setFooter(`${member.guild.name}`)
+    .setTimestamp();
+  channel.send(joinembed);
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
