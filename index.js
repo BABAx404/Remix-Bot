@@ -470,7 +470,7 @@ client.on("guildMemberAdd", member => {
       `** Welcome **`
     )
     .setColor("RANDOM")
-    .setThumbnail(jano)
+    .setThumbnail("")
     .addField(
       "💎 | **name** : ",
       `${member}
