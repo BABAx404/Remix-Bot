@@ -469,7 +469,7 @@ client.on("guildMemberAdd", member => {
     .setTitle(
       `** Welcome **`
     )
-    .setColor("RANDOM")
+    .setColor("#FC00FF")
     .setThumbnail("")
     .addField(
       "<a:discord:813406342173818910> **| Name :**",
@@ -477,11 +477,11 @@ client.on("guildMemberAdd", member => {
     <a:lodaing:813403104384647238>`
     .addField(
       "<a:Erore:813505315534405632> **| ID :**",
-      "\`[" + `${member.id}` + "]\`"
+      "[" + `${member.id}` + "]"
     )
     .addField(
       "<a:3arz:823238395895349358> **| All Member :**",
-      `\`${member.guild.memberCount}\`
+      `${member.guild.memberCount}
       <a:lodaing:813403104384647238>`
     )
     .addField("<a:KING:820738504036188181> **| Server :**", `${member.guild.name}`, true)
