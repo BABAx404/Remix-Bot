@@ -479,11 +479,11 @@ client.on("guildMemberAdd", member => {
     )
     .addField(
       "<:emoji_61:827114330608107531> **| Welcome :**",
-      `Welcome to the server, ${member}
+      `Welcome to the Server, ${member}
 <a:lodaing:813403104384647238>`
     )
     .addField(
-      "<a:Erore:813505315534405632> **| ID :**",
+      "<a:Erore:813505315534405632> **| Member ID :**",
       `${member.id}
 <a:lodaing:813403104384647238>`
     )
@@ -492,7 +492,7 @@ client.on("guildMemberAdd", member => {
       `${member.guild.memberCount}
 <a:lodaing:813403104384647238>`
     )
-    .addField("<a:KING:820738504036188181> **| Server :**", `${member.guild.name}`, true)
+    .addField("<a:KING:820738504036188181> **| Server Name :**", `${member.guild.name}`, true)
     .setFooter(``)
     .setTimestamp()
     .setFooter(``)
