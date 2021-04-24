@@ -459,18 +459,18 @@ client.on("message", message => {
   }
 });
 
-jano.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
     channel => channel.name === "・┊welcome"
   );
-  let jano = member.user.avatarURL();
+  let client = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(
       `** Welcome **`
     )
     .setColor("RANDOM")
-    .setThumbnail(jano)
+    .setThumbnail("")
     .addField(
       "💎 | **name** : ",
       `${member}
