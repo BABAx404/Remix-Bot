@@ -474,7 +474,7 @@ client.on("guildMemberAdd", member => {
     .addField(
       "<a:discord:813406342173818910> **| Name :**",
       `${member}
-    · · • • • ✤ • • • · ·`
+    <a:lodaing:813403104384647238>`
     .addField(
       "<a:Erore:813505315534405632> **| ID :**",
       "\`[" + `${member.id}` + "]\`"
@@ -482,7 +482,7 @@ client.on("guildMemberAdd", member => {
     .addField(
       "<a:3arz:823238395895349358> **| All Member :**",
       `\`${member.guild.memberCount}\`
-      · · • • • ✤ • • • · ·`
+      <a:lodaing:813403104384647238>`
     )
     .addField("<a:KING:820738504036188181> **| Server :**", `${member.guild.name}`, true)
     .setFooter(`${member.guild.name}`)
