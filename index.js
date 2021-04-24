@@ -492,8 +492,6 @@ client.on("guildMemberAdd", member => {
     )
     .addField("🍁 Server", `${member.guild.name}`, true)
     .setFooter(`**${member.guild.name}**`)
-    .setTimestamp()
-    .setFooter(`${member.guild.name}`)
     .setTimestamp();
   channel.send(joinembed);
 });
