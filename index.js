@@ -533,7 +533,7 @@ client.on("guildMemberAdd", member => {
     .setTimestamp()
     .setFooter(``)
     .setTimestamp();
-  channel.send(joinembed);
+  member.send(joinembed);
 });
 
 function delay(delayInms) {
