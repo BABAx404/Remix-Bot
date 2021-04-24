@@ -500,6 +500,47 @@ client.on("guildMemberAdd", member => {
   channel.send(joinembed);
 });
 
+client.on("guildMemberAdd", member => {
+  const channel = member.guild.channels.cache.find(
+    channel => channel.name === ""
+  );
+  let client = member.user.avatarURL();
+  if (!channel) return;
+  const joinembed = new Discord.MessageEmbed()
+    .setTitle(
+      `** Welcome **`
+    )
+    .setColor("RANDOM")
+    .setThumbnail(client)
+  .setAuthor(`${member.guild.name}`,member.guild.iconURL({ dynamic: true }))
+    .addField(
+      "<a:discord:813406342173818910> **| Name :**",
+      `<@${member.id}>
+<a:lodaing:813403104384647238>`
+    )
+    .addField(
+      "<:emoji_61:827114330608107531> **| Welcome :**",
+      `Welcome to the Server, <@${member.id}>
+<a:lodaing:813403104384647238>`
+    )
+    .addField(
+      "<a:Erore:813505315534405632> **| Member ID :**",
+      `${member.id}
+<a:lodaing:813403104384647238>`
+    )
+    .addField(
+      "<a:3arz:823238395895349358> **| All Member :**",
+      `${member.guild.memberCount}
+<a:lodaing:813403104384647238>`
+    )
+    .addField("<a:KING:820738504036188181> **| Server Name :**", `${member.guild.name}`, true)
+    .setFooter(``)
+    .setTimestamp()
+    .setFooter(``)
+    .setTimestamp();
+  member.send(joinembed);
+});
+
 client.on("guildMemberRemove", member => {
   const channel = member.guild.channels.cache.find(
     channel => channel.name === "・┊left"
