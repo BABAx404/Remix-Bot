@@ -471,6 +471,7 @@ client.on("guildMemberAdd", member => {
     )
     .setColor("#FC00FF")
     .setThumbnail(client)
+  .setAuthor(`${member.guild.name}`,member.guild.iconURL({ dynamic: true }))
     .addField(
       "<a:discord:813406342173818910> **| Name :**",
       `${member}
@@ -483,7 +484,8 @@ client.on("guildMemberAdd", member => {
     )
     .addField(
       "<a:Erore:813505315534405632> **| ID :**",
-      "**[" + `${member.id}` + "]**"
+      `${member.id}
+<a:lodaing:813403104384647238>`
     )
     .addField(
       "<a:3arz:823238395895349358> **| All Member :**",
@@ -491,9 +493,9 @@ client.on("guildMemberAdd", member => {
 <a:lodaing:813403104384647238>`
     )
     .addField("<a:KING:820738504036188181> **| Server :**", `${member.guild.name}`, true)
-    .setFooter(`**${member.guild.name}**`)
+    .setFooter(``)
     .setTimestamp()
-    .setFooter(`${member.guild.name}`)
+    .setFooter(``)
     .setTimestamp();
   channel.send(joinembed);
 });
