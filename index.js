@@ -470,7 +470,7 @@ client.on("guildMemberAdd", member => {
       `** Welcome **`
     )
     .setColor("#FC00FF")
-    .setThumbnail("")
+    .setThumbnail(client)
     .addField(
       "<a:discord:813406342173818910> **| Name :**",
       `${member}
