@@ -472,26 +472,20 @@ client.on("guildMemberAdd", member => {
     .setColor("RANDOM")
     .setThumbnail("")
     .addField(
-      "💎 | **name** : ",
+      "<a:discord:813406342173818910> **| Name :**",
       `${member}
     · · • • • ✤ • • • · ·`
+    .addField(
+      "<a:Erore:813505315534405632> **| ID :**",
+      "\`[" + `${member.id}` + "]\`"
     )
     .addField(
-      "👐 | **Welcome**",
-      `Welcome to the server, ${member}
-    · · • • • ✤ • • • · ·`
-    )
-    .addField(
-      "🆔 | **ID** :",
-      "**[" + `${member.id}` + "]**"
-    )
-    .addField(
-      "👤 | **All Member**",
-      `${member.guild.memberCount}
+      "<a:3arz:823238395895349358> **| All Member :**",
+      `\`${member.guild.memberCount}\`
       · · • • • ✤ • • • · ·`
     )
-    .addField("🍁 Server", `${member.guild.name}`, true)
-    .setFooter(`**${member.guild.name}**`)
+    .addField("<a:KING:820738504036188181> **| Server :**", `${member.guild.name}`, true)
+    .setFooter(`${member.guild.name}`)
     .setTimestamp()
     .setFooter(`${member.guild.name}`)
     .setTimestamp();
