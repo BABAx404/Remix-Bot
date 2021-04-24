@@ -474,12 +474,12 @@ client.on("guildMemberAdd", member => {
   .setAuthor(`${member.guild.name}`,member.guild.iconURL({ dynamic: true }))
     .addField(
       "<a:discord:813406342173818910> **| Name :**",
-      `${member}
+      `<@${member.id}>
 <a:lodaing:813403104384647238>`
     )
     .addField(
       "<:emoji_61:827114330608107531> **| Welcome :**",
-      `Welcome to the Server, ${member}
+      `Welcome to the Server, <@${member.id}>
 <a:lodaing:813403104384647238>`
     )
     .addField(
