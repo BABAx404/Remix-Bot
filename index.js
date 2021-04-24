@@ -511,9 +511,9 @@ client.on("guildMemberRemove", member => {
     .setColor("RANDOM")
     .setThumbnail(client)
     .setAuthor(`${member.guild.name}`,member.guild.iconURL({ dynamic: true }))
-    .addField("<a:discord:813406342173818910> **| Name :", `${member}`)
+    .addField("<a:discord:813406342173818910> **| Name :**", `${member}`)
     .addField(
-      "<a:3arz:823238395895349358> **| All Member :",
+      "<a:3arz:823238395895349358> **| All Member :**",
       `${member.guild.memberCount}`
     )
   .addField("<a:KING:820738504036188181> **| Server Name :**", `${member.guild.name}`, true)
