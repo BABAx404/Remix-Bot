@@ -502,7 +502,9 @@ client.on("guildMemberAdd", member => {
 
 client.on("guildMemberAdd", member => {
   const joinembed = new Discord.MessageEmbed()
-  .setTitle(
+ 
+   
+    .setTitle(
       `** Welcome **`
     )
     .setColor("#FC00FF")
