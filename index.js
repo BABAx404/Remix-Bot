@@ -502,7 +502,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "💐༄𝗪𝗘𝗟𝗖𝗢𝗠𝗘"
+    channel => channel.name === "❄┃ᴡᴇʟᴄᴏᴍᴇ "
   );
   let client = member.user.avatarURL();
   if (!channel) return;
