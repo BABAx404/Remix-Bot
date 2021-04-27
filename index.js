@@ -502,7 +502,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "❄┃ᴡᴇʟᴄᴏᴍᴇ "
+    channel => channel.name === "❄┃ᴡᴇʟᴄᴏᴍᴇ"
   );
   let client = member.user.avatarURL();
   if (!channel) return;
@@ -540,7 +540,6 @@ client.on("guildMemberAdd", member => {
     .setTimestamp();
   channel.send(joinembed);
 });
-
 
 client.on("guildMemberRemove", member => {
   const channel = member.guild.channels.cache.find(
