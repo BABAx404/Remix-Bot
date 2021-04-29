@@ -23,7 +23,7 @@ client.on(`ready`, () => {
    ///////////////////////////////
     ////////////IFCHEMPTY//////////
         //remove everything in between those 2 big comments if you want to disable that the bot leaves when ch. or queue gets empty!
-        setInterval(() => { 
+        setInterval(() => {  
           let member;
         client.guilds.cache.forEach(async guild =>{
         await delay(15);
