@@ -6,7 +6,6 @@ module.exports = {
   memberPermissions: ["SEND_MESSAGES"],
   botPermissions: ["SEND_MESSAGES", "EMBED_LINKS"],
   ownerOnly: false,
-  cooldown: 3000,
   async execute(bot, message, args) {
       
       if(message.author.bot || !message.guild) return message.reply(new Discord.MessageEmbed().setColor("BLUE").setDescription(`This command for serverOnly`));
