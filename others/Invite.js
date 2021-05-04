@@ -20,7 +20,7 @@ module.exports = {
         const filter1 = (reaction, user) =>
         reaction.emoji.name === '2️⃣' && user.id === message.author.id;
  const yes = message1.createReactionCollector(filter, {time: 300000})
-        const no = message1.createReactionCollector(filter1, {time: 300000})
+        const no = message1.createReactionCollector(filter1, {time: 1})
         
 yes.on('collect', bbb => {
  
