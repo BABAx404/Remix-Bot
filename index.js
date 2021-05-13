@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
    
-     client.user.setActivity(`${PREFIX}help | Welcome Ramadan`, { type: "LISTENING"});   
+     client.user.setActivity(`${PREFIX}help | جەژنتان پیرۆزبێت`, { type: "LISTENING"});   
            
            
      client.user.setActivity(`${client.guilds.cache.size} | Servers`, { type: "LISTENING"});
