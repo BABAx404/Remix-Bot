@@ -176,11 +176,11 @@ if(message.content.startsWith(`${prefix}vote`)){
     .setColor("#FC00FF")
     .setDescription (`
 
-<a:rast:813403866472251399> **[Invite](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
+<a:rast:813403866472251399> **[Invite](https://discord.com/api/oauth2/authorize?client_id=872575444216578149&permissions=8&scope=bot)**
 <a:lodaing:813403104384647238>     
-<a:rast:813403866472251399> **[Support](https://discord.gg/geu89kZ7Rt)**
+<a:rast:813403866472251399> **[Support](https://discord.gg/VBV6qp9aHM)**
 <a:lodaing:813403104384647238>  
-<a:rast:813403866472251399> **[Vote](https://top.gg/bot/792047204361175091)**
+<a:rast:813403866472251399> **
 
 `)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -205,7 +205,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
 **Owner Bot :**
-<@800373299736608818>
+<@715564822858825750>
 ●  
 **Name Bot :**
 Remix Bot ✨#8911
