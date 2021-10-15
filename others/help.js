@@ -40,7 +40,7 @@ module.exports = {
 
 
  **| Links**
-__**[Support](https://discord.gg/VBV6qp9aHM)**. **[Invite](https://discord.com/api/oauth2/authorize?client_id=872575444216578149&permissions=8&scope=bot)
+__**[Support](https://discord.gg/VBV6qp9aHM)**. **[Invite](https://discord.com/api/oauth2/authorize?client_id=891803582469373952&permissions=8&scope=bot)
 `)
    helpEmbed
    message.react("✅")
