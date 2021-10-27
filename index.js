@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODkxODAzNTgyNDY5MzczOTUy.YVDqzg.Arp7YGwVrldNIc50o0yZanK_TAM');
+client.login('ODcyNTc1NDQ0MjE2NTc4MTQ5.YQr3NQ.tX5Fsf8vGE2Dsd5X9gboZCC4PFk');
 client.commands = new Collection();
 client.setMaxListeners(0);    
 client.prefix = PREFIX;
@@ -205,10 +205,10 @@ if(message.content.startsWith(`${prefix}vote`)){
 **[Remix Bot Stats](https://discord.com/oauth2/authorize?client_id=792047204361175091&permissions=1076131920&scope=bot)**
 Hey My name is **Remix Bot** and My Work is to play Music
 **Owner Bot :**
-<@715564822858825750>
+<@760929459359580232>
 ●  
 **Name Bot :**
-Remix Bot ✨#8911
+Remix Bot ✨#9705
 ●
 **Prefix Bot :**
 ${prefix}
